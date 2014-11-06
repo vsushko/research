@@ -2,76 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bc17f73-8e16-4094-aca1-3e836ff51443" name="Default" comment="Init commit. Finished three chapters.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/Auditorium.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/BeanCounter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/BeanNameAware.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/City.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Coconut.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Coconut.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Contact.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Course.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/CourseFullEvent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/CronTriggerBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Fuddifier.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/ICoconut.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/Instrument.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/Instrumentalist.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/Juggler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Lime.bsh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Lime.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Lime.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Lime1.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/LimeImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/MagicBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/MagicBoxImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/Magician.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_1_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_1_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_1_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_1_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_1_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_1_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_1_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/OneManBand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/PerformanceException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/Performer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/PhoneEditor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/PhoneNumber.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/Piano.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/Poem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/PoeticJuggler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/vsprog/springinaction/ProjectTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/RefreshListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/Saxophone.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/Sonnet29.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SpringInAction.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/Stage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/TigerReplacer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter2/Vocalist.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/Resources/application.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/Resources/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/Resources/security.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/Resources/spring-idol.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SpringInAction.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -156,51 +87,7 @@
     <favorites_list name="SpringInAction" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="spring-idol.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Resources/spring-idol.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="197" column="23" selection-start="8467" selection-end="8467" vertical-scroll-proportion="0.0" vertical-offset="2989" max-vertical-offset="3893">
-              <folding>
-                <element signature="e#7326#7343#0" expanded="true" />
-                <element signature="e#7393#7413#0" expanded="true" />
-                <element signature="e#7456#7474#0" expanded="true" />
-                <element signature="e#7517#7539#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lime1.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Lime1.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lime.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Lime.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Coconut.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Coconut.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="6" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0882353" vertical-offset="0" max-vertical-offset="578">
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -960,12 +847,17 @@
       <workItem from="1415248166881" duration="10664000" />
       <workItem from="1415261042559" duration="7883000" />
       <workItem from="1415270713418" duration="1741000" />
-      <workItem from="1415272482947" duration="6057000" />
+      <workItem from="1415272482947" duration="6376000" />
     </task>
+    <task id="LOCAL-00001" summary="Init commit. Finished three chapters.">
+      <created>1415281679849</created>
+      <updated>1415281679849</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50065000" />
+    <option name="totallyTimeSpent" value="50384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
@@ -1308,18 +1200,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/spring-idol.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="23" selection-start="8467" selection-end="8467" vertical-scroll-proportion="0.0" vertical-offset="2989" max-vertical-offset="3893">
-          <folding>
-            <element signature="e#7326#7343#0" expanded="true" />
-            <element signature="e#7393#7413#0" expanded="true" />
-            <element signature="e#7456#7474#0" expanded="true" />
-            <element signature="e#7517#7539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Lime1.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
@@ -1336,9 +1216,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter3/Coconut.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0882353" vertical-offset="0" max-vertical-offset="578">
+        <state line="11" column="1" selection-start="359" selection-end="359" vertical-scroll-proportion="0.32352942" vertical-offset="0" max-vertical-offset="578">
           <folding>
             <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/spring-idol.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="197" column="23" selection-start="8467" selection-end="8467" vertical-scroll-proportion="0.63716817" vertical-offset="2989" max-vertical-offset="3893">
+          <folding>
+            <element signature="e#7326#7343#0" expanded="true" />
+            <element signature="e#7393#7413#0" expanded="true" />
+            <element signature="e#7456#7474#0" expanded="true" />
+            <element signature="e#7517#7539#0" expanded="true" />
           </folding>
         </state>
       </provider>
