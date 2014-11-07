@@ -4,15 +4,18 @@ import org.springframework.stereotype.Component;
 
 /**
  * Created by vsa
- * Date: 05.11.14.
+ * Date: 07.11.14.
  */
+//@Qualifier("stringed")
+//@StringedInstrument
 @Component
-public class Piano implements Instrument {
-    public Piano() {
+public class Guitar implements Instrument {
+
+    public Guitar() {
     }
 
     @Override
     public void play() {
-        System.out.println("Pink Pink Pink");
+        System.out.println("Strum strum strum");
     }
 }

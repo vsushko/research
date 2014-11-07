@@ -7,8 +7,8 @@ package ru.vsprog.springinaction.chapter2;
 public class Sonnet29 implements Poem {
     private static String[] LINES = {
             "String 1",
-            "String 1",
-            "String 1"
+            "String 2",
+            "String 3"
     };
 
     @Override

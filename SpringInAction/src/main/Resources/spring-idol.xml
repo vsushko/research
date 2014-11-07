@@ -3,14 +3,25 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:util="http://www.springframework.org/schema/util" xmlns:aop="http://www.springframework.org/schema/context"
        xmlns:lang="http://www.springframework.org/schema/lang"
+       xmlns:conext="http://www.springframework.org/schema/context"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	   					   http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
        xmlns:p="http://www.springframework.org/schema/p"
        default-init-method="turnOnLights"
        default-destroy-method="turnOffLights">
+    <!-- default-autowire="byType" - default - none -->
 
-    <bean name="duke" class="ru.vsprog.springinaction.chapter2.Juggler">
-        <constructor-arg value="15"/>
+    <!-- включанем связывание посредством аннотаций -->
+    <conext:annotation-config/>
+
+    <!-- включаем режим автоматического определения компонентов -->
+    <context:component-scan base-package="ru.vsprog.springinaction">
+        <!--<context:include-filter type="assignable" expression="javax.sound.midi.Instrument"/>-->
+    </context:component-scan>
+
+    <bean name="duke" class="ru.vsprog.springinaction.chapter2.Juggler" autowire="constructor">
+        <!--<constructor-arg value="15"/>-->
     </bean>
 
     <bean id="sonnet29" class="ru.vsprog.springinaction.chapter2.Sonnet29"/>
@@ -30,7 +41,8 @@
           init-method="turnOnLights"
           destroy-method="turnOffLights"/>
 
-    <bean id="saxophone" class="ru.vsprog.springinaction.chapter2.Saxophone" scope="prototype"/>
+    <bean id="saxophone" class="ru.vsprog.springinaction.chapter2.Saxophone" scope="prototype"
+          autowire-candidate="false"/>
 
     <bean id="kenny2" class="ru.vsprog.springinaction.chapter2.Instrumentalist" abstract="true">
         <property name="song" value="Jingle Bells"/>
@@ -39,7 +51,7 @@
         </property>
     </bean>
 
-    <bean id="piano" class="ru.vsprog.springinaction.chapter2.Piano"/>
+    <bean id="piano" class="ru.vsprog.springinaction.chapter2.Piano" autowire-candidate="false"/>
 
     <bean id="kenny3" class="ru.vsprog.springinaction.chapter2.Instrumentalist"
           p:age="39"
@@ -115,7 +127,8 @@
 
     <bean id="stevie" class="ru.vsprog.springinaction.chapter2.Instrumentalist"
           parent="basePerformer" abstract="true">
-        <lookup-method name="getInstrument" bean="saxophone"/>
+        <!-- Ищем абстрактный метод -->
+        <!--<lookup-method name="getInstrument" bean="saxophone"/>-->
         <property name="song" value="Greensleeves"/>
     </bean>
 
@@ -184,7 +197,7 @@
 
     <bean id="refreshListener" class="ru.vsprog.springinaction.chapter3.RefreshListener"/>
 
-    <!--<bean id="coconut" class="ru.vsprog.springinaction.chapter3.Coconut">
+    <!--<bean id="coconut" class="ru.vsprog.springinaction.chapter3.CoconutGroovy">
         <property name="lime" ref="lime"/>
     </bean>-->
 
@@ -192,16 +205,16 @@
                 script-interfaces="ru.vsprog.springinaction.chapter3.Lime"
                 refresh-check-delay="500"/>
 
-    <lang:groovy id="groovyLime" script-source="classpath:ru/vsprog/springinaction/chapter3/Lime.groovy"/>
+    <!--<lang:groovy id="groovyLime" script-source="classpath:ru/vsprog/springinaction/chapter3/Lime1.groovy"/>-->
 
     <lang:bsh id="limeBsh" script-source="classpath:ru/vsprog/springinaction/chapter3/Lime.bsh"
               script-interfaces="ru.vsprog.springinaction.chapter3.Lime"/>
 
     <bean id="limePojo" class="ru.vsprog.springinaction.chapter3.LimeImpl"/>
 
-    <lang:groovy id="coconut" script-source="ru/vsprog/springinaction/chapter3/Coconut.groovy">
-        <lang:property name="lime" ref="lime"/>
-    </lang:groovy>
+    <!-- <lang:groovy id="coconut" script-source="ru/vsprog/springinaction/chapter3/CoconutGroovy.groovy">
+         <lang:property name="lime" ref="lime"/>
+     </lang:groovy>-->
 
     <lang:bsh id="limeWithInternalScript" script-interfaces="ru.vsprog.springinaction.chapter3.Lime">
         <lang:inline-script>
@@ -213,12 +226,26 @@
         </lang:inline-script>
     </lang:bsh>
 
-    <bean id="kenny4" class="ru.vsprog.springinaction.chapter2.Instrumentalist" abstract="true" autowire="byName">
-        <property name="song" value="Jingle Bells"/>
-        <property name="instrument" ref="saxophone"/>
+    <bean id="kenny4" class="ru.vsprog.springinaction.chapter2.Instrumentalist"
+          abstract="true"
+          autowire="byName">
+    <property name="song" value="Jingle Bells"/>
     </bean>
 
-    <bean id="instrument" class="ru.vsprog.springinaction.chapter2.Saxophone"/>
+    <bean id="instrument" class="ru.vsprog.springinaction.chapter2.Saxophone" autowire-candidate="false"/>
+
+    <bean id="kenny5" class="ru.vsprog.springinaction.chapter2.Instrumentalist" autowire="byType" abstract="true">
+        <property name="song" value="Jingle Bells"/>
+        <property name="instrument">
+            <null/>
+        </property>
+    </bean>
+
+    <!--<bean class="ru.vsprog.springinaction.chapter2.Guitar">
+        <qualifier value="stringed"/>
+    </bean>-->
+
+    <bean id="knife" class="ru.vsprog.springinaction.chapter4.Knife" scope="prototype"/>
 
 
 </beans>
