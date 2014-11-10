@@ -6,6 +6,7 @@
        xmlns:conext="http://www.springframework.org/schema/context"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/aop
 	   					   http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
        xmlns:p="http://www.springframework.org/schema/p"
        default-init-method="turnOnLights"
@@ -141,16 +142,16 @@
         </property>
     </bean>
 
-    <beans>
-        <bean id="infoPhone" class="ru.vsprog.springinaction.chapter3.PhoneNumber">
-            <constructor-arg value="888"/>
-            <constructor-arg value="555"/>
-            <constructor-arg value="1212"/>
-        </bean>
-        <bean id="contact" class="ru.vsprog.springinaction.chapter3.Contact">
-            <property name="phoneNumber" value="888-555-1212"/>
-        </bean>
-    </beans>
+
+    <bean id="infoPhone" class="ru.vsprog.springinaction.chapter3.PhoneNumber">
+        <constructor-arg value="888"/>
+        <constructor-arg value="555"/>
+        <constructor-arg value="1212"/>
+    </bean>
+    <bean id="contact" class="ru.vsprog.springinaction.chapter3.Contact">
+        <property name="phoneNumber" value="888-555-1212"/>
+    </bean>
+
 
     <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
         <property name="customEditors">
@@ -247,5 +248,78 @@
 
     <bean id="knife" class="ru.vsprog.springinaction.chapter4.Knife" scope="prototype"/>
 
+    <!-- Глава с AOP -->
+    <bean id="audience" class="ru.vsprog.springinaction.chapter5.Audience"/>
+
+    <aop:config>
+        <!-- ссылка на компонент audience -->
+        <aop:aspect ref="audience">
+
+            <aop:pointcut id="performance"
+                          expression="execution(* ru.vsprog.springinaction.chapter2.Performer.perform(..))"/>
+
+            <!-- Перед выступлением -->
+            <aop:before pointcut="performance" method="takeSeats" />
+
+            <!-- Перед выступлением -->
+            <aop:before pointcut="performance" method="turnOffCellPhones" />
+
+            <!-- Перед выступлением -->
+            <aop:after-returning pointcut="performance" method="applaud" />
+
+            <!-- После неудачного выступления -->
+            <aop:after-throwing pointcut="performance" method="demandRefund" />
+        </aop:aspect>
+    </aop:config>
+
+    <aop:config>
+        <aop:aspect ref="magician">
+            <aop:pointcut id="thinking"
+                          expression="execution(* ru.vsprog.springinaction.chapter5.Thinker.thinkOfSomething(String))
+                          and args(thoughts)" />
+            <aop:before pointcut-ref="thinking"
+                        method="interceptThoughts"
+                        arg-names="thoughts" />
+        </aop:aspect>
+    </aop:config>
+
+    <aop:aspect>
+        <aop:declare-parents
+            types-matching="ru.vsprog.springinaction.chapter2.Performer+"
+            implement-interface="ru.vsprog.springinaction.chapter5.Contestant"
+            default-impl="ru.vsprog.springinaction.chapter5.GraciousContestant"/>
+    </aop:aspect>
+
+    <aop:declare-parents
+            types-matching="ru.vsprog.springinaction.chapter2.Performer+"
+            implement-interface="ru.vsprog.springinaction.chapter5.Contestant"
+            delegate-ref="contestantDelegate">
+    </aop:declare-parents>
+
+    <bean id="contestantDelegate" class="ru.vsprog.springinaction.chapter5.GraciousContestant"/>
+
+    <!--<bean id="audience" class="ru.vsprog.springinaction.chapter5.Audience"/>-->
+
+    <!-- элемент создаст в контексте Spring компонент класса AnnotationAwareAspectJAutoProxyCreator и
+         автоматически выполнит проксирование компонентов, имеющих методы, совпадающие с объявлениями точек
+         сопряжения в аннотациях @Pointcut, которые присутствуют в компонентах, отмеченных аннотацией @Aspect
+    -->
+    <aop:aspectj-autoproxy/>
+
+    <bean class="ru.vsprog.springinaction.chapter5.ContestantIntroducer"/>
+
+    <bean id="criticismEngine" class="ru.vsprog.springinaction.chapter5.CriticismEngineImpl">
+        <property name="criticismPool">
+            <list>
+                <value>I'm not being rude, but that was appaling.</value>
+                <value>You may be the least talented person in this show</value>
+                <value>Do everyone a favor and keep your day job.</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean class="ru.vsprog.springinaction.chapter5.JudgeAspect" factory-method="aspectOf">
+        <!--<property name="criticismEngine" ref="criticismEngine"/>-->
+    </bean>
 
 </beans>

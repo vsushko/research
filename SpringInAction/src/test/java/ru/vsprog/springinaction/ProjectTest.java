@@ -2,6 +2,8 @@ package ru.vsprog.springinaction;
 
 import org.apache.commons.lang.time.FastDateFormat;
 import org.junit.Test;
+import ru.vsprog.springinaction.chapter5.Magician;
+import ru.vsprog.springinaction.chapter5.Volunteer;
 
 import java.util.Calendar;
 import java.util.TimeZone;
@@ -31,5 +33,16 @@ public class ProjectTest {
         } finally {
             TimeZone.setDefault(tzBackup);
         }
+    }
+
+    @Test
+    public void magicianShouldReadVolunteersMind() {
+        Volunteer volunteer = new Volunteer();
+        volunteer.thinkOfSomething("Queen of Hearts");
+
+        Magician magician = new Magician();
+        magician.interceptThoughts("Queen of Hearts");
+
+        assertEquals("Queen of Hearts", magician.getThoughts());
     }
 }

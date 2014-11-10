@@ -10,7 +10,7 @@
        xmlns:p="http://www.springframework.org/schema/p"
        default-init-method="turnOnLights"
        default-destroy-method="turnOffLights">
-       <!-- default-autowire="byType" - default - none -->
+    <!-- default-autowire="byType" - default - none -->
 
     <!-- включанем связывание посредством аннотаций -->
     <conext:annotation-config/>
@@ -41,7 +41,8 @@
           init-method="turnOnLights"
           destroy-method="turnOffLights"/>
 
-    <bean id="saxophone" class="ru.vsprog.springinaction.chapter2.Saxophone" scope="prototype" autowire-candidate="false"/>
+    <bean id="saxophone" class="ru.vsprog.springinaction.chapter2.Saxophone" scope="prototype"
+          autowire-candidate="false"/>
 
     <bean id="kenny2" class="ru.vsprog.springinaction.chapter2.Instrumentalist" abstract="true">
         <property name="song" value="Jingle Bells"/>
@@ -211,9 +212,9 @@
 
     <bean id="limePojo" class="ru.vsprog.springinaction.chapter3.LimeImpl"/>
 
-   <!-- <lang:groovy id="coconut" script-source="ru/vsprog/springinaction/chapter3/CoconutGroovy.groovy">
-        <lang:property name="lime" ref="lime"/>
-    </lang:groovy>-->
+    <!-- <lang:groovy id="coconut" script-source="ru/vsprog/springinaction/chapter3/CoconutGroovy.groovy">
+         <lang:property name="lime" ref="lime"/>
+     </lang:groovy>-->
 
     <lang:bsh id="limeWithInternalScript" script-interfaces="ru.vsprog.springinaction.chapter3.Lime">
         <lang:inline-script>
@@ -228,14 +229,16 @@
     <bean id="kenny4" class="ru.vsprog.springinaction.chapter2.Instrumentalist"
           abstract="true"
           autowire="byName">
-        <property name="song" value="Jingle Bells"/>
+    <property name="song" value="Jingle Bells"/>
     </bean>
 
     <bean id="instrument" class="ru.vsprog.springinaction.chapter2.Saxophone" autowire-candidate="false"/>
 
     <bean id="kenny5" class="ru.vsprog.springinaction.chapter2.Instrumentalist" autowire="byType" abstract="true">
         <property name="song" value="Jingle Bells"/>
-        <property name="instrument"><null/></property>
+        <property name="instrument">
+            <null/>
+        </property>
     </bean>
 
     <!--<bean class="ru.vsprog.springinaction.chapter2.Guitar">
@@ -244,7 +247,39 @@
 
     <bean id="knife" class="ru.vsprog.springinaction.chapter4.Knife" scope="prototype"/>
 
+    <!-- Глава с AOP -->
+    <bean id="audience" class="ru.vsprog.springinaction.chapter5.Audience"/>
 
+    <aop:config>
+        <!-- ссылка на компонент audience -->
+        <aop:aspect ref="audience">
 
+            <aop:pointcut id="performance"
+                          expression="execution(* ru.vsprog.springinaction.chapter2.Performer.perform(..))"/>
+
+            <!-- Перед выступлением -->
+            <aop:before pointcut="performance" method="takeSeats" />
+
+            <!-- Перед выступлением -->
+            <aop:before pointcut="performance" method="turnOffCellPhones" />
+
+            <!-- Перед выступлением -->
+            <aop:after-returning pointcut="performance" method="applaud" />
+
+            <!-- После неудачного выступления -->
+            <aop:after-throwing pointcut="performance" method="demandRefund" />
+        </aop:aspect>
+    </aop:config>
+
+    <aop:config>
+        <aop:aspect ref="magician">
+            <aop:pointcut id="thinking"
+                          expression="execution(* ru.vsprog.springinaction.chapter5.Thinker.thinkOfSomething(String))
+                          and args(thoughts)" />
+            <aop:before pointcut-ref="thinking"
+                        method="interceptThoughts"
+                        arg-names="thoughts" />
+        </aop:aspect>
+    </aop:config>
 
 </beans>
