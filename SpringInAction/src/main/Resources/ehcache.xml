@@ -1,0 +1,6 @@
+<ehcache>
+    <defaultCache maxElementsInMemory="500"
+                  overflowToDisk="false"
+                  memoryStoreEvictionPolice="LFU"
+                  eternal="true"/> <!-- Настройка кэша по умолчанию -->
+</ehcache>

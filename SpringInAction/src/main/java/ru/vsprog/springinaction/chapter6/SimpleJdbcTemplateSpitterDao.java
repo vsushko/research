@@ -5,6 +5,8 @@ import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by vsa
@@ -12,7 +14,7 @@ import java.sql.SQLException;
  */
 public class SimpleJdbcTemplateSpitterDao {
     private static final String SQL_INSERT_SPITTER =
-            "insert into spitter (username, password, fullname) values (?,?,?)";
+            "insert into spitter (username, password, fullname) values (:username,:password,:fullname)";
     private static final String SQL_SELECT_SPITTER_BY_ID =
             "select id, username, fullname from spitter where id = ?";
 
@@ -28,6 +30,16 @@ public class SimpleJdbcTemplateSpitterDao {
                 spitter.getPassword(),
                 spitter.getFullName(),
                 spitter.getEmail());
+        spitter.setId(queryForIdentity());
+    }
+
+    public void addSpitterWithNamedParam(Spitter spitter) {
+        Map<String, Object> params = new HashMap<String, Object>();
+        params.put("username", spitter.getUserName());
+        params.put("password", spitter.getPassword());
+        params.put("fullname", spitter.getFullName());
+
+        jdbcTemplate.update(SQL_INSERT_SPITTER, params); // Вставка
         spitter.setId(queryForIdentity());
     }
 
