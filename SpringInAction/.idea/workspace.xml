@@ -125,7 +125,7 @@
       <file leaf-file-name="SimpleJdbcTemplateSpitterDao.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter6/SimpleJdbcTemplateSpitterDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="18" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.7183432" vertical-offset="175" max-vertical-offset="1020">
+            <state line="20" column="26" selection-start="661" selection-end="661" vertical-scroll-proportion="0.19526628" vertical-offset="175" max-vertical-offset="1020">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1179#1745#0" expanded="true" />
@@ -411,6 +411,10 @@
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -908,7 +912,7 @@
       <workItem from="1415632169344" duration="23000" />
       <workItem from="1415632207186" duration="1211000" />
       <workItem from="1415712922199" duration="918000" />
-      <workItem from="1415883616158" duration="2551000" />
+      <workItem from="1415883616158" duration="3374000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit. Finished three chapters.">
       <created>1415281679849</created>
@@ -930,7 +934,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96109000" />
+    <option name="totallyTimeSpent" value="96932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1207" height="1036" extended-state="0" />
@@ -1282,7 +1286,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/vsprog/springinaction/chapter6/SimpleJdbcTemplateSpitterDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="18" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.7183432" vertical-offset="175" max-vertical-offset="1020">
+        <state line="20" column="26" selection-start="661" selection-end="661" vertical-scroll-proportion="0.19526628" vertical-offset="175" max-vertical-offset="1020">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1179#1745#0" expanded="true" />
