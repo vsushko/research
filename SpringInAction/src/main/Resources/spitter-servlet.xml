@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/aop
+                           http://www.springframework.org/schema/mvc http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- возможность использовать все остальные аннотации имеющиеся в Spring MVC -->
+    <mvc:annotation-driver/>
+
+    <!-- обрабатывает запросы наполучение статических ресурсов -->
+    <mvc:resources mapping="/resources/**" location="resources/"/>
+
+    <!-- автоматическое обнаружение контроллеров -->
+    <context:component-scan base-package="ru.vsprog.springinaction.chapter8"/>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- настраиваем арбитр представлений на Tiles -->
+    <bean class="org.springframework.web.servlet.view.tiles2.TilesViewResolver"/>
+
+    <bean class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+        <property name="definitions">
+            <list>
+                <value>/WEB-INF/views/**/views.xml</value>
+            </list>
+        </property>
+    </bean>
+</beans>

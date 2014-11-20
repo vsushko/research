@@ -4,6 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import ru.vsprog.springinaction.chapter7.Spittle;
 
 /**
  * Created by vsa
@@ -37,5 +38,10 @@ public class HibernateSpitterDao implements SpitterDAO {
     // Использует текущий сеанс
     public void saveSpitter(Spitter spitter) {
         currentSession().update(spitter);
+    }
+
+    @Override
+    public void saveSpittle(Spittle spittle) {
+
     }
 }
