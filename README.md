@@ -23,7 +23,7 @@ research
     75 из 804 стр.
 	
 14. Уоллс К. Spring в действии.
-    345 из 754 стр.
+    354 из 754 стр.
 	 
 15. A Programmer's Guide to Java SCJP Certification. Khalid A. Rolf W. Rasmussen.
     39 из 1089 стр.
