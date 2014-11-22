@@ -10,4 +10,5 @@ public interface SpitterService {
     Object getRecentSpittles(int defaultSpittlesPerPage);
     Spitter getSpitter(String username);
     Object getSpittlesForSpitter(String username);
+    void saveSpitter(Spitter spitter);
 }

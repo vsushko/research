@@ -2,12 +2,15 @@ package ru.vsprog.springinaction.chapter8;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import ru.vsprog.springinaction.chapter6.Spitter;
 
 import javax.inject.Inject;
+import javax.validation.Valid;
 
 /**
  * Created by vsa
@@ -25,7 +28,7 @@ public class SpitterController {
     }
 
     // обрабатывает GET-запросы к URL /spitter/spittles
-    @RequestMapping(value = "/spittles", method= RequestMethod.GET)
+    @RequestMapping(value = "/spittles", method = RequestMethod.GET)
     public String listSpittlesForSpitter(
             @RequestParam("spitter") String username, Model model) {
         Spitter spitter = spitterService.getSpitter(username);
@@ -40,4 +43,24 @@ public class SpitterController {
         return "spitters/edit";
     }
 
+    // аннотация @Valid означает, что объект Spitter
+    // должен подвергаться проверке перед передачей методу
+    @RequestMapping(method = RequestMethod.POST)
+    public String addSpitterFromForm(@Valid Spitter spitter, BindingResult bindingResult) {
+        // проверка ошибок
+        if (bindingResult.hasErrors()) {
+            return "spitters/eidt";
+        }
+        // сохранить объект Spitter
+        spitterService.saveSpitter(spitter);
+
+        // переадресовать после запроса POST
+        return "redirect:/spitters/" + spitter.getUserName();
+    }
+
+    @RequestMapping(value = "/{username}", method = RequestMethod.GET)
+    public String showSpitterProfile(@PathVariable String username, Model model) {
+        model.addAttribute(spitterService.getSpitter(username));
+        return "spitters/view";
+    }
 }
