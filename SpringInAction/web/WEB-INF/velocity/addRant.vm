@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>#springMessage("title.addRant")</title>
+</head>
+
+<body>
+<h2>#springMessage("title.addRant")</h2>
+<form method="POST" action="addRant.htm">
+     <b>#springMessage("field.state")</b>#springFormInput("rant.vehicle.state" "")<br/>
+     <b>#springMessage("field.plateNumber")</b>
+        #springFormInput("rant.vehicle.plateNumber" "") <br/>
+        #springMessage("field.rantText")
+        #springFormTextarea("rant.rantText" "rows='5' cols='50'")
+    <input type="submit"/>
+</form>
+</body>
+</html>
