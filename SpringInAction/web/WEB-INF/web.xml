@@ -28,4 +28,15 @@
             classpath:dataSource-context.xml
         </param-value>
     </context-param>
+
+    <servlet-mapping>
+        <servlet-name>roadRantz</servlet-name>
+        <url-pattern>*.xls</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>roadrantz</servlet-name>
+        <url-pattern>*.pdf</url-pattern>
+    </servlet-mapping>
+
 </web-app>
