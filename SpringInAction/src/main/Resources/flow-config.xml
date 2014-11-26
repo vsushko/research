@@ -51,4 +51,16 @@
 
     </global-transitions>
 
+    <!-- здесь создается новый экземпляр класса Customer -->
+    <var name="customer" class="ru.vsprog.springinaction.chapter9.Customer"/>
+
+    <!-- создание переменной с помощью элемента <evaluate> как часть состояние-действия или
+    состояние представления-->
+    <evaluate resutl="viewScope.toppingsList" expression="T(Customer).asList()"/>
+
+    <!-- тоже самое через set -->
+    <set name="flowScope.pizza" value="Pizza()"/>
+
+
+
 </flow>

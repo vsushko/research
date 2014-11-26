@@ -1,0 +1,20 @@
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0"
+          xmlns:form="http://www.springframework.org/tags/form">
+    <html>
+    <head><title>Spizza</title></head>
+
+    <body>
+    <h2>Welcome to Spizza!!!</h2>
+
+    <form:form>
+        <input type="hidden" name="_flowExecutionKey" value="${flowExecutionKey}"/>
+
+        <input type="text" name="phoneNumber"/><br/>
+
+        <input type="submit" name="_eventId_phoneEntered" value="Lookup Customer"/>
+    </form:form>
+
+
+    </body>
+    </html>
+</jsp:root>

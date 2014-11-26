@@ -1,0 +1,16 @@
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
+    <html>
+    <head><title>Spizza</title></head>
+
+    <body>
+    <h2>Delivery Unavailable</h2>
+    <p>The address is outside of our delivery area. You may still place the order, but you
+    will neen to pick it up yourself.</p>
+
+    <![CDATA[
+            <a href="${flowExecutionUrl}&_eventId=accept">Continue, "I'll pick up the order</a>|
+            <a href="${flowExecutionUrl}&_eventId=cancel">Never mind<a>
+    ]]>
+    </body>
+    </html>
+</jsp:root>
