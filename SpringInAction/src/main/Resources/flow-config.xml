@@ -40,7 +40,15 @@
     <!-- определяем переход-->
     <global-transitions>
         <transition to="customerReady"/>
-    </global-transitions>
 
+        <!-- событие, определяющее направление перехода, можно объявить в атрибует on -->
+        <transition on="phoneEntered" to="lookupCustomer"/>
+
+        <!-- событие, если произошло исключение -->
+        <transition on-exception="CustomerNOtFoundException" to="registrationForm"/>
+
+        <transition on="cancel" to="endState"/>
+
+    </global-transitions>
 
 </flow>
