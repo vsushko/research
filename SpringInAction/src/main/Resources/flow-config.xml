@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+    <!-- состояние представления -->
+    <view-state id="welcome" />
+
+    <!-- явно указываем логическое имя используемого представления -->
+    <view-state id="welcome_other" view="greeting" />
+
+    <!-- если представление является формой, можно свяать его с моделью -->
+    <view-state id="takePayment" model="PaymentDetails"/>
+
+    <!-- определяем состояние действие -->
+    <action-state id="saveOrder">
+        <evaluate expression="pizzaFlowActions.saveOrder(order)"/>
+        <transition to="thankYou"/>
+    </action-state>
+
+
+    <!-- определяем состояние решения (выполнение последовательности в
+    одном из двух направлений)-->
+    <decision-state id="checkDeliveryArea">
+        <if test="pizzaFlowActions.checkDeliveryArea(customer.zipCode)"
+            then="addCustomer"
+            else="deliveryWarning"/>
+    </decision-state>
+
+    <!-- определяем состояние-последовательность -->
+    <!-- вывзываем другую последовательность из текущей последовательности -->
+    <subflow-state id="order" subflow="pizza/order">
+        <input name="order" value="order"/>
+        <transition on="orderCreated" to="payment"/>
+    </subflow-state>
+
+    <!-- определяем конечное состояние -->
+    <end-state id="customerReady"/>
+
+    <!-- определяем переход-->
+    <global-transitions>
+        <transition to="customerReady"/>
+    </global-transitions>
+
+
+</flow>

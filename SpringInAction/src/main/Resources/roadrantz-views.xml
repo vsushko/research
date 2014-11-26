@@ -10,6 +10,4 @@
 
     <bean id="vehicleRants.pdf" class="ru.vsprog.springinaction.chapter8.RantPdfView"/>
 
-
-
 </beans>
