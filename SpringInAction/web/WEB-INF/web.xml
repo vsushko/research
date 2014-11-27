@@ -22,7 +22,7 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/spitter-sercutiy.xml
+        <param-value>
             classpath:service-context.xml
             classpath:persistence-context.xml
             classpath:dataSource-context.xml

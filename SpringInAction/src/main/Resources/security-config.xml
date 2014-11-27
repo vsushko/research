@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <!-- форма аутентификация добавляется сама -->
+    <security:http auto-config="true">
+
+        <!-- auto config true: -->
+        <security:form-login/>
+        <security:http-basic/>
+        <security:logout/>
+        <!-- requires-channel="https" - требование использовать https протокол -->
+        <security:intercept-url pattern="/**" access="ROLE_SPITTER" requires-channel="https"/>
+    </security:http>
+
+    <!-- добавим свою форму аутентификации -->
+    <!--<security:http auto-config="true" use-expressions="false">
+        <security:form-login login-processing-url="/static/j_spring_security_check"
+                             login-page="/login"
+                             authentication-failure-url="/login?login_error=t"/>
+    </security:http>-->
+
+    <!-- с использованием SpEL -->
+    <!--<security:http auto-config="true" use-expressions="true">
+    <security:form-login login-processing-url="/static/j_spring_security_check"
+                         login-page="/login"
+                         authentication-failure-url="/login?login_error=t"/>
+        <security:intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN)"/>
+        &lt;!&ndash; ограничение не толькопо роли, но и по IP &ndash;&gt;
+        <security:intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN') and hasIpAddress('192.168.1.2')"/>
+    </security:http>-->
+
+    <!-- настройка репозитория в памяти -->
+    <security:user-service id="userDetailsService">
+        <security:user name="habuma" authorities="ROLE_SPITTER" password="123"/>
+        <security:user name="twoqubed" authorities="ROLE_SPITTER" password="123"/>
+        <security:user name="admin" authorities="ROLE_ADMIN, ROLE_SPITTER" password="123"/>
+    </security:user-service>
+
+    <security:authentication-manager>
+        <security:authentication-provider user-service-ref="userDetailsService"/>
+    </security:authentication-manager>
+
+</beans>
