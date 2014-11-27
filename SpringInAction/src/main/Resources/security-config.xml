@@ -46,4 +46,21 @@
         <security:authentication-provider user-service-ref="userDetailsService"/>
     </security:authentication-manager>
 
+    <security:jdbc-user-service data-source-ref="dataSource"
+                                users-by-username-query=
+                                "select username, password, true from spitter where username = ?"
+                                authorities-by-username-query=
+                                "select username, 'role_spitter' from spitter where username=?"/>
+
+    <!-- провайдер с поддержкой LDAP -->
+    <!-- user-search-base - базовый запрос для поиска пользователей -->
+    <security:authentication-manager alias="authenticationManager">
+        <security:ldap-authentication-provider user-search-filter="(uid={0})"
+                                               user-search-base="ou=people"
+                                               group-search-base="ou=groups"
+                                               group-search-filter="member={0}"/>
+        <!-- аутентификация посредством сравнения паролей, настройка сравнения паролей-->
+        <!--<password-compare hash="md5" password-attribute="passcode"/>-->
+    </security:authentication-manager>
+
 </beans>
