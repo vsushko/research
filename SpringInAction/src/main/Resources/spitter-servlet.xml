@@ -87,5 +87,42 @@
           p:registryHost="rmi.spitter.com"
           p:registryPort="1199"/>
 
+    <!-- компонент HessianServiceExporter экспортирует компонент
+         spitterSErvice как службу Hessian
+     -->
+    <bean id="hessianSpitterService" class="org.springframework.remoting.caucho.HessianServiceExporter"
+          p:service-ref="spitterService"
+          p:serviceInterface="SpitterService"/>
+
+    <!-- обеспечим передачу запросов компоненту hessianSpitterService -->
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings"><value>/spitter.service=hessianSpitterService</value></property>
+    </bean>
+    
+    <!-- экспортируем службу Spitter в виде службы Burlap -->
+    <bean id="burlapSpitterService" class="org.springframework.remoting.caucho.BurlapServiceExporter"
+          p:service-ref="spitterService"
+          p:serviceInterface="ru.vsprog.springinaction.chapter8.SpitterService"/>
+
+    <!-- объявляем службу spitter, реализованную на основе решения Hessian -->
+    <bean id="hessianSpitterSevice"
+          class="org.springframework.remoting.caucho.HessianProxyFactoryBean"
+          p:serviceUrl="http://localhost:8080/Sptter/spitter.service"
+          p:serviceInterface="SpitterService"/>
+
+    <!-- экпортируем компонент в виде службы Spring HTTP Invoker -->
+    <bean class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter"
+          p:service-ref="spitterService"
+          p:serviceInterface="ru.vsprog.springinaction.chapter8.SpitterService"/>
+
+    <!-- настроим обработчик адресов URL, отображающий эти адреса на службу-->
+    <bean id="httpInvokerUrlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings" value="/spitter.service=httpInvokerSpitterService"/>
+    </bean>
+    
+    <bean id="httpInvokerService" class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean"
+          p:serviceUrl="http://localhost:8080/Sptter/spitter.service"
+          p:serviceInterface="ru.vsprog.springinaction.chapter8.SpitterService"/>
+
 
 </beans>
