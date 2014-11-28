@@ -88,6 +88,4 @@
                 access="ROLE_SPITTER"/>
     </security:global-method-security>
 
-
-
 </beans>
