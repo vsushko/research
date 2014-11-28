@@ -10,6 +10,10 @@
     <!-- форма аутентификация добавляется сама -->
     <security:http auto-config="true">
 
+        <!-- добавляем функцию "запомнить меня" -->
+        <!-- по умолчанию секретный ключ имеет значение SpringSecured-->
+        <security:remember-me key="spitterKey" token-validity-seconds="2419200"/>
+
         <!-- auto config true: -->
         <security:form-login/>
         <security:http-basic/>
@@ -45,5 +49,45 @@
     <security:authentication-manager>
         <security:authentication-provider user-service-ref="userDetailsService"/>
     </security:authentication-manager>
+
+    <!-- если ldap server выполняется на удаленной машине -->
+    <security:ldap-server url="ldap://habuma.com:389/dc=habuma, dc=com"/>
+
+    <!-- настройка встроенного сервера, загружает данные в формате LDIF -->
+    <security:ldap-server root="dc=habuma,dc=com"/>
+
+    <!-- указываем явно, какой файл LDIF следует загрузить -->
+    <security:ldap-server root="dc=habuma, dc=com" ldif="classpath:users.ldif"/>
+
+    <!-- защита методов отмеченные аннотацией @Secured -->
+    <!-- включение поддержки аннотации из стандарта JSR-250 - @RolesAllowed-->
+    <!-- можно использовать вместе -->
+    <security:global-method-security secured-annotations="enabled"/>
+    <security:global-method-security jsr250-annotations="enabled"/>
+
+    <!-- включаем защиту с применением языка SpEL до и после вызова-->
+    <security:global-method-security pre-post-annotations="enabled"/>
+
+    <!-- сообщаем, что переопределили PermissionEvaluator -->
+    <bean id="expressionHandler" class="org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler">
+        <property name="permissionEvaluator">
+            <bean class="ru.vsprog.springinaction.chapter10.SpittlePermissionEvaluator"/>
+        </property>
+    </bean>
+
+    <!-- указываем обработчик выражений -->
+    <security:global-method-security pre-post-annotations="enabled">
+        <security:expression-handler ref="expressionHandler"/>
+    </security:global-method-security>
+
+    <!-- объявление точек внедрения для защиты методов -->
+    <!-- будут применяться одни и те же ограничения к определенным методам -->
+    <security:global-method-security>
+        <security:protect-pointcut
+                expression="execution(@ru.vsprog.springinaction.chapter10.Sensitive * *.*String))"
+                access="ROLE_SPITTER"/>
+    </security:global-method-security>
+
+
 
 </beans>
