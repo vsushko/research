@@ -124,5 +124,15 @@
           p:serviceUrl="http://localhost:8080/Sptter/spitter.service"
           p:serviceInterface="ru.vsprog.springinaction.chapter8.SpitterService"/>
 
+    <bean class="org.springframework.remoting.jaxws.SimpleJaxWsServiceExporter"
+            p:baseAddress="http://loacalhost:8888/services/"/>
+
+    <!-- проксирование служб JAX-WS на стороне клиента -->
+    <bean id="jaxWsSpitterService" class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean"
+          p:wsdlDocumentUrl="http://localhost:8080/services/SpitterService.wsdl"
+          p:serviceName="spitterService"
+          p:portName="spitterServiceHttpPort"
+          p:serviceInterface="ru.vsprog.springinaction.chapter8.SpitterService"
+          p:namespaceUri="http://spitter.com"/>
 
 </beans>
