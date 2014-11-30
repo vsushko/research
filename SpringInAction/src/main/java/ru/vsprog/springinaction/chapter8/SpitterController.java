@@ -30,7 +30,7 @@ import java.io.IOException;
  * Date: 21.11.14.
  */
 @Controller
-// Корневой путь URL
+// Корневой путь URL, обрабатывает запросы к URL /spittles
 @RequestMapping("/spitter")
 public class SpitterController {
     private final SpitterService spitterService;
@@ -138,5 +138,11 @@ public class SpitterController {
     public String showSpitterProfile(@PathVariable String username, Model model) {
         model.addAttribute(spitterService.getSpitter(username));
         return "spitters/view";
+    }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public String getSpittle(@PathVariable("id") long id, Model model) {
+        model.addAttribute(spitterService.getSpittleById(id));
+        return "spittles/view";
     }
 }
