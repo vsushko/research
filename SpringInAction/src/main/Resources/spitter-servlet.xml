@@ -135,4 +135,17 @@
           p:serviceInterface="ru.vsprog.springinaction.chapter8.SpitterService"
           p:namespaceUri="http://spitter.com"/>
 
+    <!-- выбирает наиболее подходящее представление -->
+    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+        <property name="mediaTypes">
+            <map>
+                <entry key="json" value="application/json"/>
+                <entry key="xml" value="text/xml"/>
+                <entry key="htm" value="text/html"/>
+
+            </map>
+        </property>
+        <property name="defaultContentType" value="text/html"/>
+    </bean>
+
 </beans>

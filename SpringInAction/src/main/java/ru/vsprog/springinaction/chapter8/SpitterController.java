@@ -9,17 +9,17 @@ import org.jets3t.service.impl.rest.httpclient.RestS3Service;
 import org.jets3t.service.model.S3Bucket;
 import org.jets3t.service.model.S3Object;
 import org.jets3t.service.security.AWSCredentials;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import ru.vsprog.springinaction.chapter6.Spitter;
+import ru.vsprog.springinaction.chapter7.Spittle;
 
 import javax.inject.Inject;
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -145,4 +145,35 @@ public class SpitterController {
         model.addAttribute(spitterService.getSpittleById(id));
         return "spittles/view";
     }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void putSpittle(@PathVariable("id") long id, @Valid Spittle spittle) {
+        spitterService.saveSpittle(spittle);
+    }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteSpittle(@PathVariable("id") long id) {
+        spitterService.deleteSpittle(id);
+    }
+
+    // обрабатывает POST запросы
+    @RequestMapping(method = RequestMethod.POST)
+    // возвращает ответ HTTP 201
+    @ResponseStatus(HttpStatus.CREATED)
+    public @ResponseBody Spittle createSpittle(@Valid Spittle spittle,
+                                               BindingResult result,
+                                               HttpServletResponse response) throws Exception {
+        if (result.hasErrors()) {
+            throw new Exception();
+        }
+
+        spitterService.saveSpittle(spittle);
+
+        // Указать местоположение ресурса
+        response.setHeader("Location", "spittles/" + spittle.getId());
+        return spittle;
+    }
+
 }

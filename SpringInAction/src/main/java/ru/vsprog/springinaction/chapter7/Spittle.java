@@ -8,6 +8,7 @@ import ru.vsprog.springinaction.chapter6.Spitter;
  */
 public class Spittle {
     private Spitter spitter;
+    private Object id;
 
     public Spitter getSpitter() {
         return spitter;
@@ -15,5 +16,13 @@ public class Spittle {
 
     public void setSpitter(Spitter spitter) {
         this.spitter = spitter;
+    }
+
+    public Object getId() {
+        return id;
+    }
+
+    public void setId(Object id) {
+        this.id = id;
     }
 }
