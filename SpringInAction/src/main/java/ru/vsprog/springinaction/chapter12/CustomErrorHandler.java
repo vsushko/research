@@ -9,14 +9,14 @@ import java.io.IOException;
 
 public class CustomErrorHandler extends DefaultResponseErrorHandler {
 
-  public boolean hasError(ClientHttpResponse response) throws IOException {
-    HttpStatus statusCode = response.getStatusCode();
-    if(statusCode == HttpStatus.NOT_FOUND) {
-      return false;
+    public boolean hasError(ClientHttpResponse response) throws IOException {
+        HttpStatus statusCode = response.getStatusCode();
+        if (statusCode == HttpStatus.NOT_FOUND) {
+            return false;
+        }
+
+        return statusCode.series() == Series.CLIENT_ERROR ||
+                statusCode.series() == Series.SERVER_ERROR;
     }
-    
-    return statusCode.series() == Series.CLIENT_ERROR || 
-           statusCode.series() == Series.SERVER_ERROR;
-  }
-  
+
 }
