@@ -142,10 +142,13 @@
                 <entry key="json" value="application/json"/>
                 <entry key="xml" value="text/xml"/>
                 <entry key="htm" value="text/html"/>
-
             </map>
         </property>
         <property name="defaultContentType" value="text/html"/>
+        <!-- запросы соответствуют типу содержимого application/json если формат со значением json -->
+        <property name="favorParameter" value="true"/>
     </bean>
+
+
 
 </beans>

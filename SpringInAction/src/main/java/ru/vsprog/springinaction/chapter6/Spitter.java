@@ -22,6 +22,7 @@ public class Spitter {
 
     @Pattern(regexp = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}", message = "Invalid email address.")
     private String email;
+    private boolean updateByEmail;
 
     public Object getUserName() {
         return username;
@@ -61,5 +62,17 @@ public class Spitter {
 
     public long getId() {
         return id;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setUpdateByEmail(boolean updateByEmail) {
+        this.updateByEmail = updateByEmail;
+    }
+
+    public boolean isUpdateByEmail() {
+        return updateByEmail;
     }
 }

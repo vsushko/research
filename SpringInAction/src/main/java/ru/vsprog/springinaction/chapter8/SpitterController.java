@@ -176,4 +176,11 @@ public class SpitterController {
         return spittle;
     }
 
+    // превращает в формат, требуемый клиентом.
+    @RequestMapping(value = "/{username}", method = RequestMethod.GET,
+            headers = {"Accept=text/xml, application/json"})
+    public @ResponseBody Spitter getSpitter(@PathVariable String username) {
+        return spitterService.getSpitter(username);
+    }
+
 }
