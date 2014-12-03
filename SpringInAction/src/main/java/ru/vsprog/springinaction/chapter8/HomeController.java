@@ -1,5 +1,7 @@
 package ru.vsprog.springinaction.chapter8;
 
+import org.springframework.jmx.export.annotation.ManagedAttribute;
+import org.springframework.jmx.export.annotation.ManagedResource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -13,15 +15,29 @@ import java.util.Map;
 // Объявить как контроллер
 @SuppressWarnings("ALL")
 @Controller
+// Экспортирует HomeController как MBean
+@ManagedResource(objectName = "spitter:name=HomeController")
 public class HomeController {
-    public static final int DEFAULT_SPITTLES_PER_PAGE = 25;
-
+    private static final int DEFAULT_SPITTLES_PER_PAGE = 25;
+    private int spittlesPerPage = DEFAULT_SPITTLES_PER_PAGE;
     private SpitterService spitterService;
 
     // внедрим SpitterService
     @Inject
     public HomeController(SpitterService spitterService) {
         this.spitterService = spitterService;
+    }
+
+    // Экспортирует spittlesPerPage как управляемый атрибут
+    @ManagedAttribute
+    public int getSpittlesPerPage() {
+        return spittlesPerPage;
+    }
+
+    // Экспортирует spittlesPerPage как управляемый атрибут
+    @ManagedAttribute
+    public void setSpittlesPerPage(int spittlesPerPage) {
+        this.spittlesPerPage = spittlesPerPage;
     }
 
     // Обрабатывать запросы на получение главной страницы
