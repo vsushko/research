@@ -186,6 +186,18 @@
             <version>1.0</version>
         </dependency>
 
+        <!--<dependency>
+            <groupId>org.jasypt</groupId>
+            <artifactId>jasypt</artifactId>
+            <version>1.9.0</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>org.jasypt</groupId>
+            <artifactId>jasypt-spring3</artifactId>
+            <version>1.9.0</version>
+        </dependency>
+
 
     </dependencies>
 </project>
