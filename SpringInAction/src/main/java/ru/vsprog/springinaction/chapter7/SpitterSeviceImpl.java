@@ -1,6 +1,8 @@
 package ru.vsprog.springinaction.chapter7;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionCallback;
 import org.springframework.transaction.support.TransactionTemplate;
@@ -10,6 +12,7 @@ import ru.vsprog.springinaction.chapter8.SpitterService;
 
 import javax.persistence.EntityTransaction;
 import java.util.List;
+import java.util.concurrent.Future;
 
 /**
  * Created by vsa
@@ -94,5 +97,12 @@ public class SpitterSeviceImpl implements SpitterService {
 
     public TransactionTemplate getTransactionTemplate() {
         return transactionTemplate;
+    }
+
+    @Async
+    public Future<Long> performSomeReallyHairyMath(long input) {
+        long result = 0L;
+        return new AsyncResult<Long>(result);
+
     }
 }
