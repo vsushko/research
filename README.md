@@ -19,6 +19,8 @@ research
     700 из 754 стр.
 15. A Programmer's Guide to Java SCJP Certification. Khalid A. Rolf W. Rasmussen.
     39 из 1089 стр.
+16. Christian Bauer, Gavin King - Hibernate in Action
+    1 из 430 стр.
     
 ========================================================================================
 	
