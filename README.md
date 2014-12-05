@@ -15,11 +15,9 @@ research
     369 стр.
 13. Хорстман К. Корнелл Г. Java 2. Том 1. Основы.
     75 из 804 стр.
-14. 
-    700 из 754 стр.
 15. A Programmer's Guide to Java SCJP Certification. Khalid A. Rolf W. Rasmussen.
     39 из 1089 стр.
-16. Christian Bauer, Gavin King - Hibernate in Action
+16. Christian Bauer, Gavin King - Hibernate in Action <br/>
     1 из 430 стр.
     
 ========================================================================================
