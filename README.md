@@ -67,7 +67,37 @@ research
     1 of 344 p.
 33. Эрик Эванс. - <b>Предметно-ориентированное проектирование. Структуризация сложных программных систем</b>.<br/>
     1 of 444 p.
-
+34. Andrew Hunt David Thomas - <b>Pragmatic Programmer, The: From Journeyman to Master</b>.<br/>
+    1 of 320 p.
+35. Joshua Bloch - <b>Effective Java</b>.<br/>
+    1 of 369 p.
+36. Bruce A Tate - <b>Bitter Java</b>.<br/>
+    1 of 375 p.
+37. Eric Jendrock - <b>The Java EE 6 Tutorial Basic Concepts</b>.<br/>
+    1 of 588 p.
+38. Bryan Basham, Kathy Sierra, Bert Bates - <b>Head First Servlets & JSP</b>.<br/>
+    1 of 913.
+39. Oracle - <b>The Java EE 6 Tutorial</b>.<br/>
+    1 of 687 p.
+40. Mark Richards, Richard Monson-Haefel, David A. Chappell - <b>Java Message Service</b>.<br/>
+    1 of 330 p.
+41. Linda DeMichiel - <b>JSR 317: Java Persistence API 2.0</b>.<br/>
+    1 of 486 p.
+42. Adam Bien - <b>Real World Java EE Patterns</b>.<br/>
+    1 of 279 p.
+43. Ron Hitchens - <b>Java NIO</b>.<br/>
+    1 of 275 p.
+44. Gerard Meszaros - <b>xUnit Test Patterns. Refactoring Test Code</b>.<br/>
+    1 of 948 p.
+44. Рик Гринвальд, Роберт Стаковьяк, Джонатан Стерн - <b>Oracle 11g. Основы</b>.<br/>
+    1 of 450 p.
+45. Robert Sheldon - <b>SQL. A Beginners's Guide</b>.<br/>
+    1 of 562 p.
+46. Michael Donahoo, Gregory Speegle - <b>SQL. Practical Guide for Developers</b>.<br/>
+    1 of 266 p.
+47. Joe Celko's - <b>SQL for Smarties. Advanced SQL programming</b>.<br/>
+    1 of 839 p.
+48. Matt Raible - <b>Spring Live</b>.<br/>
 
 Завершено:
    
