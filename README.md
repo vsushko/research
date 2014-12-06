@@ -1,23 +1,23 @@
 research
 ========================================================================================
 
-5. Э.Фримен, Э.Фримен, К.Сьерра Б.Бейтс. Паттерны проектирования.<br/>
+1. Э.Фримен, Э.Фримен, К.Сьерра Б.Бейтс. Паттерны проектирования.<br/>
    200+ стр.
-8. Кайт Том - Oracle для профессионалов.<br/>
+2. Кайт Том - Oracle для профессионалов.<br/>
    20 из 1427 стр. (Отложено).
-9. Бейли Л. - Изучаем SQL.<br/>
+3. Бейли Л. - Изучаем SQL.<br/>
    49 из 573 стр. 
-10. Мишра С., Бьюли А. Секреты Oracle SQL.<br/>
+4. Мишра С., Бьюли А. Секреты Oracle SQL.<br/>
     17 из 360 стр.
-11. Молинаро Э. SQL. Сборник рецептов.<br/>
+5. Молинаро Э. SQL. Сборник рецептов.<br/>
     668 стр.
-12. Аллен К. 101: Oracle PL/SQL.<br/>
+6. Аллен К. 101: Oracle PL/SQL.<br/>
     369 стр.
-13. Хорстман К. Корнелл Г. Java 2. Том 1. Основы.<br/>
+7. Хорстман К. Корнелл Г. Java 2. Том 1. Основы.<br/>
     75 из 804 стр.
-15. A Programmer's Guide to Java SCJP Certification. Khalid A. Rolf W. Rasmussen.<br/>
+8. A Programmer's Guide to Java SCJP Certification. Khalid A. Rolf W. Rasmussen.<br/>
     39 из 1089 стр.
-16. Christian Bauer, Gavin King - Hibernate in Action<br/>
+9. Christian Bauer, Gavin King - Hibernate in Action<br/>
     1 из 430 стр.
 
 Завершено:
