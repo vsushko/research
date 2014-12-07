@@ -2,23 +2,23 @@ research
 ========================================================================================
 
 1. Э.Фримен, Э.Фримен, К.Сьерра Б.Бейтс - <b>Паттерны проектирования</b>.<br/>
-   51 из 645 p.
+   51 of 645 p.
 2. Кайт Том - <b>Oracle для профессионалов</b>.<br/>
-   20 из 1427 p. (Отложено).
+   20 of 1427 p. (Отложено).
 3. Линн Бейли - <b>Изучаем SQL</b>.<br/>
-   49 из 573 p. 
+   49 of 573 p. 
 4. Мишра С., Бьюли А. - <b>Секреты Oracle SQL</b>.<br/>
-   17 из 360 p.
+   17 of 360 p.
 5. Молинаро Э. - SQL. <b>Сборник рецептов</b>.<br/>
-   668 p.
+   1 of 668 p.
 6. Аллен К. - <b>101: Oracle PL/SQL</b>.<br/>
-   369 p.
+   1 of 369 p.
 7. Хорстман К. Корнелл Г. - <b>Java 2. Том 1. Основы</b>.<br/>
-   75 из 804 p.
+   75 of 804 p.
 8. Khalid A. Rolf W. Rasmussen - <b>A Programmer's Guide to Java SCJP Certification</b>.<br/>
-   39 из 1089 p.
+   39 of 1089 p.
 9. Christian Bauer, Gavin King - <b>Hibernate in Action</b>.<br/>
-   1 из 430 p.
+   1 of 430 p.
 10. Chris Schaefer, Clarence Ho, and Rob Harrop - <b>Pro Spring</b>.<br/> 
     1 of 713 p. 
 11. Martin Fowler - <b>Analysis Patterns. Reusable Object Models</b>.<br/>
