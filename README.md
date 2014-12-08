@@ -3,12 +3,12 @@ research
 
 1. Э.Фримен, Э.Фримен, К.Сьерра Б.Бейтс - <b>Паттерны проектирования</b>.<br/>
    51 of 645 p.
-2. Кайт Том - <b>Oracle для профессионалов</b>.<br/>
-   20 of 1427 p. (Отложено).
+2. Martin Fowler - <b>UML Distilled. Third edition</b>.<br/>
+    20 of 184 p.
 3. Линн Бейли - <b>Изучаем SQL</b>.<br/>
    49 of 573 p. 
-4. Мишра С., Бьюли А. - <b>Секреты Oracle SQL</b>.<br/>
-   17 of 360 p.
+4. Christian Bauer, Gavin King - <b>Hibernate in Action</b>.<br/>
+   1 of 430 p.
 5. Молинаро Э. - SQL. <b>Сборник рецептов</b>.<br/>
    1 of 668 p.
 6. Аллен К. - <b>101: Oracle PL/SQL</b>.<br/>
@@ -17,8 +17,8 @@ research
    75 of 804 p.
 8. Khalid A. Rolf W. Rasmussen - <b>A Programmer's Guide to Java SCJP Certification</b>.<br/>
    39 of 1089 p.
-9. Christian Bauer, Gavin King - <b>Hibernate in Action</b>.<br/>
-   1 of 430 p.
+9. Мишра С., Бьюли А. - <b>Секреты Oracle SQL</b>.<br/>
+   17 of 360 p.
 10. Chris Schaefer, Clarence Ho, and Rob Harrop - <b>Pro Spring</b>.<br/> 
     1 of 713 p. 
 11. Martin Fowler - <b>Analysis Patterns. Reusable Object Models</b>.<br/>
@@ -57,8 +57,8 @@ research
     1 of 337 p.
 28. Bruce Eckel - <b>Thinking in Patterns wit Java</b>.<br/>
     1 of 189 p.
-29. Martin Fowler - <b>UML Distilled</b>.<br/>
-    1 of 118 p.
+29. Кайт Том - <b>Oracle для профессионалов</b>.<br/>
+   20 of 1427 p. (Отложено).
 30. Thomas Cormen, Charles Leiserson, Ronald Rivest - <b>Introduction to algorithms</b>.<br/>
     2 of 958 p.
 31. Т. Бадд - <b>Объектно-ориентированное программирование</b>.<br/>
