@@ -9,7 +9,7 @@ research
    49 of 573 p. 
 4. Christian Bauer, Gavin King - <b>Hibernate in Action</b>.<br/>
    1 of 430 p.
-5. Молинаро Э. - SQL. <b>Сборник рецептов</b>.<br/>
+5. Молинаро Э. - <b>SQL. Сборник рецептов</b>.<br/>
    1 of 668 p.
 6. Аллен К. - <b>101: Oracle PL/SQL</b>.<br/>
    1 of 369 p.
