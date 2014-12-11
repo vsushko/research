@@ -4,7 +4,7 @@ research
 1. Э.Фримен, Э.Фримен, К.Сьерра Б.Бейтс - <b>Паттерны проектирования</b>.<br/>
    51 of 645 p.
 2. Martin Fowler - <b>UML Distilled. Third edition</b>.<br/>
-   62 of 184 p.
+   64 of 184 p.
 3. Линн Бейли - <b>Изучаем SQL</b>.<br/>
    49 of 573 p. 
 4. Christian Bauer, Gavin King - <b>Hibernate in Action</b>.<br/>
