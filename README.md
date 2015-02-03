@@ -97,6 +97,8 @@ research
 47. Joe Celko's - <b>SQL for Smarties. Advanced SQL programming</b>.<br/>
     1 of 839 p.
 48. Matt Raible - <b>Spring Live</b>.<br/>
+49. Deinum Marten - <b>Pro Spring MVC: With Web Flowv</b>.<br/>
+50. Gary Mak, Josh Long, and Daniel Rubio - <b>Spring Recipes: A Problem-Solution Approach</b>.<br/>
 
 Завершено:
 <br/>2013   
