@@ -1,7 +1,7 @@
 research
 ========================================================================================
 0. J.Gosling, B.Joy, G.Steele, G.Bracha, A.Buckley - <b>The Java Language Specification (Java SE 7 Edition)</b>.<br/>
-   28 of 670 p.
+   35 of 670 (9) p.
 0. M.Gupta - <b>OCA Java SE 7 Programmer I Certification Guide</b>.<br/>
    24 of 562 p.
 1. Э.Фримен, Э.Фримен, К.Сьерра Б.Бейтс - <b>Паттерны проектирования</b>.<br/>
