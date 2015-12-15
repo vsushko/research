@@ -30,8 +30,6 @@ research
     3 of 360 p.
 13. Craig Larman - <b>Applying UML and Patterns.</b>.<br/>
     1 of 616 p.
-14. Мартин Фаулер - <b>Архитектура корпоративных программных приложений</b>.<br/>
-    1 of 541 p.
 15. Unknown Autor - <b>Design Patterns</b>.<br/>
     1 of 239 p.
 16. John Dooley - <b>Software Development and Professional Practice</b>.<br/>
@@ -115,4 +113,4 @@ research
 6. Java-next - <b>Новое поколение Java</b>.<br/>
 7. Крейг Уоллс - <b>Spring в действии</b>.<br/>
 2015<br/>
-8. 
+8. Мартин Фаулер - <b>Архитектура корпоративных программных приложений</b>.<br/>
