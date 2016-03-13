@@ -66,8 +66,6 @@ research
     1 of 344 p.
 33. Эрик Эванс. - <b>Предметно-ориентированное проектирование. Структуризация сложных программных систем</b>.<br/>
     1 of 444 p.
-34. Andrew Hunt David Thomas - <b>Pragmatic Programmer, The: From Journeyman to Master</b>.<br/>
-    1 of 320 p.
 35. Joshua Bloch - <b>Effective Java</b>.<br/>
     1 of 369 p.
 36. Bruce A Tate - <b>Bitter Java</b>.<br/>
@@ -114,3 +112,4 @@ research
 8. Мартин Фаулер - <b>Архитектура корпоративных программных приложений</b>.<br/>
 2016<br/>
 9. Грегор Хоп, Бобби Вульф - <b>Шаблоны интеграции корпоративных приложений</b>.<br/>
+10. Andrew Hunt David Thomas - <b>Pragmatic Programmer, The: From Journeyman to Master</b>.<br/>
