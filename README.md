@@ -113,3 +113,4 @@ research
 2016<br/>
 9. Грегор Хоп, Бобби Вульф - <b>Шаблоны интеграции корпоративных приложений</b>.<br/>
 10. Andrew Hunt David Thomas - <b>Pragmatic Programmer, The: From Journeyman to Master</b>.<br/>
+11. Chad Fowler - <b>The Passionate Programmer</b>.<br/>
