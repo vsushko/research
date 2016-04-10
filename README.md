@@ -98,20 +98,36 @@ research
 49. Deinum Marten - <b>Pro Spring MVC: With Web Flowv</b>.<br/>
 50. Gary Mak, Josh Long, and Daniel Rubio - <b>Spring Recipes: A Problem-Solution Approach</b>.<br/>
 
-JavaScript:
-1.  - <b></b>.<br/>
-2.  - <b></b>.<br/>
-3.    - <b></b>.<br/>
-4.      - <b></b>.<br/>
-5.        - <b></b>.<br/>
-6.          - <b></b>.<br/>
-7.            - <b></b>.<br/>
-8.              - <b></b>.<br/>
-9.                - <b></b>.<br/>
-10.                  - <b></b>.<br/>
-11.                    - <b></b>.<br/>
-12.                      - <b></b>.<br/>
-13.                        - <b></b>.<br/>
+JavaScript:<br/>
+1. Jon Duckett - <b>JavaScript & jQuery</b>.<br/>
+2. Nick Morgan - <b>JavaScript for Kids</b>.<br/>
+3. Maxwell Ogden - <b>JavaScript for Cats</b>.<br/> (http://jsforcats.com, https://github.com/maxogden/javascript-for-cats)
+4. Addy Osmani - <b>Learn Javascript Design Patterns</b>.<br/> (https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+5. David Flanagan - <b>JavaScript: The Definitive Guide</b>.<br/>
+6. Douglas Crockford - <b>JavaScript: The Good Parts</b>.<br/>
+7. Ecma International - <b>ECMAScript Language Specification</b>.<br/>
+8. Stoyan Stefanov - <b>JavaScript Patterns</b>.<br/>
+9. Kyle Simpson - <b>You Don't Know JS</b>.<br/>
+10. Kyle Simpson - <b>Up & Going</b>.<br/>
+11. Kyle Simpson - <b>Scope & Closures</b>.<br/>
+12. Kyle Simpson - <b>this & Object Prototypes</b>.<br/>
+13. Kyle Simpson - <b>Types & Grammar</b>.<br/>
+14. Kyle Simpson - <b>Async & Performance</b>.<br/>
+15. Kyle Simpson - <b>ES6 & Beyond</b>.<br/>
+16. Google - <b>Google Web Fundamentals</b>.<br/>https://developers.google.com/web/fundamentals/
+17. Andrea Giammarchi - <b>JavaScript glossary on demand</b>.<br/>
+18. Marijn Haverbeke - <b>Eloquent Javascript</b>.<br/>
+
+Courses:<br/>
+https://www.codecademy.com/learn/javascript
+https://www.codeeval.com/
+https://coderbyte.com/challenges#easyChals
+https://www.codeschool.com/learn/javascript
+https://www.freecodecamp.com/
+https://frontendmasters.com/
+https://egghead.io/
+https://www.khanacademy.org/computing/computer-programming
+https://teamtreehouse.com/library/topic:javascript
 
 Завершено:
 <br/>2013   
