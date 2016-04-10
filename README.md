@@ -98,6 +98,21 @@ research
 49. Deinum Marten - <b>Pro Spring MVC: With Web Flowv</b>.<br/>
 50. Gary Mak, Josh Long, and Daniel Rubio - <b>Spring Recipes: A Problem-Solution Approach</b>.<br/>
 
+JavaScript:
+1.  - <b></b>.<br/>
+2.  - <b></b>.<br/>
+3.    - <b></b>.<br/>
+4.      - <b></b>.<br/>
+5.        - <b></b>.<br/>
+6.          - <b></b>.<br/>
+7.            - <b></b>.<br/>
+8.              - <b></b>.<br/>
+9.                - <b></b>.<br/>
+10.                  - <b></b>.<br/>
+11.                    - <b></b>.<br/>
+12.                      - <b></b>.<br/>
+13.                        - <b></b>.<br/>
+
 Завершено:
 <br/>2013   
 1. Кент Бек - <b>Экстремальное программирование. Разработка через тестирование</b>.<br/>
