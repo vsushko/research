@@ -101,8 +101,8 @@ research
 JavaScript:<br/>
 1. Jon Duckett - <b>JavaScript & jQuery</b>.<br/>
 2. Nick Morgan - <b>JavaScript for Kids</b>.<br/>
-3. Maxwell Ogden - <b>JavaScript for Cats</b>.<br/> (http://jsforcats.com, https://github.com/maxogden/javascript-for-cats)
-4. Addy Osmani - <b>Learn Javascript Design Patterns</b>.<br/> (https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+3. Maxwell Ogden - <b>JavaScript for Cats</b> - [link]((http://jsforcats.com, https://github.com/maxogden/javascript-for-cats)<br/>
+4. Addy Osmani - <b>Learn Javascript Design Patterns</b> - [link](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)<br/> 
 5. David Flanagan - <b>JavaScript: The Definitive Guide</b>.<br/>
 6. Douglas Crockford - <b>JavaScript: The Good Parts</b>.<br/>
 7. Ecma International - <b>ECMAScript Language Specification</b>.<br/>
@@ -114,20 +114,20 @@ JavaScript:<br/>
 13. Kyle Simpson - <b>Types & Grammar</b>.<br/>
 14. Kyle Simpson - <b>Async & Performance</b>.<br/>
 15. Kyle Simpson - <b>ES6 & Beyond</b>.<br/>
-16. Google - <b>Google Web Fundamentals</b>.<br/>https://developers.google.com/web/fundamentals/
+16. Google - <b>Google Web Fundamentals</b> - [link](https://developers.google.com/web/fundamentals)<br/>
 17. Andrea Giammarchi - <b>JavaScript glossary on demand</b>.<br/>
 18. Marijn Haverbeke - <b>Eloquent Javascript</b>.<br/>
-
+[link](
 Courses:<br/>
-[Codecademy](https://www.codecademy.com/learn/javascript)
-[CodeEval](https://www.codeeval.com)
-[Coderbyte](https://coderbyte.com/challenges#easyChals)
-[Code School](https://www.codeschool.com/learn/javascript)
-[freeCodeCamp](https://www.freecodecamp.com)
-[Frontend Masters](https://frontendmasters.com)
-[egghead](https://egghead.io)
-[Khan Academy](https://www.khanacademy.org/computing/computer-programming)
-[treehouse](https://teamtreehouse.com/library/topic:javascript)
+[Codecademy](https://www.codecademy.com/learn/javascript)<br/>
+[CodeEval](https://www.codeeval.com)<br/>
+[Coderbyte](https://coderbyte.com/challenges#easyChals)<br/>
+[Code School](https://www.codeschool.com/learn/javascript)<br/>
+[freeCodeCamp](https://www.freecodecamp.com)<br/>
+[Frontend Masters](https://frontendmasters.com)<br/>
+[egghead](https://egghead.io)<br/>
+[Khan Academy](https://www.khanacademy.org/computing/computer-programming)<br/>
+[treehouse](https://teamtreehouse.com/library/topic:javascript)<br/>
 
 Завершено:
 <br/>2013   
