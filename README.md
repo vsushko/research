@@ -117,7 +117,7 @@ JavaScript:<br/>
 16. Google - <b>Google Web Fundamentals</b> - [link](https://developers.google.com/web/fundamentals).<br/>
 17. Andrea Giammarchi - <b>JavaScript glossary on demand</b>.<br/>
 18. Marijn Haverbeke - <b>Eloquent Javascript</b>.<br/>
-[link](
+
 Courses:<br/>
 [Codecademy](https://www.codecademy.com/learn/javascript)<br/>
 [CodeEval](https://www.codeeval.com)<br/>
