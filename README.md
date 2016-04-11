@@ -119,15 +119,15 @@ JavaScript:<br/>
 18. Marijn Haverbeke - <b>Eloquent Javascript</b>.<br/>
 
 Courses:<br/>
-https://www.codecademy.com/learn/javascript
-https://www.codeeval.com/
-https://coderbyte.com/challenges#easyChals
-https://www.codeschool.com/learn/javascript
-https://www.freecodecamp.com/
-https://frontendmasters.com/
-https://egghead.io/
-https://www.khanacademy.org/computing/computer-programming
-https://teamtreehouse.com/library/topic:javascript
+[Codecademy](https://www.codecademy.com/learn/javascript)
+[CodeEval](https://www.codeeval.com)
+[Coderbyte](https://coderbyte.com/challenges#easyChals)
+[Code School](https://www.codeschool.com/learn/javascript)
+[freeCodeCamp](https://www.freecodecamp.com)
+[Frontend Masters](https://frontendmasters.com)
+[egghead](https://egghead.io)
+[Khan Academy](https://www.khanacademy.org/computing/computer-programming)
+[treehouse](https://teamtreehouse.com/library/topic:javascript)
 
 Завершено:
 <br/>2013   
