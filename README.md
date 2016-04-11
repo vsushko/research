@@ -101,8 +101,8 @@ research
 JavaScript:<br/>
 1. Jon Duckett - <b>JavaScript & jQuery</b>.<br/>
 2. Nick Morgan - <b>JavaScript for Kids</b>.<br/>
-3. Maxwell Ogden - <b>JavaScript for Cats</b> - [link]((http://jsforcats.com, https://github.com/maxogden/javascript-for-cats)<br/>
-4. Addy Osmani - <b>Learn Javascript Design Patterns</b> - [link](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)<br/> 
+3. Maxwell Ogden - <b>JavaScript for Cats</b> - [link](http://jsforcats.com, https://github.com/maxogden/javascript-for-cats).<br/>
+4. Addy Osmani - <b>Learn Javascript Design Patterns</b> - [link](https://addyosmani.com/resources/essentialjsdesignpatterns/book/).<br/> 
 5. David Flanagan - <b>JavaScript: The Definitive Guide</b>.<br/>
 6. Douglas Crockford - <b>JavaScript: The Good Parts</b>.<br/>
 7. Ecma International - <b>ECMAScript Language Specification</b>.<br/>
@@ -114,7 +114,7 @@ JavaScript:<br/>
 13. Kyle Simpson - <b>Types & Grammar</b>.<br/>
 14. Kyle Simpson - <b>Async & Performance</b>.<br/>
 15. Kyle Simpson - <b>ES6 & Beyond</b>.<br/>
-16. Google - <b>Google Web Fundamentals</b> - [link](https://developers.google.com/web/fundamentals)<br/>
+16. Google - <b>Google Web Fundamentals</b> - [link](https://developers.google.com/web/fundamentals).<br/>
 17. Andrea Giammarchi - <b>JavaScript glossary on demand</b>.<br/>
 18. Marijn Haverbeke - <b>Eloquent Javascript</b>.<br/>
 [link](
