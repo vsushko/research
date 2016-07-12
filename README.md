@@ -128,10 +128,10 @@ Courses:<br/>
 [treehouse](https://teamtreehouse.com/library/topic:javascript)<br/>
 
 Завершено:
-<br/>2012 
+2012<br/> 
 1. Liberty, Jesse - <b>Sams Teach Yourself C++ in 21 Days</b>.<br/>
 2. Schildt, Herbert - <b>C++: The Complete Reference, 4th Edition</b>.<br/>
-<br/>2013 
+2013<br/>
 3. Кент Бек - <b>Экстремальное программирование. Разработка через тестирование</b>.<br/>
 4. Эккель Брюс - <b>Философия Java</b>.<br/> 
 5. [Google Guice перевод документации](http://netvl.github.io/guice/users-guide.html).<br/>
