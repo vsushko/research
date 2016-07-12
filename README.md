@@ -127,7 +127,7 @@ Courses:<br/>
 [Khan Academy](https://www.khanacademy.org/computing/computer-programming)<br/>
 [treehouse](https://teamtreehouse.com/library/topic:javascript)<br/>
 
-Завершено:
+Завершено:<br/>
 2012<br/> 
 1. Liberty, Jesse - <b>Sams Teach Yourself C++ in 21 Days</b>.<br/>
 2. Schildt, Herbert - <b>C++: The Complete Reference, 4th Edition</b>.<br/>
