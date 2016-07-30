@@ -149,3 +149,4 @@ Courses:<br/>
 14. Scott Chacon - <b>Pro Git</b>.<br/>
 15. Joshua Bloch - <b>Effective Java</b>.<br/>
 16. Tom DeMarco - <b>The Deadline: A Novel about Project Management</b>.<br/>
+17. Tom DeMarco - <b>Peopleware: Productive Projects and Teams</b>.<br/>
