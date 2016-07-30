@@ -147,6 +147,7 @@ Courses:<br/>
 12. Andrew Hunt David Thomas - <b>Pragmatic Programmer, The: From Journeyman to Master</b>.<br/>
 13. Chad Fowler - <b>The Passionate Programmer</b>.<br/>
 14. Scott Chacon - <b>Pro Git</b>.<br/>
-15. Joshua Bloch - <b>Effective Java</b>.<br/>
-16. Tom DeMarco - <b>The Deadline: A Novel about Project Management</b>.<br/>
-17. Tom DeMarco - <b>Peopleware: Productive Projects and Teams</b>.<br/>
+15. Brooks Jr., Frederick P. - <b> The Mythical Man-Month: Essays on Software Engineering </b>.<br/>
+16. Joshua Bloch - <b>Effective Java</b>.<br/>
+17. Tom DeMarco - <b>The Deadline: A Novel about Project Management</b>.<br/>
+18. Tom DeMarco - <b>Peopleware: Productive Projects and Teams</b>.<br/>
