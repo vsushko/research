@@ -151,3 +151,4 @@ Courses:<br/>
 16. Joshua Bloch - <b>Effective Java</b>.<br/>
 17. Tom DeMarco - <b>The Deadline: A Novel about Project Management</b>.<br/>
 18. Tom DeMarco - <b>Peopleware: Productive Projects and Teams</b>.<br/>
+19. Antonio Goncalves - <b>Beginning Java EE 7</b>.<br/>
