@@ -1,0 +1,34 @@
+// attributes 
+|
+|
+a(href='google.com') Google
+|
+|
+img(href='google.com')
+|
+|
+a(class='button' href='google.com') Google
+|
+|
+- var authenticated = true
+body(class=authenticated ? 'authed' : 'anon')
+|
+|
+// multiline attributes 
+|
+|
+input(
+    type='checkbox'
+    name1='agreement'
+    checked)
+|
+|
+input(data-json=`
+    {
+        "very-long": "piece of ",
+        "data": true
+    }
+`)
+|
+|
+// quoted attributes 
