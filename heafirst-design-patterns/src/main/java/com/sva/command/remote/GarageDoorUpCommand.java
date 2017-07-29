@@ -1,0 +1,23 @@
+package com.sva.command.remote;
+
+/**
+ * @author vsa
+ * @created 20.09.16
+ */
+public class GarageDoorUpCommand implements Command {
+
+    GarageDoor garageDoor;
+
+    public GarageDoorUpCommand(GarageDoor garageDoor) {
+        this.garageDoor = garageDoor;
+    }
+
+    public void execute() {
+        garageDoor.up();
+    }
+
+    @Override
+    public void undo() {
+        garageDoor.down();
+    }
+}
