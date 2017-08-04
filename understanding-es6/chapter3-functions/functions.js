@@ -513,3 +513,107 @@ let PageHandler = {
     console.log("Handling " + type + " for " + this.id);
   }
 }
+
+// arrow functions and arrays
+
+// sort an array using custom comparator
+var result = values.sort(function(a, b) {
+  return a - b;
+});
+
+// with arrow function
+var result = values.sort((a, b) => a - b);
+
+// no arguments binding
+function createArrowfunctionReturningFirstArg() {
+  return () => arguments[0];
+}
+
+var arrowFunction = createArrowfunctionReturningFirstArg(5);
+console.log(arrowFunction()); // 5
+
+// identifying arrow functions
+var comparator = (a, b) => a - b;
+console.log(typeof comparator); // "function"
+console.log(comparator instanceof Funcion); // true
+
+var sum = (num1, num2) => num1 + num2;
+console.log(sum.call(null, 1, 2));    // 3
+console.log(sum.apply(null, [1, 2])); // 3
+
+var boundSum = sum.bind(null, 1, 2);
+console.log(boundSum()); // 3
+
+// tail call optimization
+// a tail call is when a function is called as the last statement in another function
+function doSomething() {
+  return doSomethingElse(); // tail call
+}
+
+// how tail calls are different in ecmascript 6
+// the tail call does not require access to variables in the current stack frame
+// (meaning the function is not a closure)
+// the function making the tail call has no further work to do after the tail call returns
+// the result of the tail call is returned as the function value
+
+"use strict";
+function doSomething() {
+  // optimized
+  return doSomethingElse();
+}
+
+"use strict";
+function doSomething() {
+  // not optimized - no return
+  doSomethingElse();
+}
+
+"use strict";
+function doSomething() {
+  // not optimized - must add after returning
+  return 1 + doSomethingElse();
+}
+
+"use strict";
+function doSomething() {
+  // not optimized - call isn't in tail position
+  var result = doSomethingElse();
+  return result;
+}
+
+"use strict";
+function doSomething() {
+  var num = 1,
+  func = () => num;
+  // not optimized - function is a closure
+  return func();
+}
+
+// hornessing tail call optimization
+function factorial(n) {
+  if (n <= 1) {
+    return 1;
+  } else {
+    // not optimized - must mltiply after returning
+    return n * factorial(n - 1);
+  }
+}
+
+// the parameter p holds the previous multiplication result
+// so the next result can be computed without another function call
+// when n is greater than 1, the multiplication is done first 
+// and then passed in as the second argument to factorial()
+// this allows the es6 engine to optimize the recursive call
+function factorial(n, p = 1) {
+  if (n <= 1) {
+    return 1 * p;
+  } else {
+    let result = n * p;
+
+    // optimized
+    return factorial(n - 1, result);
+  }
+}
+
+// tail call optimization allows some function calls to be optimized to
+// maintain a smaller call stack, use less memory, and prevent stack overflow errors
