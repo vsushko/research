@@ -117,7 +117,6 @@ JavaScript:<br/>
 18. Marijn Haverbeke - <b>Eloquent Javascript</b>.<br/>
 
 Courses:<br/>
-[Codecademy](https://www.codecademy.com/learn/javascript)<br/>
 [CodeEval](https://www.codeeval.com)<br/>
 [Coderbyte](https://coderbyte.com/challenges#easyChals)<br/>
 [Code School](https://www.codeschool.com/learn/javascript)<br/>
