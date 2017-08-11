@@ -117,7 +117,6 @@ JavaScript:<br/>
 18. Marijn Haverbeke - <b>Eloquent Javascript</b>.<br/>
 
 Courses:<br/>
-[Codecademy](https://www.codecademy.com/learn/javascript)<br/>
 [CodeEval](https://www.codeeval.com)<br/>
 [Coderbyte](https://coderbyte.com/challenges#easyChals)<br/>
 [Code School](https://www.codeschool.com/learn/javascript)<br/>
@@ -126,29 +125,3 @@ Courses:<br/>
 [egghead](https://egghead.io)<br/>
 [Khan Academy](https://www.khanacademy.org/computing/computer-programming)<br/>
 [treehouse](https://teamtreehouse.com/library/topic:javascript)<br/>
-
-Завершено:<br/>
-2012<br/> 
-1. Liberty, Jesse - <b>Sams Teach Yourself C++ in 21 Days</b>.<br/>
-2. Schildt, Herbert - <b>C++: The Complete Reference, 4th Edition</b>.<br/>
-2013<br/>
-3. Кент Бек - <b>Экстремальное программирование. Разработка через тестирование</b>.<br/>
-4. Эккель Брюс - <b>Философия Java</b>.<br/> 
-5. [Google Guice перевод документации](http://netvl.github.io/guice/users-guide.html).<br/>
-6. Роберт Мартин - <b>Чистый код. Создание, анализ и рефакторинг</b>.<br/>
-2014<br/>
-7. Мартин Фаулер - <b>Рефакторинг. Улучшение существующего кода</b>.<br/>
-8. Java-next - <b>Новое поколение Java</b>.<br/>
-9. Крейг Уоллс - <b>Spring в действии</b>.<br/>
-2015<br/>
-10. Мартин Фаулер - <b>Архитектура корпоративных программных приложений</b>.<br/>
-2016<br/>
-11. Грегор Хоп, Бобби Вульф - <b>Шаблоны интеграции корпоративных приложений</b>.<br/>
-12. Andrew Hunt David Thomas - <b>Pragmatic Programmer, The: From Journeyman to Master</b>.<br/>
-13. Chad Fowler - <b>The Passionate Programmer</b>.<br/>
-14. Scott Chacon - <b>Pro Git</b>.<br/>
-15. Brooks Jr., Frederick P. - <b> The Mythical Man-Month: Essays on Software Engineering</b>.<br/>
-16. Joshua Bloch - <b>Effective Java</b>.<br/>
-17. Tom DeMarco - <b>The Deadline: A Novel about Project Management</b>.<br/>
-18. Tom DeMarco - <b>Peopleware: Productive Projects and Teams</b>.<br/>
-19. Antonio Goncalves - <b>Beginning Java EE 7</b>.<br/>
