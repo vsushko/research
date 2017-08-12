@@ -1,0 +1,32 @@
+body {
+    padding: 10px;
+    text-align: center;
+}
+
+.block {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    background-color: #34495e;
+    background-image: url("/assets/course13/logo.png");
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #999999;
+}
+
+.block1 {
+    background-position: 35px 25px;
+}
+
+.block2 {
+    background-position: -95px 25px;
+}
+
+.block3 {
+    background-position: -45px 50%;
+}
+
+.block4 {
+    background-position: 100% 50%;
+}

@@ -1,0 +1,27 @@
+body {
+    padding-top: 40px;
+}
+
+.block {
+    height: 70px;
+    margin: 30px 50px;
+    background-color: #3498db;
+    background-repeat: repeat-x;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #999999;
+}
+
+.block1 {
+    background-position: -30px 30px;
+    background: url("/assets/course13/stitch.png") repeat-x;
+}
+
+.block2 {
+    background-position: 0 0;
+    background: url("/assets/course13/zigzag.png") repeat-x;
+}
+
+.block3 {
+    background-position: 0 100%;
+    background: url("/assets/course13/shadow.png") repeat-x;
+}

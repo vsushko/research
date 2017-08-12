@@ -1,0 +1,23 @@
+html, body {
+    margin: 0; 
+    padding: 0;
+}
+
+.block {
+    width: 300px;
+    height: 300px;
+    background: #3498db;
+}
+
+.bg {
+    height: 300px;
+    
+    background:url(/assets/course13/cat_fish_128.png) no-repeat 90px 145px,
+      url(/assets/course13/cat_grumpy_128.png) no-repeat 15px 125px,
+      url(/assets/course13/cat_drunk_128.png) no-repeat 160px 125px,
+      url(/assets/course13/cat_walk_128.png) no-repeat 80px 80px,
+      url(/assets/course13/cat_academy.png) no-repeat 20px 20px ,
+      url(/assets/course13/star.png) repeat-x 0px 10px,
+      url(/assets/course13/star.png) repeat-x 0px 270px;
+}
+

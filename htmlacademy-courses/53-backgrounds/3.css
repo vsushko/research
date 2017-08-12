@@ -1,0 +1,37 @@
+body {
+    padding: 10px;
+    text-align: center;
+}
+
+.block {
+    display: inline-block;
+    width: 192px;
+    height: 192px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #999999;
+}
+
+.block1 {
+    background-color: #2ecc71;
+    background-image: url("/assets/course13/cat_box.png");
+    background-repeat: repeat-x;
+}
+
+.block2 {
+    background-color: #3498db;
+    background-image: url("/assets/course13/cat_fish.png");
+    background-repeat: repeat-y;
+}
+
+.block3 {
+    background-color: #e74c3c;
+    background-image: url("/assets/course13/cat_drunk.png");
+    background-repeat: no-repeat;
+}
+
+.block4 {
+    background-color: #e67e22;
+    background-image: url("/assets/course13/cat_tied.png");
+    background-repeat: repeat;
+}

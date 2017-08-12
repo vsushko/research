@@ -1,0 +1,46 @@
+body {
+    width: 300px;
+    margin: 0; 
+    padding: 0;
+    padding-top: 15px;
+    font-size: 0;
+    text-align: center;
+    background: white;
+}
+
+.block {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    background-color: black;
+}
+
+.block1 {
+    background:#000000 url("/assets/course13/cat_poo.png") no-repeat 50% 50%;
+}
+.block2 {
+    background:#f1c40f url("/assets/course13/cat_poo.png") no-repeat 50% 50%
+}
+.block3 {
+    background:#e74c3c url("/assets/course13/cat_hiss.png") no-repeat 50% 50%
+}
+.block4 {
+    background:#3498db url("/assets/course13/cat_walk.png") no-repeat 230% 50%
+}
+.block5 {
+    background:#3498db url("/assets/course13/cat_walk.png") no-repeat -115% 50%
+}
+.block6 {
+    background:#27ae60 url("/assets/course13/cat_slippers.png")no-repeat 50% 50%
+}
+.block7 {
+    background:#bdc3c7
+}
+.block8 {
+    background:#95a5a6 url("/assets/course13/cat_grumpy.png") no-repeat 41px 50%;
+}
+.block9 {
+    background:#bdc3c7 url("/assets/course13/cat_grumpy.png") no-repeat -50px 50%;
+}

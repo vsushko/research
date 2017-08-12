@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    background-image: url("/assets/course13/moon.jpg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.block {
+    width: 192px;
+    height: 256px;
+    margin: 20px auto;
+    background-color: #34495e;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 5px;
+}
+
+.block:nth-child(1) {
+    background-image: url("/assets/course13/cat_clean.png");
+}
+
+.block:nth-child(2) {
+    background-image: url("/assets/course13/cat_fight.png");
+}
+
+.block:nth-child(3) {
+    background-image: url("/assets/course13/cat_hiss.png");
+}
+
+.block:nth-child(4) {
+    background-image: url("/assets/course13/cat_poo.png");
+}

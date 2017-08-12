@@ -1,0 +1,19 @@
+body {
+    padding-top: 80px;
+}
+
+.block1 {
+    width: 256px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 3px #999999;
+    background: url("/assets/course13/cows.jpg") no-repeat;
+}
+
+.block2 {
+    background: url("/assets/course13/cat_walk.png") no-repeat 190px 195px;
+}
+
+.block3 {
+    height: 256px;
+    background: url("/assets/course13/fence.png") no-repeat;
+}
