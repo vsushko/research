@@ -4,8 +4,6 @@ research
    102 of 606 p.
 0. M.Gupta - <b>OCA Java SE 7 Programmer I Certification Guide</b>.<br/>
    24 of 562 p.
-1. Э.Фримен, Э.Фримен, К.Сьерра Б.Бейтс - <b>Паттерны проектирования</b>.<br/>
-   37 of 645 p.
 2. Martin Fowler - <b>UML Distilled. Third edition</b>.<br/>
    105 of 184 p.
 3. Линн Бейли - <b>Изучаем SQL</b>.<br/>
@@ -52,9 +50,7 @@ research
     1 of 225 p.
 26. David Winterfeldt - <b>Spring by example</b>.<br/>
     1 of 315 p.
-27. Иван Портянкин - <b>Swing. Эффективные пользовательские интерфейсы</b>.<br/>
-    1 of 337 p.
-28. Bruce Eckel - <b>Thinking in Patterns wit Java</b>.<br/>
+28. Bruce Eckel - <b>Thinking in Patterns with Java</b>.<br/>
     1 of 189 p.
 29. Кайт Том - <b>Oracle для профессионалов</b>.<br/>
    20 of 1427 p. (Отложено).
