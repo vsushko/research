@@ -1,0 +1,19 @@
+.shooter-1 li {
+    background-color: white;
+}
+
+.shooter-1 .third + li {
+    background-color: red;
+}
+
+.shooter-2 li {
+    background-color: white;
+}
+
+.shooter-2 .first + li {
+    background-color: red;
+}
+
+.shooter-2 .third + li {
+    background-color: yellow;
+}

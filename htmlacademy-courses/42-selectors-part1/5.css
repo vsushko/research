@@ -1,0 +1,22 @@
+
+.shooter-1 .first,
+.shooter-1 .third,
+.shooter-1 .fourth {
+    background-color: white;
+}
+
+.shooter-1 .second,
+.shooter-1 .fifth {
+    background-color: red;
+}
+
+.shooter-2 .first {
+    background-color: red;
+}
+
+.shooter-2 .second,
+.shooter-2 .third,
+.shooter-2 .fourth,
+.shooter-2 .fifth {
+    background-color: white;
+}
