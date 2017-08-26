@@ -1,0 +1,16 @@
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
+.block1 {
+    padding: 10px;
+    border: 1px solid #1abc9c;
+}
+
+.block2 ul {
+    background-color: #3498db;
+}
+
+.block2 li {
+    background-color: #e74c3c;
+}
