@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Кнопка-изображение</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/assets/course74/keksik-style.css">
+    </head>
+    <body>
+        <header class="page-header">Форма логина</header>
+        <main>
+            <form action="/echo" method="post">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" value="Кексик">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password">
+                <label>
+                    <input type="checkbox" name="allow">
+                    Разрешать гладить
+                </label>
+                <!-- Кнопка-изображение -->
+                <input type="image" src="/assets/course74/enter.png" alt="Войти">
+            </form> 
+        </main>
+        <footer class="page-footer"></footer>
+    </body>
+</html>

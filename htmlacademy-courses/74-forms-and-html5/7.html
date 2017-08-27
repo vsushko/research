@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Поле выбора даты</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/assets/course74/keksik-style.css">
+    </head>
+    <body>
+        <header class="page-header">Форма доставки</header>
+        <main>
+            <form action="/echo" method="post">
+                <label for="name">Имя</label> 
+                <input type="text" id="name" name="name" value="Кекс" required>
+                <label for="address">Адрес доставки</label>
+                <textarea id="address" name="address" rows="2" required>ул. Хвостенко, д. 1</textarea>
+                <div class="half-width">
+                    <label for="date">Дата доставки</label> 
+                    <!-- Выбор даты -->
+                    <input type="date" name="date">
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Заказать">
+                </div>
+            </form> 
+        </main>
+        <footer class="page-footer"></footer>
+    </body>
+</html>

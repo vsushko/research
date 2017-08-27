@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Обязательные поля</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/assets/course74/keksik-style.css">
+    </head>
+    <body>
+        <header class="page-header">Форма доставки</header>
+        <main>
+            <form action="/echo" method="post">
+                <label for="name">Имя</label> 
+                <input type="text" id="name" name="name" value="Кексик" required>
+                <label for="address">Адрес доставки</label>
+                <textarea id="address" name="address" rows="2" required></textarea>
+                <div class="buttons">
+                    <input type="submit" value="Заказать">
+                </div>
+            </form> 
+        </main>
+        <footer class="page-footer"></footer>
+    </body>
+</html>

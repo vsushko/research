@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Альтернативный способ задания кнопок</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/assets/course74/keksik-style.css">
+    </head>
+    <body>
+        <header class="page-header">Форма логина</header>
+        <main>
+            <form action="/echo" method="post">
+                <label for="name">Имя</label> 
+                <input type="text" id="name" name="name" value="Кексик">
+                <label for="password">Пароль</label> 
+                <input type="password" id="password" name="password">
+                <label><input type="checkbox" name="allow">Разрешать гладить</label>
+                <div class="buttons">
+                    <!-- Кнопка -->
+                    <button type="submit">Войти <img src="/assets/course74/enter-light.png"></button>
+                </div>
+            </form>
+        </main>
+        <footer class="page-footer"></footer>
+    </body>
+</html>
