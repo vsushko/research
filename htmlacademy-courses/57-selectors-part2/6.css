@@ -1,0 +1,16 @@
+/*
+Чтобы строки подсвечивались целиком,
+следите за приоритетами селекторов или
+можете удалять селекторы после подсветки каждой строки.
+*/
+ul li:last-child {
+    background-color: #ff3300;
+}
+
+ul:last-of-type li {
+    background-color: #339933;
+}
+
+ul:last-of-type li:last-of-type {
+    background-color: #0099ff;
+}

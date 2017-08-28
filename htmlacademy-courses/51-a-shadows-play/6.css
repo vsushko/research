@@ -1,0 +1,32 @@
+.btn1 {
+    box-shadow: 0 0 6px -2px #34495e;
+}
+
+.btn2 {
+    box-shadow: 0 0 6px 0 #34495e;
+}
+
+.btn3 {
+    box-shadow: 0 0 6px 3px #34495e;
+}
+
+.btn4 {
+    box-shadow: 0 0 3px 6px #34495e;
+}
+
+body {
+    font-family: "Tahoma", sans-serif;
+    font-size: 18px;
+    background: url("/assets/pcourse1/bg.jpg");
+}
+
+.btn {
+    width: 150px;
+    margin: 50px auto;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background: #3498db;
+    cursor: pointer;
+}

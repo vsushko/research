@@ -1,0 +1,26 @@
+.btn1 {
+    box-shadow: 0 0 0 15px rgba(39, 174, 96, 0.5);
+}
+
+.btn2 {
+    box-shadow: 0 0 0 15px rgba(231, 76, 60, 0.5);
+}
+
+body {
+    padding-top: 200px;
+    font-size: 18px;
+    font-family: "Tahoma", sans-serif;
+    background: url("/assets/course4/img1.jpg") no-repeat 40% 0;
+    background-size: auto 700px;
+}
+
+.btn {
+    width: 150px;
+    margin: 50px auto;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background: #2c3e50;
+    cursor: pointer;
+}

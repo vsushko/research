@@ -1,0 +1,11 @@
+.cards li:first-child:not(.spade) {
+    background-color: #ff3300;
+}
+
+.cards li:nth-child(4):not(.ace):not(.diamond) {
+    background-color: #339933;
+}
+
+.cards li.heart:not(:first-child):not(.queen):not(.jack) {
+    background-color: #0099ff;
+}
