@@ -1,0 +1,14 @@
+.portrait {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-image: url("img/eye-patch.svg"),url("img/keks-2.jpg");
+    background-size: 80px,cover;
+    background-repeat: no-repeat;
+    background-position: left 35px top 35px, center;
+    border: 50px solid rgba(0, 0, 0, 0.4);
+    border-image-source: url("img/rope-frame.png");
+    border-image-slice: 90 fill;
+    background-clip: content-box;
+    }

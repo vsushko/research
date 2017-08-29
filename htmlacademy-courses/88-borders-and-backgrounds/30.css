@@ -1,0 +1,21 @@
+.arrow-round {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    border: 50px solid #0074d9;
+    border-radius: 50%;
+    border-right-color: transparent;
+}
+
+.arrow-round::after {
+    content: "";
+    position: absolute;
+    top: -45px;
+    left: 130px;
+    border: 100px solid #ffffff;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-color: #0074d9;
+    border-left-color: transparent;
+}

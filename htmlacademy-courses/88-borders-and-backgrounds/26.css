@@ -1,0 +1,18 @@
+[class^="arrow"] {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 30px;
+}
+
+.arrow-bottom {
+    border: 100px solid #ffffff;
+    border-bottom-width: 0;
+    border-top-color: #0074d9;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+
+.arrow-left {
+    border: 100px solid #ffffff;
+}

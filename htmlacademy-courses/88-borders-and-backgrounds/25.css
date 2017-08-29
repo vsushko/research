@@ -1,0 +1,11 @@
+.square {
+    width: 0;
+    height: 0;
+    margin: 100px auto;
+    background-color: #aaaaaa;
+    border: 100px solid #ffffff;
+    border-top-color: #ff4136;
+    border-right-color: #2ecc40;
+    border-bottom-color: #ffdc00;
+    border-left-color: #0074d9;
+}

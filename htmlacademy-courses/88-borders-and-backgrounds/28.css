@@ -1,0 +1,19 @@
+.arrow-right-long {
+    position: relative;
+    width: 200px;
+    height: 30px;
+    margin: 150px auto;
+    background: #0074d9;
+}
+
+.arrow-right-long::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    right: -30px;
+    border: 40px solid #ffffff;
+    border-right-width: 0;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #0074d9;
+}
