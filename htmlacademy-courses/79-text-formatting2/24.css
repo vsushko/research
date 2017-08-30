@@ -1,0 +1,30 @@
+body {
+    font-size: 12px;
+    font-family: "Arial", sans-serif;
+    color: #fffbb4;
+    margin: 0;
+    background: url("bokeh.jpg") no-repeat 50% 0;
+    min-width: 570px;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    word-spacing: 5px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    word-spacing: 12px;
+}
+
+li {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+img {
+    width: 250px;
+}

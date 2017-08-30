@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Montserrat Alternates";
+    src:
+      local("MontserratAlternates-Regular"),
+      url("fonts/MontserratAlternates.woff") format("woff");
+  }
+  
+  body {
+      font-size: 12px;
+      font-family: "Arial", sans-serif;
+      color: #333333;
+      background: url("rain.jpg") no-repeat 50% 0;
+  }
+  
+  .square {
+      width: 260px;
+      margin: 150px auto;
+      font-family: "Montserrat Alternates", sans-serif;
+      font-size: 72px;
+      text-transform: uppercase;
+      text-align: center;
+      border: 5px solid #333333;
+  }

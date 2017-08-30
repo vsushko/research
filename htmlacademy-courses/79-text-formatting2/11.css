@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Montserrat Alternates";
+    src:
+      local("MontserratAlternates-Regular"),
+      url("fonts/MontserratAlternates.woff") format("woff");
+  }
+  
+  @font-face {
+      font-family: "Glyphter";
+      src: url("fonts/Glyphter.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+  }
+  
+  body {
+      font-size: 12px;
+      font-family: "Arial", sans-serif;
+      background: url("night.jpg") no-repeat 50% 0;
+  }
+  
+  a {
+      display: block;
+      margin: 12px;
+      font-family: "Montserrat Alternates", sans-serif;
+      font-size: 55px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #ecf0f1;
+  }
+  
+  a span {
+      font-family: "Glyphter";
+  }
+  
+  h1 {
+      margin: 12px;
+      font-size: 24px;
+      text-align: center;
+      color: #ecf0f1;
+  }
