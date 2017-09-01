@@ -1,0 +1,46 @@
+/* Базовые стили, изменять не нужно */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 520px;
+    min-height: 270px;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #3a78a1;
+    background-image: url("/assets/course9/grid.png");
+    background-repeat: repeat;
+    background-position: -80px -80px;
+}
+
+input[type="text"] {
+    height: 38px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+}
+
+.block {
+    background: rgba(0, 255, 255, 0.2);
+}
+
+.block1 {
+border: 2px solid white;
+
+}
+.block2 {
+padding: 20px;
+margin: 18px;
+
+}
+input[type="text"] {
+box-sizing: border-box;
+padding: 10px;
+}`
