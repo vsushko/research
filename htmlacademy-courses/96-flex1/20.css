@@ -1,0 +1,23 @@
+.palette {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    align-content: center;
+}
+
+.color-1 {
+    order: 5;
+}
+
+.color-3 {
+    order: 4;
+}
+
+.color-4 {
+    order: 0;
+}
+
+.color-5 {
+    order: 3;
+}

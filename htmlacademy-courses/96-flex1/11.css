@@ -1,0 +1,12 @@
+.room {
+    display: flex;
+    align-items: center;
+}
+
+.text-simeon {
+    align-self: baseline;
+}
+
+.text-keks {
+    align-self: baseline;
+}

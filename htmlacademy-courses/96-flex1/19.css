@@ -1,0 +1,16 @@
+.room {
+    display: flex;
+    align-items: center;
+}
+
+.keks {
+    order: -1;
+}
+
+.simeon {
+    order: -2;
+}
+
+.rudolf {
+    order: 1;
+}

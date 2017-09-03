@@ -1,0 +1,8 @@
+.room {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.rug {
+    width: 180px;
+}

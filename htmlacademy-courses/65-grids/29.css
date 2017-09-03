@@ -1,0 +1,29 @@
+body {
+    font-size: 16px;
+    font-family: "PT Sans", sans-serif;
+}
+
+.container {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0 0 2px #cccccc;
+}
+
+.container::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.block {
+    display: inline-block;
+    vertical-align: top;
+    width: 90px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: #3498db;
+    border: 2px solid #34495e;
+}

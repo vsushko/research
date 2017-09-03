@@ -1,0 +1,38 @@
+body {
+    font-size: 16px;
+    font-family: "PT Sans", sans-serif;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 0.5em;
+    font-size: 18px;
+}
+
+.container {
+    width: 400px;
+    margin: 20px auto;
+}
+
+.catalog {
+    width: 400px;
+    background: #ecf0f1;
+    box-shadow: 0 0 3px #999999;
+}
+
+.item {
+    display: inline-block;
+    vertical-align: top;
+    width: 116px;
+    min-height: 75px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    background: #3498db;
+    border: 2px solid #2c3e50;
+}
+
+.item:nth-child(3n) {
+    margin-right: 0;
+}
