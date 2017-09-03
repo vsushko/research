@@ -1,0 +1,17 @@
+.spot {
+    display: flex;
+    width: 450px;
+}
+
+.spot-1 .skate {
+    flex-basis: 300px;
+}
+
+.spot-1 .racoon-brown {
+    flex-shrink: 0;
+}
+
+.spot-2 .skate {
+    flex-basis: 150px;
+    flex-shrink: 0;
+}

@@ -1,0 +1,19 @@
+.spot {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.skate {
+    min-width: 40px;
+    min-height: 100px;
+    margin: 10px;
+}
+
+.skate-2 {
+    margin-left: auto;
+}
+
+.skate-4 {
+    margin-right: auto;
+}

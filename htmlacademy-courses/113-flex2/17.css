@@ -1,0 +1,14 @@
+.spot {
+    display: flex;
+    width: 450px;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.skate {
+    flex-basis: 120px;
+}
+
+.racoon-green {
+    flex-grow: 1;
+}

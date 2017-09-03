@@ -1,0 +1,9 @@
+.menu {
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+}
+
+.menu > div {
+    flex-grow: 1;
+}

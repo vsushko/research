@@ -1,0 +1,11 @@
+.spot {
+    display: flex;
+}
+
+.skate {
+    flex: 0 1 200px;
+}
+
+.racoon-orange {
+    flex: 1 2 200px;
+}

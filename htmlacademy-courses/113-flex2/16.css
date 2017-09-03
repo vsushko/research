@@ -1,0 +1,11 @@
+.spot {
+    display: flex;
+    width: 450px;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.skate {
+    flex-basis: 500px;
+    flex-shrink: 0;
+}

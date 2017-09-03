@@ -1,0 +1,17 @@
+.spot {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    margin-left: 30px;
+    padding: 10px 0;
+}
+
+.racoon-green {
+    flex-basis: 250px;
+    flex-shrink: 1;
+}
+
+.racoon-brown {
+    flex-basis: 250px;
+    flex-shrink: 3;
+}

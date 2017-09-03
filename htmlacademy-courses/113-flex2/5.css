@@ -1,0 +1,12 @@
+.spot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.racoon-orange {
+    width: 300px;
+    height: 100px;
+    flex-basis: 100%;
+}
