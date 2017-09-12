@@ -1,0 +1,19 @@
+body {
+    padding: 20px;
+}
+
+.block {
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background: #3a78a1;
+}
+
+.inline-absolute {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    color: white;
+    background: rgba(255, 0, 0, 0.5);
+}

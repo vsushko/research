@@ -1,0 +1,14 @@
+.frame {
+    display: inline-block;
+    margin: 10px;
+    background-color: #27ae60;
+    border-radius: 6px;
+}
+
+.frame img {
+    position: relative;
+    top: -5px;
+    left: -5px;
+    display: block;
+    border-radius: 5px;
+}
