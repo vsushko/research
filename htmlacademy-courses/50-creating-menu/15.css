@@ -1,0 +1,50 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 280px;
+  min-height: 280px;
+  padding: 10px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  background: #ecf0f1;
+}
+
+.main-menu {
+  list-style: none;
+  width: 200px;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: block;
+}
+
+.main-menu ul {
+  padding: 10px;
+  border-bottom: 2px solid #2c3e50;
+  background-color: #ffffff;
+  list-style: none;
+}
+
+.main-menu ul a {
+  color: #2980b9;
+  padding: 5px;
+}
+
+.main-menu>li>a {
+  text-decoration: none;
+  border-bottom: 2px solid #2c3e50;
+  background-color: #2980b9;
+  color: #ffffff;
+  padding: 10px 15px;
+}
+
+.main-menu>.active>a {
+  background-color: #1abc9c;
+}

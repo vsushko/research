@@ -1,0 +1,19 @@
+body {
+    min-width: 300px;
+    padding: 10px;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.main-menu {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.main-menu > .opened > a {
+    color: white;
+    background: #0088cc;
+}
+    

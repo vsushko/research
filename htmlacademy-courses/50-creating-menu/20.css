@@ -1,0 +1,38 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 430px;
+  min-height: 280px;
+  padding: 10px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  background: #ecf0f1;
+}
+
+.main-menu {
+  padding: 0;
+  margin: 0;
+  background: #2980b9;
+}
+
+.main-menu li {
+  display: inline-block;
+}
+
+.main-menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-right: -5px;
+  border-left: 2px solid #2c3e50;
+  padding: 10px 15px;
+}
+
+.main-menu .active a {
+  background: #1abc9c;
+}

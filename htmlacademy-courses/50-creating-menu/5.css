@@ -1,0 +1,26 @@
+body {
+    padding: 10px;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.main-menu {
+    width: 150px;
+    margin: 0;
+    padding: 10px 15px;
+    list-style: none;
+    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+}
+
+/* Обратите внимание на селектор. */
+/* Все селекторы для меню предваряются классом меню. */
+
+.main-menu li {
+    margin-bottom: 8px;
+}
+
+.main-menu a {
+    color: #0088cc;
+}
