@@ -1,0 +1,17 @@
+input:required {
+    background: url('/assets/course58/required.png') no-repeat right 50%;
+    border: 1px solid #e74c3c;
+}
+
+input[type="number"]:required {
+    background-image: none;
+}
+
+input:valid:required {
+    background-color: #94e6b6;
+    border-color: #2ecc71;
+}
+
+input[value*=Кекс]:required:valid {
+    color: #ffffff;
+}

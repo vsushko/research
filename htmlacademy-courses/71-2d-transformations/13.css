@@ -1,0 +1,17 @@
+.wizard {
+    top: 244px;
+    left: 30px;
+}
+
+.doppelganger {
+    visibility: visible;
+    transform: scaleX(-1);
+}
+
+.diamond {
+    transform: scale(0.6, -0.6) translate(-330px, 350px);
+}
+
+.world {
+    min-width: 570px;
+}

@@ -1,0 +1,11 @@
+input[value="Кекс"] {
+    color: #3498db;
+}
+
+input[value^="Кекс-"] {
+    color: #e74c3c;
+}
+
+input[value|="Кекс"] {
+    border-color: #2ecc71;
+}

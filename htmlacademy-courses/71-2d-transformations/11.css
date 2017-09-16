@@ -1,0 +1,20 @@
+.wizard {
+    top: 244px;
+    left: 30px;
+}
+
+.hero {
+    transform: scale(1.5) translateX(40px);
+}
+
+.overlord {
+    transform: rotate(90deg);
+}
+
+.summon {
+    display: block;
+}
+
+.world {
+    min-width: 570px;
+}

@@ -1,0 +1,12 @@
+.wizard {
+    top: 344px;
+    left: 10px;
+    transform: translateY(-150px) translateX(-20px);
+    transform: translateY(-260px) translateX(220px);
+    transform: translateY(0px) translateX(410px);
+    
+}
+
+.world {
+    min-width: 570px;
+}

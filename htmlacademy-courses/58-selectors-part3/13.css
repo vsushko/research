@@ -1,0 +1,7 @@
+input:checked + label {
+    color: #1abc9c;
+}
+
+input:not(:checked) {
+    margin-right: 15px;
+}

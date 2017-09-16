@@ -1,0 +1,82 @@
+html, body {
+    width: 550px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+.map {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.map > img {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.part-s {
+    transform: rotate(180deg) translateY(-200px) translateX(-100px)
+}
+
+.part-a {
+    transform: rotate(180deg) translateX(-100px) translateY(-100px)
+}
+
+.part-g {
+    transform: rotate(180deg) translateX(200px)
+}
+
+.part-r {
+    transform: translateX(-100px) translateY(-100px)
+}
+
+.part-b {
+    transform: rotate(-90deg) translateX(100px) translateY(-100px)
+}
+
+.part-k {
+    transform: translateX(300px) translateY(-100px)
+}
+
+.part-o {
+    transform: rotate(-90deg) translateY(100px) translateX(-200px)
+}
+
+.part-w {
+    transform: translateY(200px) translateX(100px)
+}
+
+.part-c {
+    transform: rotate(90deg) translateY(-200px) translateX(100px)
+}
+
+.part-i {
+    transform: rotate(90deg) translateY(200px)
+}
+
+.part-q {
+    transform: rotate(90deg) translateY(-100px) translateX(-200px)
+}
+
+.part-e {
+    transform: translateY(-100px) translateX(100px)
+}
+
+.part-h {
+    transform: rotate(-90deg) translateY(-200px)
+}
+
+.part-u {
+    transform: rotate(90deg) translateX(-200px)
+}
+
+.part-n {
+    transform: rotate(180deg) translateY(-200px)
+}
+
+.part-t {
+    transform: rotate(-90deg) translateX(200px) translateY(-300px)
+}

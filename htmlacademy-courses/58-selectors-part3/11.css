@@ -1,0 +1,4 @@
+input:required {
+    border: 1px solid #e74c3c;
+    background: url("/assets/course58/required.png") no-repeat 100% 50%;
+}

@@ -1,0 +1,7 @@
+.cat-in-box::before {
+    display: block;
+}
+
+.cat-in-box[title="Кекс"]::before {
+    display: none;
+}

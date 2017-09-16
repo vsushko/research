@@ -1,0 +1,61 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    background-color: #f5f5f5;
+}
+ 
+section {
+    width: 450px;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0 0 3px #cccccc;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider input[type=radio] {
+    display: none;
+}
+
+.slider-inner {
+    overflow: hidden;
+}
+
+.slider-slides {
+    width: 300%;
+}
+
+.slider-slides img {
+    float: left;
+    width: 450px;
+    height: 320px;
+}
+
+.slider-controls {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.8);
+    margin: 0 3px;
+    cursor: pointer;
+}

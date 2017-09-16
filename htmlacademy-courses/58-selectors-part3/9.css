@@ -1,0 +1,9 @@
+input:disabled {
+    background-color: #bdc3c7;
+    opacity: 0.5;
+}
+
+input:enabled,
+select:enabled {
+    border: 1px solid #34495e;
+}

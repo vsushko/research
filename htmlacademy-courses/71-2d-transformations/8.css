@@ -1,0 +1,13 @@
+.wizard {
+    top: 244px;
+    left: 50px;
+    z-index: 11;
+}
+
+.fireball {
+    transform: translate(250px, 90px);
+}
+
+.werewolf {
+    transform: rotate(90deg);
+}

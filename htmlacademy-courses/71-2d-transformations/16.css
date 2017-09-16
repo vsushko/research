@@ -1,0 +1,4 @@
+.picture {
+    transform: rotate(20deg);
+    transform-origin: right bottom;
+}

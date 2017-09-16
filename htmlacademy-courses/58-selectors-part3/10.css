@@ -1,0 +1,8 @@
+input:read-only {
+    color: #bdc3c7;
+    background-color: #ecf0f1;
+}
+
+input:read-write {
+    color: #3498db;
+}

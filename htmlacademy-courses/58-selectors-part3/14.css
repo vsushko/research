@@ -1,0 +1,7 @@
+input:valid {
+    color: #2ecc71;
+}
+
+input:invalid {
+    color: #e74c3c;
+}

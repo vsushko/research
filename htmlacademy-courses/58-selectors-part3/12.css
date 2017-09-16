@@ -1,0 +1,9 @@
+input:required {
+    background: url('/assets/course58/required.png') no-repeat right 50%;
+    border: 1px solid #e74c3c;
+}
+
+input[type="text"]:optional {
+    background: url("/assets/course58/optional.png") no-repeat 100% 50%;
+    border: 1px solid #3498db;
+}

@@ -1,0 +1,7 @@
+input:in-range {
+    border-color: #2ecc71;
+}
+
+input:out-of-range {
+    border-color: #e74c3c;
+}

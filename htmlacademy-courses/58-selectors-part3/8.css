@@ -1,0 +1,13 @@
+img[src$="gif"] {
+    display: none;
+}
+
+img[src$="jpg"] {
+    border: 5px solid #f6b267;
+    box-shadow: 0 0 0 3px #b77d3e;
+}
+
+img[src$="jpg"][alt*="Кекс"] {
+    border: 5px solid #2980b9;
+    box-shadow: 0 0 0 3px #34495e;
+}

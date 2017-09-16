@@ -1,0 +1,41 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    background-color: #f5f5f5;
+}
+ 
+section {
+    width: 450px;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0 0 3px #cccccc;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider-inner {
+    overflow: hidden;
+}
+
+.slider-slides {
+    width: 300%;
+}
+
+.slider-slides img {
+    float: left;
+    width: 450px;
+    height: 320px;
+}

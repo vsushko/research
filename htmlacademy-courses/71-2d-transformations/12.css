@@ -1,0 +1,30 @@
+html, body {
+    width: 550px;
+    height: 310px;
+    margin: 0;
+    padding: 0;
+}
+
+.part-green {
+    transform: translateX(15px) rotate(90deg);
+}
+
+.part-maroon {
+    transform: translateY(-125px) rotate(180deg);
+}
+
+.part-orange {
+    transform: translateX(105px) translateY(160px) rotate(-90deg) scale(2);
+}
+
+.part-red {
+    transform: translateX(175px) translateY(-100px)skewX(-45deg);
+}
+
+.part-yellow {
+    transform: translateX(40px) rotate(90deg);
+}
+
+.part-blue {
+    transform: translateX(-120px) translateY(-80px) skewX(-45deg);
+}

@@ -1,0 +1,10 @@
+.wizard {
+    top: 244px;
+    left: 30px;
+    transform: translateX(250px) translateX(-250px);
+}
+
+.tree {
+    top: 178px;
+    right: 30px;
+}

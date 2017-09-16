@@ -1,0 +1,5 @@
+input[name^="cat"] {
+    color: #3498db;
+    background: url("/assets/course58/cat-leg.png") no-repeat 100% 50%;
+    border-color: #000000;
+}
