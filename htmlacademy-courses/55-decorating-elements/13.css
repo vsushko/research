@@ -1,0 +1,24 @@
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    color: #777777;
+}
+
+.comment {
+    position: relative;
+    margin-left: 50px;
+    margin-top: 90px;
+    margin-right: 20px;
+}
+
+.comment-avatar {
+    width: 70px;
+    height: 70px;
+    background: #7f8c8c url("/assets/course14/avatar.png") no-repeat 50% 50%;
+}
+
+.comment-author {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
