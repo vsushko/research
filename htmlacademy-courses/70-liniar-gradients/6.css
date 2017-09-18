@@ -1,0 +1,64 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 500px;
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.icon {
+    float:left;
+    width: 220px;
+    height: 220px;
+    margin: 20px;
+    margin-bottom: 0;
+    margin-right: 0;
+    border-radius: 45px;
+    background-color: #cccccc;
+}
+
+.messages {
+    background-image: linear-gradient(to bottom, #86ff65, #06d315);
+    /* градиент от #86ff65 к #06d315 */
+}
+
+.weather {
+    background-image: linear-gradient(to right, #1f76ed, #70edfe);
+    /* градиент от  к #70edfe */
+}
+
+.camera {
+        background-image: linear-gradient(to bottom, #f7f7f7, #898b91);
+    /* градиент от #f7f7f7 к #898b91 */
+}
+
+.itunes {
+        background-image: linear-gradient(to right, #fb5bc4, #a645fe);
+    /* градиент от #fb5bc4 к #a645fe */
+}
+
+.icon-inner {
+    height: 220px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.messages .icon-inner {
+    background-image: url("/assets/course70/messages.png");
+}
+
+.weather .icon-inner {
+    background-image: url("/assets/course70/weather.png");
+}
+
+.camera .icon-inner {
+    background-image: url("/assets/course70/camera.png");
+}
+
+.itunes .icon-inner {
+    background-image: url("/assets/course70/itunes.png");
+}
