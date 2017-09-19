@@ -1,0 +1,19 @@
+label {
+    position: relative;
+    cursor: pointer;
+}
+
+label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -44px;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #5a5a5a;
+}
+
+input[type="checkbox"] {
+    display: none;
+}

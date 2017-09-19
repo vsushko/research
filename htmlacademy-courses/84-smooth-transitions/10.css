@@ -1,0 +1,29 @@
+.paper-btn {
+    display: inline-block;
+    margin: 58px 12px;
+}
+
+.paper-btn label {
+    display: inline-block;
+    width: 80px;
+    line-height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #616161;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.paper-btn input {
+    display: none;
+}
+
+.paper-btn-true input:checked ~ label {
+    background-color: #00e676;
+}
+
+.paper-btn-false input:checked ~ label {
+    background-color: #ff5252;
+}

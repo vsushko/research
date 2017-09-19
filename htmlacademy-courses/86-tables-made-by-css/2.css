@@ -1,0 +1,11 @@
+.checklist {
+    display: table;
+}
+
+.checklist ul {
+    display: table-row;
+}
+
+.checklist li {
+    display: table-cell;
+}

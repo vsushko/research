@@ -1,0 +1,48 @@
+.checklist {
+    display: table;
+}
+
+.checklist ul {
+    display: table-row;
+}
+
+.checklist li {
+    display: table-cell;
+}
+
+.checklist h1 {
+    display: table-caption;
+}
+
+.checklist header {
+    display: table-header-group;
+}
+
+.checklist header li {
+    border-color: #3d9970;
+}
+
+.checklist footer {
+    display: table-footer-group;
+}
+
+.checklist footer li {
+    border-color: #0074d9;
+}
+
+.checklist .content {
+    display: table-row-group;
+}
+
+.checklist .content li {
+    border-color: #ff851b;
+}
+
+.checklist .content-important li {
+    border-color: #ff4136;
+}
+
+.checklist .column {
+    display: table-column;
+    background-image: url("img/wall-1.png");
+}

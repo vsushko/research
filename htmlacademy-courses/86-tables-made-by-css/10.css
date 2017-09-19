@@ -1,0 +1,53 @@
+.formula {
+    display: table;
+    margin: 10px;
+    width: 500px;
+    border-collapse: collapse;
+}
+
+.formula p {
+    display: table-caption;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    caption-side: bottom;
+    text-align: center;
+}
+
+.formula ul {
+    display: table-row;
+}
+
+li {
+    display: table-cell;
+    border: 1px solid #777;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.content {
+    display: table-row-group;
+}
+
+header {
+    display: table-header-group;
+    background-color: #fff;
+}
+
+.content-important li {
+    background-color: #fffebc;
+}
+
+.column {
+    display: table-column;
+}
+
+.column-group {
+    display: table-column-group;
+    background-color: #b2fdd0;
+}
+
+.formula .column-last {
+    background-color: #ffbaba;
+}

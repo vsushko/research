@@ -1,0 +1,23 @@
+.checklist {
+    display: table;
+}
+
+.checklist ul {
+    display: table-row;
+}
+
+.checklist li {
+    display: table-cell;
+}
+
+.checklist h1 {
+    display: table-caption;
+}
+
+.checklist header {
+    display: table-header-group;
+}
+
+.checklist header li {
+    border-color: #3d9970;
+}

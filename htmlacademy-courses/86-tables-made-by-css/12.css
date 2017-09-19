@@ -1,0 +1,9 @@
+.checklist ul {
+    display: table;
+    margin: auto;
+    width: 200px;
+}
+
+.checklist li {
+    text-align: center;
+}

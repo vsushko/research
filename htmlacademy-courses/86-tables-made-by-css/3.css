@@ -1,0 +1,16 @@
+.checklist {
+    display: table;
+}
+
+.checklist ul {
+    display: table-row;
+}
+
+.checklist li {
+    display: table-cell;
+}
+
+.checklist h1 {
+    display: table-caption;
+    caption-side: bottom;
+}
