@@ -1,0 +1,21 @@
+.label-box {
+    position: relative;
+    width: 270px;
+}
+
+input {
+    width: 270px;
+    padding: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+label {
+    position: absolute;
+    top: -36px;
+    font-size: 18px;
+    color: #757575;
+    pointer-events: none;
+}

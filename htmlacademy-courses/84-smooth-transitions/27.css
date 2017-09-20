@@ -1,0 +1,28 @@
+.label-box {
+    position: relative;
+    width: 270px;
+}
+
+input {
+    width: 270px;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    box-sizing: border-box;
+}
+
+label {
+    position: absolute;
+    top: -36px;
+    font-size: 18px;
+    color: #757575;
+    pointer-events: none;
+    transition-duration: 0.2s;
+}
+
+input:focus ~ .label-box label,
+input:valid ~ .label-box label {
+    font-size: 14px;
+    transform: translateY(-20px);
+}

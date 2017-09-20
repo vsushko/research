@@ -1,0 +1,48 @@
+.label-box {
+    position: relative;
+    width: 270px;
+}
+
+.label-box::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 50%;
+    height: 2px;
+    background-color: #757575;
+}
+
+.label-box::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    bottom: 1px;
+    width: 50%;
+    height: 2px;
+    background-color: #757575;
+}
+
+input {
+    width: 270px;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    box-sizing: border-box;
+}
+
+label {
+    position: absolute;
+    top: -36px;
+    font-size: 18px;
+    color: #757575;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+input:focus ~ .label-box label,
+input:valid ~ .label-box label {
+    font-size: 14px;
+    transform: translateY(-20px);
+}
