@@ -10,12 +10,8 @@ research
    49 of 573 p. 
 4. Christian Bauer, Gavin King - <b>Hibernate in Action</b>.<br/>
    1 of 430 p.
-5. Молинаро Э. - <b>SQL. Сборник рецептов</b>.<br/>
-   1 of 668 p.
 6. Аллен К. - <b>101: Oracle PL/SQL</b>.<br/>
    1 of 369 p.
-7. Хорстман К. Корнелл Г. - <b>Java 2. Том 1. Основы</b>.<br/>
-   75 of 804 p.
 8. Khalid A. Rolf W. Rasmussen - <b>A Programmer's Guide to Java SCJP Certification</b>.<br/>
    39 of 1089 p.
 9. Мишра С., Бьюли А. - <b>Секреты Oracle SQL</b>.<br/>
@@ -42,14 +38,8 @@ research
     1 of 249 p.
 22. Кент Бек - <b>Шаблоны реализации корпотаривных приолжений</b>.<br/>
     1 of 167 p.
-23. Matthew Robinson, Pavel Vorobiev - <b>Swing</b>.<br/>
-    1 of 908! p.
-24. William Grosso - <b>Java RMI</b>.<br/>
-    1 of 467 p.
 25. Doug Tidwell, James Snell, Pavel Kulchenko - <b>Programming Web Services with Soap</b>.<br/>
     1 of 225 p.
-26. David Winterfeldt - <b>Spring by example</b>.<br/>
-    1 of 315 p.
 28. Bruce Eckel - <b>Thinking in Patterns with Java</b>.<br/>
     1 of 189 p.
 29. Кайт Том - <b>Oracle для профессионалов</b>.<br/>
@@ -64,12 +54,8 @@ research
     1 of 444 p.
 36. Bruce A Tate - <b>Bitter Java</b>.<br/>
     1 of 375 p.
-37. Eric Jendrock - <b>The Java EE 6 Tutorial Basic Concepts</b>.<br/>
-    1 of 588 p.
 38. Bryan Basham, Kathy Sierra, Bert Bates - <b>Head First Servlets & JSP</b>.<br/>
     1 of 913.
-39. Oracle - <b>The Java EE 6 Tutorial</b>.<br/>
-    1 of 687 p.
 40. Mark Richards, Richard Monson-Haefel, David A. Chappell - <b>Java Message Service</b>.<br/>
     1 of 330 p.
 41. Linda DeMichiel - <b>JSR 317: Java Persistence API 2.0</b>.<br/>
@@ -82,12 +68,6 @@ research
     1 of 948 p.
 44. Рик Гринвальд, Роберт Стаковьяк, Джонатан Стерн - <b>Oracle 11g. Основы</b>.<br/>
     1 of 450 p.
-45. Robert Sheldon - <b>SQL. A Beginners's Guide</b>.<br/>
-    1 of 562 p.
-46. Michael Donahoo, Gregory Speegle - <b>SQL. Practical Guide for Developers</b>.<br/>
-    1 of 266 p.
-47. Joe Celko's - <b>SQL for Smarties. Advanced SQL programming</b>.<br/>
-    1 of 839 p.
 48. Matt Raible - <b>Spring Live</b>.<br/>
 49. Deinum Marten - <b>Pro Spring MVC: With Web Flowv</b>.<br/>
 50. Gary Mak, Josh Long, and Daniel Rubio - <b>Spring Recipes: A Problem-Solution Approach</b>.<br/>
