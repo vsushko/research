@@ -4,40 +4,24 @@ research
    102 of 606 p.
 0. M.Gupta - <b>OCA Java SE 7 Programmer I Certification Guide</b>.<br/>
    24 of 562 p.
-2. Martin Fowler - <b>UML Distilled. Third edition</b>.<br/>
-   105 of 184 p.
-3. Линн Бейли - <b>Изучаем SQL</b>.<br/>
-   49 of 573 p. 
 4. Christian Bauer, Gavin King - <b>Hibernate in Action</b>.<br/>
    1 of 430 p.
-6. Аллен К. - <b>101: Oracle PL/SQL</b>.<br/>
-   1 of 369 p.
 8. Khalid A. Rolf W. Rasmussen - <b>A Programmer's Guide to Java SCJP Certification</b>.<br/>
    39 of 1089 p.
-9. Мишра С., Бьюли А. - <b>Секреты Oracle SQL</b>.<br/>
-   17 of 360 p.
 10. Chris Schaefer, Clarence Ho, and Rob Harrop - <b>Pro Spring</b>.<br/> 
     1 of 713 p. 
 11. Martin Fowler - <b>Analysis Patterns. Reusable Object Models</b>.<br/>
     1 of 361 p.
 12. Will Iverson - <b>Apache Jakarta Commons. Reusable Java Components</b>.<br/>
     3 of 360 p.
-13. Craig Larman - <b>Applying UML and Patterns.</b>.<br/>
-    1 of 616 p.
 15. Unknown Autor - <b>Design Patterns</b>.<br/>
     1 of 239 p.
 16. John Dooley - <b>Software Development and Professional Practice</b>.<br/>
     1 of 255 p.
 18. Хассан Гома - <b>UML. Проектироваие систем реального времени, параллельных и распределенных приложений</b>.<br/>
     1 of 699 p.
-19. Гради Буч - <b>Объектно-ориентированный анализ и проектирование</b>.<br/>
-    html-book.
-20. Eben Hewitt - <b>Java Soa CookBook</b>.<br/>
-    1 of 742 p.
 21. David Chappel Tyler Jewell - <b>Java Web Services</b>.<br/>
     1 of 249 p.
-22. Кент Бек - <b>Шаблоны реализации корпотаривных приолжений</b>.<br/>
-    1 of 167 p.
 25. Doug Tidwell, James Snell, Pavel Kulchenko - <b>Programming Web Services with Soap</b>.<br/>
     1 of 225 p.
 28. Bruce Eckel - <b>Thinking in Patterns with Java</b>.<br/>
@@ -46,30 +30,12 @@ research
    20 of 1427 p. (Отложено).
 30. Thomas Cormen, Charles Leiserson, Ronald Rivest - <b>Introduction to algorithms</b>.<br/>
     2 of 958 p.
-31. Т. Бадд - <b>Объектно-ориентированное программирование</b>.<br/>
-    1 of 296 p.
-32. Э. Гамма Р. Хелм Р. Джонсон Дж. Влиссидес. - <b>Приемы объектно-ориентированного проектирования. Паттерны проектирования</b>.<br/>
-    1 of 344 p.
-33. Эрик Эванс. - <b>Предметно-ориентированное проектирование. Структуризация сложных программных систем</b>.<br/>
-    1 of 444 p.
 36. Bruce A Tate - <b>Bitter Java</b>.<br/>
     1 of 375 p.
-38. Bryan Basham, Kathy Sierra, Bert Bates - <b>Head First Servlets & JSP</b>.<br/>
-    1 of 913.
 40. Mark Richards, Richard Monson-Haefel, David A. Chappell - <b>Java Message Service</b>.<br/>
     1 of 330 p.
-41. Linda DeMichiel - <b>JSR 317: Java Persistence API 2.0</b>.<br/>
-    1 of 486 p.
-42. Adam Bien - <b>Real World Java EE Patterns</b>.<br/>
-    1 of 279 p.
-43. Ron Hitchens - <b>Java NIO</b>.<br/>
-    1 of 275 p.
 44. Gerard Meszaros - <b>xUnit Test Patterns. Refactoring Test Code</b>.<br/>
     1 of 948 p.
-44. Рик Гринвальд, Роберт Стаковьяк, Джонатан Стерн - <b>Oracle 11g. Основы</b>.<br/>
-    1 of 450 p.
-48. Matt Raible - <b>Spring Live</b>.<br/>
-49. Deinum Marten - <b>Pro Spring MVC: With Web Flowv</b>.<br/>
 50. Gary Mak, Josh Long, and Daniel Rubio - <b>Spring Recipes: A Problem-Solution Approach</b>.<br/>
 
 JavaScript:<br/>
