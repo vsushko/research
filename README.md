@@ -16,10 +16,6 @@ research
     1 of 239 p.
 16. John Dooley - <b>Software Development and Professional Practice</b>.<br/>
     1 of 255 p.
-21. David Chappel Tyler Jewell - <b>Java Web Services</b>.<br/>
-    1 of 249 p.
-25. Doug Tidwell, James Snell, Pavel Kulchenko - <b>Programming Web Services with Soap</b>.<br/>
-    1 of 225 p.
 28. Bruce Eckel - <b>Thinking in Patterns with Java</b>.<br/>
     1 of 189 p.
 29. Кайт Том - <b>Oracle для профессионалов</b>.<br/>
