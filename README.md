@@ -1,7 +1,5 @@
 research
 ========================================================================================
-0. J.Gosling, B.Joy, G.Steele, G.Bracha, A.Buckley - <b>The Java Language Specification (Java SE 8 Edition)</b>.<br/>
-   102 of 606 p.
 0. M.Gupta - <b>OCA Java SE 7 Programmer I Certification Guide</b>.<br/>
    24 of 562 p.
 4. Christian Bauer, Gavin King - <b>Hibernate in Action</b>.<br/>
@@ -18,12 +16,6 @@ research
     1 of 239 p.
 16. John Dooley - <b>Software Development and Professional Practice</b>.<br/>
     1 of 255 p.
-18. Хассан Гома - <b>UML. Проектироваие систем реального времени, параллельных и распределенных приложений</b>.<br/>
-    1 of 699 p.
-21. David Chappel Tyler Jewell - <b>Java Web Services</b>.<br/>
-    1 of 249 p.
-25. Doug Tidwell, James Snell, Pavel Kulchenko - <b>Programming Web Services with Soap</b>.<br/>
-    1 of 225 p.
 28. Bruce Eckel - <b>Thinking in Patterns with Java</b>.<br/>
     1 of 189 p.
 29. Кайт Том - <b>Oracle для профессионалов</b>.<br/>
