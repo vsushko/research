@@ -10,8 +10,6 @@ research
     1 of 713 p. 
 11. Martin Fowler - <b>Analysis Patterns. Reusable Object Models</b>.<br/>
     1 of 361 p.
-12. Will Iverson - <b>Apache Jakarta Commons. Reusable Java Components</b>.<br/>
-    3 of 360 p.
 15. Unknown Autor - <b>Design Patterns</b>.<br/>
     1 of 239 p.
 16. John Dooley - <b>Software Development and Professional Practice</b>.<br/>
