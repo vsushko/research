@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.ibm:com.ibm.mqjms:5.3.07-13">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ibm/com.ibm.mqjms/5.3.07-13/com.ibm.mqjms-5.3.07-13.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ibm/com.ibm.mqjms/5.3.07-13/com.ibm.mqjms-5.3.07-13-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ibm/com.ibm.mqjms/5.3.07-13/com.ibm.mqjms-5.3.07-13-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
