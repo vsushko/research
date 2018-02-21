@@ -1,0 +1,11 @@
+<process name="MY_TEST_PROCESS" xmlns="http://jbpm.org/4.0/jpdl">
+    <start name="start">
+        <transition to="printHelloWorld"/>
+    </start>
+
+    <java class="ru.vsprog.jbpmtest.Printer" method="printHelloWorld" name="printHelloWorld">
+    <transition to="end"/>
+    </java>
+
+    <end name="end"/>
+</process>
