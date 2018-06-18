@@ -19,6 +19,12 @@ public class FunctionalInterfaces {
         BiConsumer<Integer, String> biConsumer =
                 (key, value) -> System.out.println("Key:" + key + " Value:" + value);
         map.forEach(biConsumer);
+
+        BiConsumer<String, String> biConsumer2 = (x, y) -> {
+            System.out.println(x);
+            System.out.println(y);
+        };
+        biConsumer2.accept("String 1", "String 2");
         // ------------------------------------------------------------------------------------
 
         // BiFunction
