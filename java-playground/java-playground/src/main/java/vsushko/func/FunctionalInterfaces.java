@@ -25,13 +25,25 @@ public class FunctionalInterfaces {
             System.out.println(y);
         };
         biConsumer2.accept("String 1", "String 2");
+        
+        BiConsumer<Integer, Integer> biConsumer3 = (i1, i2) -> System.out.println(i1 + i2);
+        BiConsumer<Integer, Integer> biConsumer4 = (i1, i2) -> System.out.println(i1 - i2);
+
+        biConsumer3.andThen(biConsumer4).accept(10, 11);
+
         // ------------------------------------------------------------------------------------
 
         // BiFunction
         // accepts two arguments and produces a result
-        BiFunction<Integer, Integer, String> biFunction =
-                (num1, num2) -> "Result: " + (num1 + num2);
+        BiFunction<Integer, Integer, String> biFunction = (num1, num2) -> "Result: " + (num1 + num2);
         System.out.println(biFunction.apply(20, 25));
+        
+        BiFunction<Integer, Integer, Integer> biFunction2 = (i1, i2) -> i1 + i2;
+        Function<Integer, Integer> function1 = (n) -> n * n;
+
+        // using andThen()
+        System.out.println(biFunction2.andThen(function1).apply(2, 4));
+        System.out.println(biFunction2.andThen(function1).apply(3, 5));
         // ------------------------------------------------------------------------------------
 
         // BinaryOperator
