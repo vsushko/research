@@ -106,7 +106,6 @@ public class FunctionalInterfaces {
         };
         consumer1.andThen(consumer2).accept(1);
 
-
         Consumer<Integer> consumerInt = i -> {
             System.out.println("Integer value = " + i);
         };
