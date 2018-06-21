@@ -8,7 +8,6 @@ import java.util.function.*;
 public class FunctionalInterfaces {
 
     public static void main(String[] args) {
-
         // BiConsumer
         Map<Integer, String> map = new HashMap<>();
         map.put(1, "A");
@@ -30,9 +29,7 @@ public class FunctionalInterfaces {
         BiConsumer<Integer, Integer> biConsumer4 = (i1, i2) -> System.out.println(i1 - i2);
 
         biConsumer3.andThen(biConsumer4).accept(10, 11);
-
         // ------------------------------------------------------------------------------------
-
         // BiFunction
         // accepts two arguments and produces a result
         BiFunction<Integer, Integer, String> biFunction = (num1, num2) -> "Result: " + (num1 + num2);
@@ -45,7 +42,6 @@ public class FunctionalInterfaces {
         System.out.println(biFunction2.andThen(function1).apply(2, 4));
         System.out.println(biFunction2.andThen(function1).apply(3, 5));
         // ------------------------------------------------------------------------------------
-
         // BinaryOperator
         // Represents an operation upon two operands of the same type, producing a result
         // of the same type as the operands
@@ -73,7 +69,6 @@ public class FunctionalInterfaces {
         System.out.println("Min: " + opMin.apply(5, 6));
         System.out.println("Min: " + opMin.apply(9, 6));
         // ------------------------------------------------------------------------------------
-
         // BiPredicate
         // Represents a predicate (boolean-valued function) of two arguments
         BiPredicate<Integer, String> condition1 = (i, s) -> i > 20;
