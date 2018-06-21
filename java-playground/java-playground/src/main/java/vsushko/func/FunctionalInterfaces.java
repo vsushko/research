@@ -76,10 +76,13 @@ public class FunctionalInterfaces {
 
         // BiPredicate
         // Represents a predicate (boolean-valued function) of two arguments
-        BiPredicate<Integer, String> condition = (i, s) -> i > 20 && s.startsWith("T");
-        System.out.println(condition.test(10, "One"));
-        System.out.println(condition.test(30, "Two"));
-        System.out.println(condition.test(30, "Three"));
+        BiPredicate<Integer, String> condition1 = (i, s) -> i > 20;
+        BiPredicate<Integer, String> condition2 = (i, s) -> s.startsWith("T");
+
+        System.out.println(condition1.and(condition2).test(10, "One"));
+        System.out.println(condition1.and(condition2).test(30, "Two"));
+        System.out.println(condition1.or(condition2).test(30, "Three"));
+        System.out.println(condition1.and(condition2).negate().test(30, "Three"));
         // ------------------------------------------------------------------------------------
 
     }
