@@ -96,6 +96,23 @@ public class FunctionalInterfaces {
         booleanSupplier = () -> "String".equals("String");
         System.out.println(booleanSupplier.getAsBoolean());
         // ------------------------------------------------------------------------------------
+        // Consumer
+        // Represents an operation that accepts a single input argument and returns no result
+        Consumer<Integer> consumer1 = i -> {
+            System.out.println(i + i);
+        };
+        Consumer<Integer> consumer2 = i -> {
+            System.out.println(i - i);
+        };
+        consumer1.andThen(consumer2).accept(1);
+
+
+        Consumer<Integer> consumerInt = i -> {
+            System.out.println("Integer value = " + i);
+        };
+        consumerInt.accept(5);
+        consumerInt.accept(8);
+        // ------------------------------------------------------------------------------------
         
     }
 
