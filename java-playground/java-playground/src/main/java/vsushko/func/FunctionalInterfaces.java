@@ -84,7 +84,19 @@ public class FunctionalInterfaces {
         System.out.println(condition1.or(condition2).test(30, "Three"));
         System.out.println(condition1.and(condition2).negate().test(30, "Three"));
         // ------------------------------------------------------------------------------------
+        // BooleanSupplier
+        // represents a supplier with boolean-valued results
+        BooleanSupplier booleanSupplier = () -> true;
+        System.out.println(booleanSupplier.getAsBoolean());
 
+        int x = 0, y= 1;
+        booleanSupplier = () -> x > y;
+        System.out.println(booleanSupplier.getAsBoolean());
+
+        booleanSupplier = () -> "String".equals("String");
+        System.out.println(booleanSupplier.getAsBoolean());
+        // ------------------------------------------------------------------------------------
+        
     }
 
 
