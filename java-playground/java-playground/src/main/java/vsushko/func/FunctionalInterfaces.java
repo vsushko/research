@@ -135,14 +135,15 @@ public class FunctionalInterfaces {
         DoubleFunction<String> doubleFunctionString = (x) -> "double value: " + x;
         System.out.println(doubleFunctionString.apply(0.123));
         // ------------------------------------------------------------------------------------
-        // DoublePredicate
+       // DoublePredicate
         // Represents a predicate (boolean-valued function) of one double-valued argument
         DoublePredicate notZero = (x) -> x == 0;
         DoublePredicate moreThanOne = (x) -> x > 1;
         DoublePredicate lessThanTen = (x) -> x < 10;
         System.out.println(notZero.negate().or(lessThanTen).and(moreThanOne).test(21.12));
         System.out.println(notZero.negate().or(lessThanTen).and(moreThanOne).test(0.12));
-        // DoublePredicate
+        // ------------------------------------------------------------------------------------
+        // DoubleSupplier
         // Represents a supplier of double-valued results
         DoubleSupplier randomSupplier = () -> Math.random() * 10000;
         System.out.println(randomSupplier.getAsDouble());
@@ -150,9 +151,19 @@ public class FunctionalInterfaces {
         double secondDouble = 7;
         DoubleSupplier divisionSupplier = () -> firstDouble / secondDouble;
         System.out.println(divisionSupplier.getAsDouble());
-        // DoublePredicate
+        // ------------------------------------------------------------------------------------
+        // DoubleToIntFunction
         // Represents a function that accepts a double-valued argument and produces an int-valued result
-        // DoubleToIntFunction doubleToIntFunction =
+        DoubleToIntFunction doubleToIntFunction = (d) -> (int) d;
+        System.out.println(doubleToIntFunction.applyAsInt(4.5));
+        System.out.println(doubleToIntFunction.applyAsInt(Double.MAX_VALUE));
+        DoubleToIntFunction doubleToIntFunction2 = (d) -> {
+            Double doubleValue = new Double(d);
+            return doubleValue.intValue();
+        };
+        System.out.println(doubleToIntFunction2.applyAsInt(45.846));
+        System.out.println(doubleToIntFunction2.applyAsInt(99.9089));
+        // ------------------------------------------------------------------------------------
     }
 
 
