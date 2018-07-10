@@ -107,7 +107,52 @@ public class FunctionalInterfaces {
         consumerInt.accept(5);
         consumerInt.accept(8);
         // ------------------------------------------------------------------------------------
-        
+        // DoubleBinaryOperator
+        // Represents an operation upon two double-valued operands and producing a double-valued result
+        DoubleBinaryOperator dBinaryOperator1 = (a, b) -> (a + b);
+        DoubleBinaryOperator dBinaryOperator2 = (a, b) -> (a - b);
+        DoubleBinaryOperator dBinaryOperator3 = (a, b) -> (a * b);
+        DoubleBinaryOperator dBinaryOperator4 = (a, b) -> (a / b);
+
+        System.out.println(dBinaryOperator1.applyAsDouble(5, 6));
+        System.out.println(dBinaryOperator2.applyAsDouble(8, -10));
+        System.out.println(dBinaryOperator3.applyAsDouble(8, 5));
+        System.out.println(dBinaryOperator4.applyAsDouble(8, 4));
+        // ------------------------------------------------------------------------------------
+        // DoubleConsumer
+        // Represents an operation that accepts a single double-valued argument and returns no result
+        DoubleConsumer doubleConsumer = (a) -> System.out.println(a);
+        // Using accept()
+        doubleConsumer.accept(4.5);
+        DoubleConsumer doubleConsumer2 = (b) -> System.out.println(b * 2);
+        // Using andThen()
+        doubleConsumer.andThen(doubleConsumer2).accept(10);
+        // ------------------------------------------------------------------------------------
+        // DoubleFunction
+        // Represents a function that accepts a double-valued argument and produces a result
+        DoubleFunction doubleFunction = (x) -> x * 2;
+        System.out.println(doubleFunction.apply(3.14));
+        DoubleFunction<String> doubleFunctionString = (x) -> "double value: " + x;
+        System.out.println(doubleFunctionString.apply(0.123));
+        // ------------------------------------------------------------------------------------
+        // DoublePredicate
+        // Represents a predicate (boolean-valued function) of one double-valued argument
+        DoublePredicate notZero = (x) -> x == 0;
+        DoublePredicate moreThanOne = (x) -> x > 1;
+        DoublePredicate lessThanTen = (x) -> x < 10;
+        System.out.println(notZero.negate().or(lessThanTen).and(moreThanOne).test(21.12));
+        System.out.println(notZero.negate().or(lessThanTen).and(moreThanOne).test(0.12));
+        // DoublePredicate
+        // Represents a supplier of double-valued results
+        DoubleSupplier randomSupplier = () -> Math.random() * 10000;
+        System.out.println(randomSupplier.getAsDouble());
+        double firstDouble = 8;
+        double secondDouble = 7;
+        DoubleSupplier divisionSupplier = () -> firstDouble / secondDouble;
+        System.out.println(divisionSupplier.getAsDouble());
+        // DoublePredicate
+        // Represents a function that accepts a double-valued argument and produces an int-valued result
+        // DoubleToIntFunction doubleToIntFunction =
     }
 
 
