@@ -1,6 +1,8 @@
 package vsushko.func;
 
+import java.util.Calendar;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
@@ -23,6 +25,29 @@ import java.util.function.IntConsumer;
 import java.util.function.IntFunction;
 import java.util.function.IntPredicate;
 import java.util.function.IntSupplier;
+import java.util.function.IntToDoubleFunction;
+import java.util.function.IntToLongFunction;
+import java.util.function.IntUnaryOperator;
+import java.util.function.LongBinaryOperator;
+import java.util.function.LongConsumer;
+import java.util.function.LongFunction;
+import java.util.function.LongPredicate;
+import java.util.function.LongSupplier;
+import java.util.function.LongToDoubleFunction;
+import java.util.function.LongToIntFunction;
+import java.util.function.LongUnaryOperator;
+import java.util.function.ObjDoubleConsumer;
+import java.util.function.ObjIntConsumer;
+import java.util.function.ObjLongConsumer;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+import java.util.function.ToDoubleBiFunction;
+import java.util.function.ToDoubleFunction;
+import java.util.function.ToIntBiFunction;
+import java.util.function.ToIntFunction;
+import java.util.function.ToLongBiFunction;
+import java.util.function.ToLongFunction;
+import java.util.function.UnaryOperator;
 
 /**
  * @author Vasiliy Sushko
@@ -373,6 +398,181 @@ public class Main {
         longConsumer1.andThen(longConsumer2).accept(10);
         System.out.println();
         longConsumer2.andThen(longConsumer1).accept(15);
-        
+        // ------------------------------------------------------------------------------------
+        // LongFunction
+        // Represents a function that accepts a long-valued argument and produces a result
+        // A function to check whether a given number is greater than zero or not.
+        LongFunction<Boolean> longFunction1 = (a) -> a > 0;
+
+        System.out.println(longFunction1.apply(50));
+        System.out.println(longFunction1.apply(-20));
+
+        // A function to add number of days in current date and return new date.
+        LongFunction<Date> addDays = (day) -> {
+            Calendar calendar = Calendar.getInstance();
+            calendar.add(Calendar.DAY_OF_MONTH, (int) day);
+            return calendar.getTime();
+        };
+
+        System.out.println(addDays.apply(5));
+        System.out.println(addDays.apply(50));
+        // ------------------------------------------------------------------------------------
+        // LongPredicate
+        // Represents a predicate (boolean-valued function) of one long-valued argument
+        LongPredicate longPredicate = (l) -> (l > 0);
+        System.out.println(longPredicate.test(50));
+        System.out.println(longPredicate.test(-10));
+
+        LongPredicate longPredicate1 = (l) -> (l > 0);
+        LongPredicate longPredicate2 = (l) -> (l == 5);
+
+        // Using and() method
+        boolean booleanValue = longPredicate1.and(longPredicate2).test(10);
+        System.out.println(booleanValue);
+
+        //Using or() method
+        booleanValue = longPredicate1.or(longPredicate2).test(10);
+        System.out.println(booleanValue);
+
+        //Using negate() method
+        booleanValue = longPredicate1.negate().test(10);
+        System.out.println(booleanValue);
+        // ------------------------------------------------------------------------------------
+        // LongSupplier
+        // Represents a supplier of long-valued results
+        LongSupplier longSupplier1 = () -> 10l;
+        System.out.println(longSupplier1.getAsLong());
+
+        LongSupplier longSupplier2 = () -> new Double(451.456).longValue();
+        System.out.println(longSupplier2.getAsLong());
+        // ------------------------------------------------------------------------------------
+        // LongToDoubleFunction
+        // Represents a function that accepts a long-valued argument and produces a double-valued result
+        LongToDoubleFunction longToDoubleFunction1 = l -> l / 9.0;
+        System.out.println(longToDoubleFunction1.applyAsDouble(50));
+
+        LongToDoubleFunction longToDoubleFunction2 = l -> l * 37.45;
+        System.out.println(longToDoubleFunction2.applyAsDouble(15));
+        // ------------------------------------------------------------------------------------
+        // LongToIntFunction
+        // Represents a function that accepts a long-valued argument and produces an int-valued result
+        LongToIntFunction longToIntFunction1 = (l) -> (int) l;
+        System.out.println(longToIntFunction1.applyAsInt(1000L));
+        System.out.println(longToIntFunction1.applyAsInt(-45454L));
+
+        LongToIntFunction longToIntFunction2 = (l) -> String.valueOf(l).length();
+        System.out.println(longToIntFunction2.applyAsInt(454545L));
+        System.out.println(longToIntFunction2.applyAsInt(Long.MAX_VALUE));
+        // ------------------------------------------------------------------------------------
+        // LongUnaryOperator
+        // Represents a function that accepts a long-valued argument and produces an int-valued result
+        LongUnaryOperator longUnaryOperator = (l) -> l * l;
+        System.out.println(longUnaryOperator.applyAsLong(45L));
+        System.out.println(longUnaryOperator.applyAsLong(100L));
+
+        LongUnaryOperator longUnaryOperator1 = (l) -> l + 10;
+        LongUnaryOperator longUnaryOperator2 = (l) -> l * 2;
+
+        // Using default method andThen()
+        System.out.println(longUnaryOperator1.andThen(longUnaryOperator2).applyAsLong(10));
+        System.out.println(longUnaryOperator2.andThen(longUnaryOperator1).applyAsLong(10));
+
+        //Using default method compose()
+        System.out.println(longUnaryOperator1.compose(longUnaryOperator2).applyAsLong(10));
+        System.out.println(longUnaryOperator2.compose(longUnaryOperator1).applyAsLong(10));
+        // ------------------------------------------------------------------------------------
+        // ObjDoubleConsumer
+        // Represents an operation that accepts an object-valued and a double-valued argument, and returns no result
+        ObjDoubleConsumer<String> objDoubleConsumer = (x, y) -> System.out.println(x + " " + y);
+        // Example of accept
+        objDoubleConsumer.accept("Interface", 2.00);
+        // ------------------------------------------------------------------------------------
+        // ObjIntConsumer
+        // Represents an operation that accepts an object-valued and a int-valued argument, and returns no result
+        ObjIntConsumer<String> objIntConsumer = (t, i) -> System.out.println(t + i);
+        objIntConsumer.accept("ObjIntConsumer = ", 8);
+        // ------------------------------------------------------------------------------------
+        // ObjLongConsumer
+        // Represents an operation that accepts an object-valued and a long-valued argument, and returns no result
+        ObjLongConsumer<String> objLongConsumer = (t, i) -> System.out.println(t + i);
+        objLongConsumer.accept("ObjLongConsumer = ", 8L);
+        // ------------------------------------------------------------------------------------
+        // Predicate
+        // Represents a predicate (boolean-valued function) of one argument
+        // Predicate String
+        Predicate<String> predicateString = s -> s.equals("Hello");
+        System.out.println(predicateString.test("Hello"));
+        System.out.println(predicateString.test("Hello World"));
+
+        // Predicate integer
+        Predicate<Integer> predicateInt = i -> i > 0;
+        System.out.println(predicateInt.test(5));
+        System.out.println(predicateInt.test(-5));
+
+        Predicate<String> predicate = s -> s.equals("Hello");
+
+        // AND logical operation
+        Predicate<String> predicateAnd = predicate.and(s -> s.length() > 4);
+        System.out.println(predicateAnd.test("Hello"));
+        // OR logical operation
+        Predicate<String> predicateOr = predicate.or(s -> s.length() == 10);
+        System.out.println(predicateOr.test("Hello"));
+        // NEGATE logical operation
+        Predicate<String> predicateNegate = predicate.negate();
+        System.out.println(predicateNegate.test("Hello"));
+        // ------------------------------------------------------------------------------------
+        // Supplier
+        // Represents a supplier of results
+        Supplier<String> supplierStr = () -> "Hello world.";
+        Supplier<Number> supplierNum = () -> 40;
+
+        System.out.println(supplierStr.get());
+        System.out.println(supplierNum.get());
+        // ------------------------------------------------------------------------------------
+        // ToDoubleBiFunction
+        // Represents a function that accepts two arguments and produces a double-valued result
+        ToDoubleBiFunction<Integer, Long> toDoubleBiFunction = (x, y) -> Math.sin(x) + Math.sin(y);
+        System.out.println(toDoubleBiFunction.applyAsDouble(Integer.MAX_VALUE, Long.MAX_VALUE));
+        // ------------------------------------------------------------------------------------
+        // ToDoubleFunction
+        // Represents a function that produces a double-valued result
+        ToDoubleFunction<Integer> toDoubleFunction = (x) -> Math.sin(x);
+        System.out.println(toDoubleFunction.applyAsDouble(Integer.MAX_VALUE));
+        // ------------------------------------------------------------------------------------
+        // ToIntBiFunction
+        // Represents a function that accepts two arguments and produces an int-valued result
+        ToIntBiFunction<String, String> toIntBiFunction = (x, y) -> Integer.parseInt(x) + Integer.parseInt(x);
+        System.out.println(toIntBiFunction.applyAsInt("2", "3"));
+        // ------------------------------------------------------------------------------------
+        // ToIntFunction
+        // Represents a function that produces an int-valued result
+        ToIntFunction<String> toIntFunction = (x) -> Integer.parseInt(x);
+        System.out.println(toIntFunction.applyAsInt("2"));
+        // ------------------------------------------------------------------------------------
+        // ToLongBiFunction
+        // Represents a function that accepts two arguments and produces a long-valued result
+        ToLongBiFunction<String, String> toLongBiFunction = (x, y) -> Long.parseLong(x) + Long.parseLong(y);
+        System.out.println(toLongBiFunction.applyAsLong("2", "2"));
+        // ------------------------------------------------------------------------------------
+        // ToLongFunction
+        // Represents a function that produces a long-valued result
+        ToLongFunction<String> i = (x) -> Long.parseLong(x);
+        System.out.println(i.applyAsLong("2"));
+        // ------------------------------------------------------------------------------------
+        // UnaryOperator
+        // Represents an operation on a single operand that produces a result of the same type as its operand
+        UnaryOperator<Integer> unaryOperator = t -> t * 2;
+
+        System.out.println(unaryOperator.apply(5));
+        System.out.println(unaryOperator.apply(10));
+        System.out.println(unaryOperator.apply(15));
+
+        UnaryOperator<Integer> unaryOperator1 = t -> t + 10;
+        UnaryOperator<Integer> unaryOperator2 = t -> t * 10;
+
+        // Using andThen()
+        System.out.println(unaryOperator1.andThen(unaryOperator2).apply(5));
+        // Using compose()
+        System.out.println(unaryOperator1.compose(unaryOperator2).apply(5));
     }
 }
