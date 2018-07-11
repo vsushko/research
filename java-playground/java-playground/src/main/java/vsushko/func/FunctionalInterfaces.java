@@ -308,24 +308,71 @@ public class Main {
         System.out.println(supplier2.getAsInt());
         // ------------------------------------------------------------------------------------
         // IntToDoubleFunction
-        //
+        // Represents a function that accepts an int-valued argument and produces a double-valued result
+        IntToDoubleFunction intToDoubleFunction = (a) -> (a / 3d);
 
+        System.out.println(intToDoubleFunction.applyAsDouble(9));
+        System.out.println(intToDoubleFunction.applyAsDouble(22));
         // ------------------------------------------------------------------------------------
         // IntToLongFunction
-        //
+        // Represents a function that accepts an int-valued argument and produces a long-valued result
+        IntToLongFunction intToLongFunction = a -> (long) a;
+        System.out.println(intToLongFunction.applyAsLong(45));
 
+        IntToLongFunction intToLongFunction2 = a -> (long) (a * 10);
+        System.out.println(intToLongFunction2.applyAsLong(50));
         // ------------------------------------------------------------------------------------
         // IntUnaryOperator
-        //
+        // Represents an operation on a single int-valued operand that produces an int-valued result
+        IntUnaryOperator intUnaryOperator = a -> a * 10;
 
+        System.out.println(intUnaryOperator.applyAsInt(10));
+        System.out.println(intUnaryOperator.applyAsInt(12));
+
+        IntUnaryOperator intUnaryOperator1 = a -> a * 10;
+        IntUnaryOperator intUnaryOperator2 = a -> a * a;
+
+        // Using andThen()
+        System.out.println(intUnaryOperator1.andThen(intUnaryOperator2).applyAsInt(10));
+        // Using compose()
+        System.out.println(intUnaryOperator1.compose(intUnaryOperator2).applyAsInt(10));
         // ------------------------------------------------------------------------------------
         // LongBinaryOperator
-        //
+        // Represents an operation upon two long-valued operands and producing a long-valued result
+        LongBinaryOperator addition = (a, b) -> a + b;
+        LongBinaryOperator subtraction = (a, b) -> a - b;
+        LongBinaryOperator multiplication = (a, b) -> a * b;
+        LongBinaryOperator division = (a, b) -> a / b;
 
+        System.out.println(addition.applyAsLong(5, 6));
+        System.out.println(subtraction.applyAsLong(10, 6));
+        System.out.println(multiplication.applyAsLong(8, 3));
+        System.out.println(division.applyAsLong(8, 4));
         // ------------------------------------------------------------------------------------
         // LongConsumer
-        //
+        // Represents an operation that accepts a single long-valued argument and returns no result
+        LongConsumer consumer = (a) -> {
+            long b = a * a;
+            System.out.println(b);
+        };
+        consumer.accept(10);
+        consumer.accept(100);
+        consumer.accept(1000);
 
+        LongConsumer longConsumer1 = a -> {
+            long square = a * a;
+            System.out.println("Square=" + square);
+        };
+
+        LongConsumer longConsumer2 = a -> {
+            long cube = a * a * a;
+            System.out.println("Cube=" + cube);
+        };
+
+        // Using andThen() method
+        longConsumer1.andThen(longConsumer2).accept(10);
+        System.out.println();
+        longConsumer2.andThen(longConsumer1).accept(15);
         // ------------------------------------------------------------------------------------
         // LongFunction
         //
