@@ -50,9 +50,9 @@ import java.util.function.ToLongFunction;
 import java.util.function.UnaryOperator;
 
 /**
- * @author Vasiliy Sushko
+ * @author vsushko
  */
-public class Main {
+public class FunctionalInterfaces {
 
     public static void main(String[] args) {
         // BiConsumer
