@@ -18,7 +18,7 @@ public class ThreadWithState implements Runnable {
         } catch (InterruptedException ex) {
             ex.printStackTrace();
         }
-        System.out.println("State of thread1 while it called join() method on thread2 -"+
+        System.out.println("State of thread1 while it called join() method on thread2 - "+
                 ThreadWithStateTest.thread1.getState());
         try {
             Thread.sleep(1500);

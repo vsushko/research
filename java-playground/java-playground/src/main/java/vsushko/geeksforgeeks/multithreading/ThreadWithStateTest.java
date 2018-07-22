@@ -8,7 +8,7 @@ public class ThreadWithStateTest implements Runnable {
     @Override
     public void run() {
         ThreadWithState myThread = new ThreadWithState();
-        Thread thread2 = new Thread();
+        Thread thread2 = new Thread(myThread);
 
         // thread1 created and is currently in the NEW state.
         System.out.println("State of thread2 after creating it - " + thread2.getState());
@@ -45,7 +45,5 @@ public class ThreadWithStateTest implements Runnable {
 
         // thread1 moved to Runnable state
         System.out.println("State of thread1 after calling .start() method on it - " + thread1.getState());
-
-
     }
 }
