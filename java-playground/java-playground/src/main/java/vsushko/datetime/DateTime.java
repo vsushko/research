@@ -4,6 +4,9 @@ import java.time.*;
 import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
 
+import static java.time.temporal.TemporalAdjusters.lastDayOfMonth;
+import static java.time.temporal.TemporalAdjusters.nextOrSame;
+
 public class DateTime {
 
     public static void main(String[] args) {
@@ -94,5 +97,16 @@ public class DateTime {
         System.out.println(threeMinutes1);
         Duration threeMinutes2 = Duration.of(3, ChronoUnit.MINUTES);
         System.out.println(threeMinutes2);
+
+        // Using the predefined TemporalAdjusters
+        // method with() creates a copy of this temporal object with part of the state changed
+        LocalDate localDate1 = LocalDate.of(2014, 3, 18);
+        System.out.println(localDate1);
+        // creates a new date set to the first occurrence of the specified day of week
+        LocalDate localDate2 = localDate1.with(nextOrSame(DayOfWeek.SUNDAY));
+        System.out.println(localDate2);
+        // creates a new date set to the last day of the current month
+        LocalDate localDate3 = localDate2.with(lastDayOfMonth());
+        System.out.println(localDate3);
     }
 }
