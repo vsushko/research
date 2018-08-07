@@ -29,6 +29,5 @@ public class SleepDemo implements Runnable {
         Thread t2 = new Thread(new SleepDemo());
         // call run() function
         t2.start();
-
     }
 }
