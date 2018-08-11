@@ -7,13 +7,13 @@ import java.util.concurrent.Executors;
 
 /**
  * Basic example of thread pool executor - FixedThreadPool
- *
+ * <p>
  * Steps:
  * 1. Create a task (Runnable Object) to execute
  * 2. Create Executor Pool using Executors
  * 3. Pass tasks to Executor Pool
  * 4. Shutdown the Executor Pool
- *
+ * <p>
  * N*(1+ W/S)
  * N - number of processors
  * W - the ratio of waiting time
@@ -72,8 +72,8 @@ class Task implements Runnable {
                     Date d = new Date();
                     SimpleDateFormat ft = new SimpleDateFormat("hh:mm:ss");
                     // prints the execution time for every task
-                    System.out.println("Executing Time for task name - "+
-                            name +" = " +ft.format(d));
+                    System.out.println("Executing Time for task name - " +
+                            name + " = " + ft.format(d));
                 }
                 Thread.sleep(1000);
             }
