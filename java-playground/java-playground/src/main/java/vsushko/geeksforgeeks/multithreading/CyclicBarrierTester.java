@@ -16,9 +16,9 @@ public class CyclicBarrierTester implements Runnable {
 
     public static void main(String[] args) {
         // parent thread
-        CyclicBarrierTester example = new CyclicBarrierTester();
+        CyclicBarrierTester barrier = new CyclicBarrierTester();
 
-        Thread t1 = new Thread(example);
+        Thread t1 = new Thread(barrier);
         t1.start();
     }
 
