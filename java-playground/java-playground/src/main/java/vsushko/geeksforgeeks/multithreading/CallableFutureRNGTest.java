@@ -10,8 +10,7 @@ import java.util.concurrent.FutureTask;
  *
  * @author vsushko
  */
-
-public class CallableFutureTest {
+public class CallableFutureRNGTest {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         // FutureTask is a concrete class that
