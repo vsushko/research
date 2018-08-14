@@ -26,6 +26,7 @@ class PingPongThread extends Thread {
     @Override
     public void run() {
         while (true) {
+            // put a reference to an object that will serve as the lock
             synchronized (printer) {
                 printer.printString(s);
                 printer.notify();
