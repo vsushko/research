@@ -1,7 +1,7 @@
 package vsushko.geeksforgeeks.multithreading;
 
 /**
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class MyThreadWithYield extends Thread {
 

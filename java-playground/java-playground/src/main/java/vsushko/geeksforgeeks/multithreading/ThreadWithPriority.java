@@ -3,7 +3,7 @@ package vsushko.geeksforgeeks.multithreading;
 /**
  * Java program to demonstrate getPriority() and setPriority()
  *
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class ThreadWithPriority extends Thread {
 

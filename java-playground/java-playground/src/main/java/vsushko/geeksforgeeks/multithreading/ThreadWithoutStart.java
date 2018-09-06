@@ -4,7 +4,7 @@ package vsushko.geeksforgeeks.multithreading;
  * Java code to see that all threads are pushed on same stack if we use run()
  * instead of start().
  *
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class ThreadWithoutStart extends Thread {
 

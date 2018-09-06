@@ -4,7 +4,7 @@ package vsushko.geeksforgeeks.multithreading;
  * Example illustrates multiple threads are executing
  * on the same Object at same time without synchronization
  *
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class MethodSynchronization {
 

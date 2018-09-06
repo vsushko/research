@@ -19,7 +19,7 @@ import java.util.concurrent.Executors;
  * W - the ratio of waiting time
  * S - service time for a request
  *
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class ThreadPoolExample {
     private static final int MAX_T = 3;

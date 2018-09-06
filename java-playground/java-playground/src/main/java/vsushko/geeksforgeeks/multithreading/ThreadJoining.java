@@ -3,7 +3,7 @@ package vsushko.geeksforgeeks.multithreading;
 /**
  * Java program to explain the concept of joining a thread
  *
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class ThreadJoining extends Thread {
 

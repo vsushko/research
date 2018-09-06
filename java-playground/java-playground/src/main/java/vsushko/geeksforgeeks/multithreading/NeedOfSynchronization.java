@@ -4,7 +4,7 @@ package vsushko.geeksforgeeks.multithreading;
 /**
  * Java program to illustrate need of Synchronization
  *
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class NeedOfSynchronization {
 

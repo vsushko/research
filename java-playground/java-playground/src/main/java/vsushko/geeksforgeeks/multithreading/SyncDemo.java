@@ -3,7 +3,7 @@ package vsushko.geeksforgeeks.multithreading;
 /**
  * A Java program to demonstrate working of synchronized
  *
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class SyncDemo {
 

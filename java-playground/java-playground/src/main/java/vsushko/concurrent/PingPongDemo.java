@@ -1,7 +1,7 @@
 package vsushko.concurrent;
 
 /**
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class PingPongDemo {
 

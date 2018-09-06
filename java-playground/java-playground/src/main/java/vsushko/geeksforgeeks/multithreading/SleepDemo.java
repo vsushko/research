@@ -3,7 +3,7 @@ package vsushko.geeksforgeeks.multithreading;
 /**
  * Ilustrates sleep() method in Java
  *
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class SleepDemo implements Runnable {
 

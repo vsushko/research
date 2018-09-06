@@ -2,7 +2,7 @@ package vsushko.geeksforgeeks.multithreading;
 
 /** Java program to demonstrate that a child thread gets same priority as parent
  *
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class ChildAndParentThreadPriority extends Thread {
 

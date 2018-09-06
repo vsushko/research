@@ -3,7 +3,7 @@ package vsushko.concurrent;
 import java.util.concurrent.Executor;
 
 /**
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class ExecutorExample {
 

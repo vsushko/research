@@ -16,7 +16,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class Streams {
 

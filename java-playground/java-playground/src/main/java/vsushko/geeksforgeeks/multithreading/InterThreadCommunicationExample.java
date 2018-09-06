@@ -8,7 +8,7 @@ import java.util.Scanner;
  * To avoid polling java uses three methods: wait(), notify() and notifyAll()
  * They must be used within a synchronized block only
  *
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class InterThreadCommunicationExample {
 

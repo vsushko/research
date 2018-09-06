@@ -4,7 +4,7 @@ package vsushko.geeksforgeeks.multithreading;
  * Java program to illustrate how to set the name of the thread
  * at time of thread creation
  *
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class ThreadNaming extends Thread {
     ThreadNaming(String name) {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class BlockSynchronization {
 

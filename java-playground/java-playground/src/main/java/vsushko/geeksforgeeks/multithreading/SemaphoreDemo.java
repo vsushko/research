@@ -8,7 +8,7 @@ import java.util.concurrent.Semaphore;
  * A semaphore controls access to a shared resource
  * through the use of a counter
  *
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class SemaphoreDemo {
 

@@ -5,7 +5,7 @@ import java.util.LinkedList;
 /**
  * Java program to implement solution of producer consumer problem
  *
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class ProducerConsumerProblem {
 

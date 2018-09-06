@@ -3,7 +3,7 @@ package vsushko.geeksforgeeks.multithreading;
 /**
  * Java program to demonstrate method calls of Thread class
  *
- * @author Vasiliy Sushko
+ * @author vsushko
  */
 public class ThreadClassMethods implements Runnable {
     @Override
