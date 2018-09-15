@@ -1,7 +1,11 @@
 package vsushko.algorithms.searching;
 
-// Java code for linearly search x in arr[].  If x
-// is present  then return its  location,  otherwise return -1
+/**
+ * Java code for linearly search x in arr[].  If x
+ * is present  then return its  location,  otherwise return -1
+ *
+ * @author vsushko
+ */
 public class LinearSearch {
     // This function returns index of element x in arr[]
     static int search(int arr[], int n, int x) {
