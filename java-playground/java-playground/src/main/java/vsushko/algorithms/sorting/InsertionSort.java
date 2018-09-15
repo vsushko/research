@@ -14,7 +14,7 @@ public class InsertionSort {
     }
 
     // Function to sort array using insertion sort
-    private static void sort(int arr[]) {
+    public static void sort(int arr[]) {
         for (int i = 1; i < arr.length; ++i) {
             int key = arr[i];
             int j = i - 1;
