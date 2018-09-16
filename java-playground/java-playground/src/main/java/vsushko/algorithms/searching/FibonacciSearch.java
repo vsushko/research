@@ -1,5 +1,8 @@
 package vsushko.algorithms.searching;
 
+/**
+ * @author vsushko
+ */
 public class FibonacciSearch {
 
     public static void main(String[] args) {
