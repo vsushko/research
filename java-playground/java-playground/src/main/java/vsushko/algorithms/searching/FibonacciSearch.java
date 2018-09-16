@@ -62,8 +62,9 @@ public class FibonacciSearch {
         }
 
         // comparing the last element with x
-        if (fibMMm1 == 1 && arr[offset + 1] == x)
+        if (fibMMm1 == 1 && arr[offset + 1] == x) {
             return offset + 1;
+        }
 
         // element not found. return -1
         return -1;
