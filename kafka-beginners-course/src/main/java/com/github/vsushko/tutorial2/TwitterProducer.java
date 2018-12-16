@@ -11,10 +11,15 @@ import com.twitter.hbc.core.processor.StringDelimitedProcessor;
 import com.twitter.hbc.httpclient.auth.Authentication;
 import com.twitter.hbc.httpclient.auth.OAuth1;
 import org.apache.commons.text.StringEscapeUtils;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.common.serialization.StringSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
+import java.util.Properties;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
@@ -30,8 +35,9 @@ public class TwitterProducer {
     private String token = "378129048-h1tXU9hfubtI6hHZnL0spB3d148cqhT3oBqJ5Csg";
     private String secret = "cI0NgkvbbP9Nir1RtrS0R9Ki70RIiBIzmA2ExGUnZyYmj";
 
-    public TwitterProducer() {
+    private List<String> terms = Lists.newArrayList("kafka");
 
+    public TwitterProducer() {
     }
 
     public static void main(String[] args) {
@@ -48,6 +54,20 @@ public class TwitterProducer {
         // attempts to establish a connection
         client.connect();
 
+        // create a kafka producer
+        KafkaProducer<String, String> producer = createKafkaProducer();
+
+        // Add a shutdown hook
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            logger.info("stopping application...");
+            logger.info("shutting down client from twitter...");
+            client.stop();
+            logger.info("closing producer...");
+            producer.close();
+            logger.info("done!");
+        }));
+
+        // loop to send tweets to kafka
         // on a different thread, or multiple different threads....
         while (!client.isDone()) {
             String msg = null;
@@ -58,17 +78,40 @@ public class TwitterProducer {
             }
 
             if (msg != null) {
-                logger.info(StringEscapeUtils.unescapeJava(msg));
+                String unescapedMsg = StringEscapeUtils.unescapeJava(msg);
+                logger.info(unescapedMsg);
+                producer.send(new ProducerRecord<>("twitter_tweets", null, unescapedMsg), (recordMetadata, e) -> {
+                    if (e != null) {
+                        logger.error("Something bad happened", e);
+                    }
+                });
             }
         }
         logger.info("End of application");
+    }
+
+    private KafkaProducer<String, String> createKafkaProducer() {
+        String bootstrapServers = "127.0.0.1:9092";
+
+        // create Producer properties
+        Properties properties = new Properties();
+
+        properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
+
+        // specifying what of values will send to kafka
+        // and how it is to be serialized
+        properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+        properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+
+        // create the producer
+        return new KafkaProducer<>(properties);
     }
 
     private Client createTwitterClient(BlockingQueue<String> msgQueue) {
         // declare the host you want to connect to, the endpoint, and authentication
         Hosts hosts = new HttpHosts(Constants.STREAM_HOST);
         StatusesFilterEndpoint endpoint = new StatusesFilterEndpoint();
-        List<String> terms = Lists.newArrayList("java", "api");
+
         endpoint.trackTerms(terms);
 
         // These secrets should be read from a config file
