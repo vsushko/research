@@ -1,4 +1,4 @@
-package com.github.vsushko.tutorial2;
+package com.github.vsushko;
 
 import com.google.common.collect.Lists;
 import com.twitter.hbc.ClientBuilder;
@@ -28,6 +28,7 @@ import java.util.concurrent.TimeUnit;
  * @author vsushko
  */
 public class TwitterProducer {
+    private static final String BOOTSTRAP_SERVERS = "127.0.0.1:9092";
     private Logger logger = LoggerFactory.getLogger(TwitterProducer.class.getName());
 
     private String consumerKey = "nSyj44g5xvs0YRvIwRwqLQ";
@@ -35,7 +36,7 @@ public class TwitterProducer {
     private String token = "378129048-h1tXU9hfubtI6hHZnL0spB3d148cqhT3oBqJ5Csg";
     private String secret = "cI0NgkvbbP9Nir1RtrS0R9Ki70RIiBIzmA2ExGUnZyYmj";
 
-    private List<String> terms = Lists.newArrayList("kafka");
+    private List<String> terms = Lists.newArrayList("bincoin", "usa", "politics", "sport", "soccer");
 
     public TwitterProducer() {
     }
@@ -91,17 +92,27 @@ public class TwitterProducer {
     }
 
     private KafkaProducer<String, String> createKafkaProducer() {
-        String bootstrapServers = "127.0.0.1:9092";
-
         // create Producer properties
         Properties properties = new Properties();
 
-        properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
+        properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
 
         // specifying what of values will send to kafka
         // and how it is to be serialized
         properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+
+        // create safe Producer
+        properties.setProperty(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, "true");
+        properties.setProperty(ProducerConfig.ACKS_CONFIG, "all");
+        // kafka 2.0 >= 1.1 so we can keep this as 5. Use 1 otherwise.
+        properties.setProperty(ProducerConfig.RETRIES_CONFIG, Integer.toString(Integer.MAX_VALUE));
+
+        // high throughput producer (at the expense of a bit of latency and CPU usage)
+        properties.setProperty(ProducerConfig.COMPRESSION_TYPE_CONFIG, "snappy");
+        properties.setProperty(ProducerConfig.LINGER_MS_CONFIG, "20");
+        // 32 KB batch size
+        properties.setProperty(ProducerConfig.BATCH_SIZE_CONFIG, Integer.toString((32 * 1024)));
 
         // create the producer
         return new KafkaProducer<>(properties);

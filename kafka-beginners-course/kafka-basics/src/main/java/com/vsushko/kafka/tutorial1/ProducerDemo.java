@@ -1,4 +1,4 @@
-package com.github.vsushko.tutorial1;
+package com.vsushko.kafka.tutorial1;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
