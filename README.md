@@ -48,6 +48,10 @@ JavaScript:<br/>
 17. Andrea Giammarchi - <b>JavaScript glossary on demand</b>.<br/>
 18. Marijn Haverbeke - <b>Eloquent Javascript</b>.<br/>
 
+https://www.edx.org/course/artificial-intelligence-ai-columbiax-csmm-101x-2
+https://ru.coursera.org/learn/machine-learning
+https://course.fast.ai/
+
 Courses:<br/>
 [CodeEval](https://www.codeeval.com)<br/>
 [Coderbyte](https://coderbyte.com/challenges#easyChals)<br/>
