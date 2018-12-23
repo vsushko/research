@@ -10,7 +10,6 @@ import com.twitter.hbc.core.endpoint.StatusesFilterEndpoint;
 import com.twitter.hbc.core.processor.StringDelimitedProcessor;
 import com.twitter.hbc.httpclient.auth.Authentication;
 import com.twitter.hbc.httpclient.auth.OAuth1;
-import org.apache.commons.text.StringEscapeUtils;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -79,9 +78,9 @@ public class TwitterProducer {
             }
 
             if (msg != null) {
-                String unescapedMsg = StringEscapeUtils.unescapeJava(msg);
-                logger.info(unescapedMsg);
-                producer.send(new ProducerRecord<>("twitter_tweets", null, unescapedMsg), (recordMetadata, e) -> {
+                // String unescapedMsg = StringEscapeUtils.unescapeJava(msg);
+                logger.info(msg);
+                producer.send(new ProducerRecord<>("twitter_tweets", null, msg), (recordMetadata, e) -> {
                     if (e != null) {
                         logger.error("Something bad happened", e);
                     }
