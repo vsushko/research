@@ -61,3 +61,4 @@ Courses:<br/>
 [egghead](https://egghead.io)<br/>
 [Khan Academy](https://www.khanacademy.org/computing/computer-programming)<br/>
 [treehouse](https://teamtreehouse.com/library/topic:javascript)<br/>
+https://www.udacity.com/course/intro-to-statistics--st101
