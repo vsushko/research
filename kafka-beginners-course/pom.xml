@@ -25,6 +25,7 @@
         <module>kafka-basics</module>
         <module>kafka-consumer-elasticsearch</module>
         <module>kafka-connect</module>
+        <module>kafka-streams-filter-tweets</module>
     </modules>
 
     <name>kafka-beginners-course</name>
