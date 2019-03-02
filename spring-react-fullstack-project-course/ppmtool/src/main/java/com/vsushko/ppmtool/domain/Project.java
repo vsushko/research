@@ -2,11 +2,14 @@ package com.vsushko.ppmtool.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.validation.constraints.NotBlank;
@@ -46,6 +49,10 @@ public class Project {
     @JsonFormat(pattern = "yyyy-mm-dd")
     private Date updated_at;
 
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "project")
+    //
+    private Backlog backlog;
+
     public Project() {
     }
 
@@ -59,115 +66,75 @@ public class Project {
         this.updated_at = new Date();
     }
 
-    /**
-     * @return the {@link #id}
-     */
     public Long getId() {
         return id;
     }
 
-    /**
-     * @param id the {@link #id}  to set
-     */
     public void setId(Long id) {
         this.id = id;
     }
 
-    /**
-     * @return the {@link #projectName}
-     */
     public String getProjectName() {
         return projectName;
     }
 
-    /**
-     * @param projectName the {@link #projectName}  to set
-     */
     public void setProjectName(String projectName) {
         this.projectName = projectName;
     }
 
-    /**
-     * @return the {@link #projectIdentifier}
-     */
     public String getProjectIdentifier() {
         return projectIdentifier;
     }
 
-    /**
-     * @param projectIdentifier the {@link #projectIdentifier}  to set
-     */
     public void setProjectIdentifier(String projectIdentifier) {
         this.projectIdentifier = projectIdentifier;
     }
 
-    /**
-     * @return the {@link #description}
-     */
     public String getDescription() {
         return description;
     }
 
-    /**
-     * @param description the {@link #description}  to set
-     */
     public void setDescription(String description) {
         this.description = description;
     }
 
-    /**
-     * @return the {@link #start_date}
-     */
     public Date getStart_date() {
         return start_date;
     }
 
-    /**
-     * @param start_date the {@link #start_date}  to set
-     */
     public void setStart_date(Date start_date) {
         this.start_date = start_date;
     }
 
-    /**
-     * @return the {@link #end_date}
-     */
     public Date getEnd_date() {
         return end_date;
     }
 
-    /**
-     * @param end_date the {@link #end_date}  to set
-     */
     public void setEnd_date(Date end_date) {
         this.end_date = end_date;
     }
 
-    /**
-     * @return the {@link #created_at}
-     */
     public Date getCreated_at() {
         return created_at;
     }
 
-    /**
-     * @param created_at the {@link #created_at}  to set
-     */
     public void setCreated_at(Date created_at) {
         this.created_at = created_at;
     }
 
-    /**
-     * @return the {@link #updated_at}
-     */
     public Date getUpdated_at() {
         return updated_at;
     }
 
-    /**
-     * @param updated_at the {@link #updated_at}  to set
-     */
     public void setUpdated_at(Date updated_at) {
         this.updated_at = updated_at;
+    }
+
+    public Backlog getBacklog() {
+        return backlog;
+    }
+
+    public void setBacklog(Backlog backlog) {
+        this.backlog = backlog;
     }
 }
