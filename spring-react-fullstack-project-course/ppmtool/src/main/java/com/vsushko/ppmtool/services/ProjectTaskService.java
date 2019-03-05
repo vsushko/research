@@ -48,7 +48,7 @@ public class ProjectTaskService {
 
             // initial priority
             // in the future we need to handle the form
-            if (projectTask.getPriority() == null) {
+            if (projectTask.getPriority() == 0 || projectTask.getPriority() == null) {
                 projectTask.setPriority(3);
             }
 
