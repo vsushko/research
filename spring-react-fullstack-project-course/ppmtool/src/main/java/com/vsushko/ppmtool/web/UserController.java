@@ -67,7 +67,7 @@ public class UserController {
         if (errorMap != null) {
             return errorMap;
         }
-        
+
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         loginRequest.getUsername(),
