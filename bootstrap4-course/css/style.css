@@ -1,7 +1,24 @@
+body,
+html {
+  height: 100%;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+@media (max-width: 768px) {
+  #header {
+    text-align: center;
+  }
+  #social {
+      text-align: center;
+  }
+  #social hr {
+      margin: 8% auto;
+  }
+}
+
 .navbar {
   background-color: rgba(21, 31, 33, 0.5);
   border-bottom: 1px solid #dedede;
-  font-family: "Alegreya Sans", sans-serif;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -14,4 +31,61 @@
 
 .navbar-toggler-icon {
   color: #fff;
+}
+
+/* HEADER */
+#header {
+  background: url(../img/stars-bg.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#header img {
+  padding: 0 0 20px 0;
+  width: 80%;
+}
+
+#header .header-right {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#header .fa {
+  margin: 5% 0;
+}
+
+#header a .fa {
+  color: #fff;
+}
+
+#header a .fa:hover {
+  color: #ccc;
+}
+
+/* SOCIAL */
+
+#social {
+  padding:4.25rem 0;
+}
+
+#social .fa {
+    font-size:1.5em;
+    color:#be2835;
+    border: 2px solid #be2835;
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    text-align: center;
+    padding: 30% 0;
+    margin-top: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+#social .fa:hover {
+    color: #fff;
+    background: #be2835;
 }
