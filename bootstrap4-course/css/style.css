@@ -9,10 +9,16 @@ html {
     text-align: center;
   }
   #social {
-      text-align: center;
+    text-align: center;
   }
-  #social hr {
-      margin: 8% auto;
+  #social hr, #who hr {
+    margin: 8% auto;
+  }
+  #who {
+    text-align: center;
+  }
+  #who img {
+    margin-top: 15%;
   }
 }
 
@@ -69,23 +75,41 @@ html {
 /* SOCIAL */
 
 #social {
-  padding:4.25rem 0;
+  padding: 4.25rem 0;
 }
 
 #social .fa {
-    font-size:1.5em;
-    color:#be2835;
-    border: 2px solid #be2835;
-    width: 60px;
-    height: 60px;
-    border-radius: 30%;
-    text-align: center;
-    padding: 30% 0;
-    margin-top: 10px;
-    transition: all 0.4s ease-in-out;
+  font-size: 1.5em;
+  color: #be2835;
+  border: 2px solid #be2835;
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+  text-align: center;
+  padding: 30% 0;
+  margin-top: 10px;
+  transition: all 0.4s ease-in-out;
 }
 
 #social .fa:hover {
-    color: #fff;
-    background: #be2835;
+  color: #fff;
+  background: #be2835;
+}
+
+/* WHO */
+#who {
+  padding: 5rem 0;
+  background-color: #f6f6ff;
+}
+
+#who .btn-who {
+  background-color: #be2835;
+  color: #fff;
+  width: 50%;
+}
+
+#who .btn-who:hover {
+  background-color: transparent;
+  border: 1px solid #be2835;
+  color: #be2835;
 }
