@@ -17,7 +17,7 @@ html {
     text-align: center;
   }
   #header img {
-    margin: 20% auto;
+    margin: 0 auto;
   }
   #social {
     text-align: center;
@@ -31,9 +31,6 @@ html {
   }
   #who img {
     margin-top: 15%;
-  }
-  #footer {
-    text-align: center;
   }
 }
 
@@ -157,4 +154,16 @@ html {
 #work .work-img .img-overlay:hover {
   opacity: 1;
   z-index: 1;
+}
+
+/*  WHY */
+
+#why {
+  padding: 5rem 0;
+  background-color: #f6f6f6;
+}
+
+#why .fa {
+  color: #be2835;
+  padding: 15px 0;
 }
