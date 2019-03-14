@@ -4,14 +4,26 @@ html {
   font-family: "Alegreya Sans", sans-serif;
 }
 
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.card {
+  margin-bottom: 15px;
+}
+
 @media (max-width: 768px) {
   #header {
     text-align: center;
   }
+  #header img {
+    margin: 20% auto;
+  }
   #social {
     text-align: center;
   }
-  #social hr, #who hr {
+  #social hr,
+  #who hr {
     margin: 8% auto;
   }
   #who {
@@ -19,6 +31,9 @@ html {
   }
   #who img {
     margin-top: 15%;
+  }
+  #footer {
+    text-align: center;
   }
 }
 
@@ -112,4 +127,34 @@ html {
   background-color: transparent;
   border: 1px solid #be2835;
   color: #be2835;
+}
+
+/* WORK */
+
+#work {
+  padding: 5rem 0;
+}
+
+#work .work-img {
+  position: relative;
+}
+
+#work .work-img .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/eye.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+#work .work-img .img-overlay:hover {
+  opacity: 1;
+  z-index: 1;
 }
