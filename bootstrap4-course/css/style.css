@@ -167,3 +167,21 @@ html {
   color: #be2835;
   padding: 15px 0;
 }
+
+/* CUSTOMERS */
+
+#customers {
+  padding: 5rem 0;
+}
+
+#customers .carousel-indicators li {
+ background-color: #be2835;
+}
+
+#customers .carousel-inner {
+  margin-bottom: 50px;
+}
+
+#customers .carousel-indicators {
+  margin-bottom: -50px;
+}
