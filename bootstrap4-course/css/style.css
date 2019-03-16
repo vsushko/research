@@ -17,7 +17,7 @@ html {
     text-align: center;
   }
   #header img {
-    margin: 0 auto;
+    margin: 20% auto 0;
   }
   #social {
     text-align: center;
@@ -31,6 +31,9 @@ html {
   }
   #who img {
     margin-top: 15%;
+  }
+  #footer {
+    text-align: center;
   }
 }
 
@@ -172,10 +175,11 @@ html {
 
 #customers {
   padding: 5rem 0;
+  overflow: hidden;
 }
 
 #customers .carousel-indicators li {
- background-color: #be2835;
+  background-color: #be2835;
 }
 
 #customers .carousel-inner {
@@ -184,4 +188,51 @@ html {
 
 #customers .carousel-indicators {
   margin-bottom: -50px;
+}
+
+/* PRICING */
+
+#pricing {
+  padding: 5rem 0;
+  background-color: #f6f6f6;
+}
+
+#pricing .card .card-header {
+  background-color: #6e6e6e;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+#pricing .card .standard {
+  background-color: #be2835;
+  font-size: 1.3em;
+  padding: 15px 0;
+}
+
+#pricing .card .card-header:hover {
+  background-color: #be2835;
+}
+
+#pricing .card {
+  margin-top: 20px;
+}
+
+/* PRICING */
+#contact {
+  padding: 5rem 0;
+}
+
+/* FOOTER */
+#footer {
+  padding: 2rem 0;
+  background-color: #484848;
+  color: white;
+}
+
+#footer a {
+  color: white;
+}
+
+#footer .fa {
+  padding: 0 5px;
 }
