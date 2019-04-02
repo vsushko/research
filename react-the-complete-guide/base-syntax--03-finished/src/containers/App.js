@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
-import Person from './Person/Person';
-
+import classes from './App.css';
+import Cockpit from '../components/Cockpit/Cockpit';
+import Persons from '../components/Persons/Persons';
 class App extends Component {
+  constructor(props) {
+    super(props);
+    console.log('[App.js] constructor');
+  }
+
   state = {
     persons: [
       { id: 'id1', name: 'Max', age: 28 },
@@ -11,6 +16,19 @@ class App extends Component {
     ],
     otherState: 'some other value',
     doesShow: false
+  }
+
+  static getDerivedStateFromProps(props, state) {
+    console.log('[App.js] getDerivedStateFromProps', props)
+    return state;
+  }
+
+  componentDidMount() {
+    console.log('[App.js] componentDidMount');
+  }
+
+  componentWillMount() {
+    console.log('[App.js] componentWillMount ');
   }
 
   togglePersonsHandler = () => {
@@ -44,45 +62,22 @@ class App extends Component {
   }
 
   render() {
-    const style = {
-      backgroundColor: 'green',
-      color: 'white',
-      font: 'inherit',
-      border: '1px solid blue',
-      padding: '8px',
-      cursor: 'pointer'
-    };
-
+    console.log('[App.js] rendering...')
     let persons = null;
 
     if (this.state.showPersons) {
       persons = (
-        <div>
-          {this.state.persons.map((person, index) => {
-            return <Person click={() => this.deletePersonHandler(index)} name={person.name} age={person.age}
-              key={index} changed={(event) => this.nameChangeHandler(event, person.id)} />
-          })}
-        </div>
+        <Persons persons={this.state.persons} clicked={this.deletePersonHandler} changed={this.nameChangeHandler} />
       );
-      style.backgroundColor = 'red';
     }
-
-    let classes = []
-
-    if (this.state.persons.length <= 2) {
-      classes.push('red') // classes = ['red']
-    }
-    if (this.state.persons.length <= 1) {
-      classes.push('bold'); // classes = ['red', 'bold']
-    }
-
     return (
-        <div className="App">
-          <h1>Hi, I'm a React App</h1>
-          <p className={classes.join(' ')}>This is really working!</p>
-          <button onClick={this.togglePersonsHandler} style={style}>Switch Name</button>
-          {persons}
-        </div>
+      <div className={classes.App}>
+        <Cockpit title={this.props.appTitle}
+          showPersons={this.state.showPersons}
+          persons={this.state.persons}
+          clicked={this.togglePersonsHandler} />
+        {persons}
+      </div>
     );
     // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
   }
