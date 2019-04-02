@@ -1,0 +1,35 @@
+.container {
+    border: 5px solid red;
+}
+
+.box {
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.box-1 {
+    background: brown;
+}
+
+.box-2 {
+    background: yellow;
+}
+
+.box-3 {
+    background: orange;
+}
+
+.box-4 {
+    background: blue;
+}
+
+.box-5 {
+    background: green;
+}
+
+.generic {
+    background: blue;
+    border: 1px solid white;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="flexbox1.css">
+
+  <style>
+    /*
+      flex-direction: row(default), column, column-reverse
+      flex-wrap: wrap, no-wrap(default), wrap reverse
+      justify-content: flex-start, flex-end, center, space-between, space-around
+      align-items: stretch, flex-start, flex-end, center, baseline
+      align-content: stretch, flex-end, flex-start, space-around, space-between, center
+      main axis / corss axis
+      order
+      align-self: auto, baseline, center, flex-start, flex-end, inherit, initial, 
+        stretch, unset
+      flex-grow: inherit, initial unset
+      flex-shrink: inherit, initial unset
+      flex-basis
+      flex
+    */
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      /* flex-direction: row; */
+      /* flex-direction: row-reverse; */
+      /* flex-direction: column; */
+      /* flex-direction: column-reverse; */
+
+      /* flex-wrap: nowrap; */
+      /* flex-wrap: wrap; */
+      /* flex-wrap: wrap-reverse; */
+
+      /* justify-content: flex-start; */
+      /* justify-content: flex-end; */
+      /* justify-content: center; */
+      /* justify-content: space-between; */
+      /* justify-content: space-around; */
+
+      /* align-items: stretch; */
+      /* align-items: flex-start; */
+      /* align-items: flex-end; */
+      /* align-items: center; */
+      /* i.e. text will be formatted with baseline of text */
+      /* align-items: baseline; */
+
+      /* align-content: stretch; */
+      /* align-content: flex-start; */
+      /* align-content: flex-end; */
+      /* align-content: center; */
+      /* align-content: space-around; */
+      /* align-content: space-between; */
+    }
+    /* .box {
+      flex-grow: 1;
+      flex-basis: 100px;
+    } */
+    .box {
+      /* grow and shrink, basis */
+      flex:1 0 200px;
+    }
+    /* .box-2 {
+      width: 300px;
+      flex-shrink: 0;
+    } */
+    /* .box {
+      flex-grow: 1;
+    }
+    .box-3 {
+      flex-grow: 6;
+    }
+    .box-2 {
+      flex-grow: 4;
+    } */
+    /* .box-3 {
+      align-self: stretch;
+    }
+    .box-5 {
+      align-self: flex-end
+    } */
+    /* @media screen and (min-width: 576px) {
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .box-1 {
+        order: 1;
+      }
+
+      .box-4 {
+        order: 2;
+      }
+
+      .box-5 {
+        order: -1;
+      }
+    } */
+    /* .container-1 {
+      border: 5px solid blue;
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    } */
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="box box-1">1</div>
+    <div class="box box-2">2</div>
+    <div class="box box-3">3</div>
+    <div class="box box-4">4</div>
+    <div class="box box-5">5</div>
+    
+    <!-- <div class="box generic">G</div>
+    <div class="box generic">G</div>
+    <div class="box generic">G</div>
+    <div class="box generic">G</div> -->
+
+  </div>
+  <!-- <div class="container-1">
+    <div class="box box-1">1</div>
+    <div class="box box-2">2</div>
+    <div class="box box-3">3</div>
+    <div class="box box-4">4</div>
+    <div class="box box-5">5</div>
+  </div> -->
+</body>
+
+</html>
