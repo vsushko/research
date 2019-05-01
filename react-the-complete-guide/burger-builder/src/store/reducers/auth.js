@@ -3,7 +3,7 @@ import { updateObject } from '../../shared/utility';
 
 const initialState = {
   token: null,
-  uderId: null,
+  userId: null,
   error: null,
   loading: false,
   authRedirectPath: '/'
