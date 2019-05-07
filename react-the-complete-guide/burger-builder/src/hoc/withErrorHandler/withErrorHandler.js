@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import Aux from '../Aux/Aux';
 import Modal from '../../components/UI/Modal/Modal';
 
 const withErrorHandler = (WrappedComponent, axios) => {
+  return props {
 
-  return class extends Component {
+    
     state = {
       error: null
     }
@@ -28,17 +29,15 @@ const withErrorHandler = (WrappedComponent, axios) => {
       this.setState({ error: null });
     }
 
-    render() {
-      return (
-        <Aux>
-          <Modal show={this.state.error}
-            modalClosed={this.errorConfirmedHandler}>
-            {this.state.error ? this.state.error.message : null}
-          </Modal>
-          <WrappedComponent {...this.props} />
-        </Aux>
-      );
-    }
+    return (
+      <Aux>
+        <Modal show={this.state.error}
+          modalClosed={this.errorConfirmedHandler}>
+          {this.state.error ? this.state.error.message : null}
+        </Modal>
+        <WrappedComponent {...this.props} />
+      </Aux>
+    );
   }
 }
 
