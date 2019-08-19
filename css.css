@@ -34,7 +34,7 @@ table tr td {
   padding: 5px;
 }
 
-.search-table-row:hover {
+.table-row:hover {
   cursor: pointer;
   box-shadow: inset 0px 0px 3px 1px rgba(71, 71, 71, 1);
 }
