@@ -86,4 +86,4 @@ This folder contains sources from Thinking in Java [Book](https://en.wikipedia.o
 This folder contains sources from Understanding ECMAScript 6: The Definitive Guide for JavaScript Developers [Book](https://leanpub.com/understandinges6/read).
 
 ## xml-schema-validation-app
-This folder contains a simiple java application with an example using JAXB J2EE API and an example of XML validation by XSD schema. 
+This folder contains a simple java application with an example using JAXB J2EE API and an example of XML validation by XSD schema. 
