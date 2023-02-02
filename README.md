@@ -12,12 +12,12 @@ This folder contains comprehensive and bestselling Angular course sources from U
 Simple application with a try to create an application for managing accounts with currencies ([link](https://github.com/vsushko/research/tree/master/bank-with-currency-app/src)).
 
 ## bootstrap4-and-10-projects
-Contains simple bootstrap landings and files for sharpening [bootstrarp](https://getbootstrap.com/) skills.
+Contains simple bootstrap landings and files for sharpening [bootstrap](https://getbootstrap.com/) skills.
 
 <img src="https://github.com/vsushko/research/blob/master/img/bootstrap1.png" width="550" height="350">
 
 ## bootstrap4-course
-Contains simple [bootstrarp](https://getbootstrap.com/) landing.
+Contains simple [bootstrap](https://getbootstrap.com/) landing.
 
 <img src="https://github.com/vsushko/research/blob/master/img/bootstrap2.png" width="550" height="650">
 
