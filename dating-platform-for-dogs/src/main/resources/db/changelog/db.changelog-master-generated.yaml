@@ -1,0 +1,398 @@
+databaseChangeLog:
+- changeSet:
+    id: 1707074106436-1
+    author: vsushko (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: dept_no
+            type: CHAR(4)
+        - column:
+            constraints:
+              nullable: false
+              unique: true
+            name: dept_name
+            type: VARCHAR(40)
+        tableName: departments
+- changeSet:
+    id: 1707074106436-2
+    author: vsushko (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: emp_no
+            type: INT
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: dept_no
+            type: CHAR(4)
+        - column:
+            constraints:
+              nullable: false
+            name: from_date
+            type: date
+        - column:
+            constraints:
+              nullable: false
+            name: to_date
+            type: date
+        tableName: dept_emp
+- changeSet:
+    id: 1707074106436-3
+    author: vsushko (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: emp_no
+            type: INT
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: dept_no
+            type: CHAR(4)
+        - column:
+            constraints:
+              nullable: false
+            name: from_date
+            type: date
+        - column:
+            constraints:
+              nullable: false
+            name: to_date
+            type: date
+        tableName: dept_manager
+- changeSet:
+    id: 1707074106436-4
+    author: vsushko (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: emp_no
+            type: INT
+        - column:
+            constraints:
+              nullable: false
+            name: birth_date
+            type: date
+        - column:
+            constraints:
+              nullable: false
+            name: first_name
+            type: VARCHAR(14)
+        - column:
+            constraints:
+              nullable: false
+            name: last_name
+            type: VARCHAR(16)
+        - column:
+            constraints:
+              nullable: false
+            name: gender
+            type: ENUM('M', 'F')
+        - column:
+            constraints:
+              nullable: false
+            name: hire_date
+            type: date
+        tableName: employees
+- changeSet:
+    id: 1707074106436-5
+    author: vsushko (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: emp_no
+            type: INT
+        - column:
+            constraints:
+              nullable: false
+            name: salary
+            type: INT
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: from_date
+            type: date
+        - column:
+            constraints:
+              nullable: false
+            name: to_date
+            type: date
+        tableName: salaries
+- changeSet:
+    id: 1707074106436-6
+    author: vsushko (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: emp_no
+            type: INT
+        - column:
+            constraints:
+              nullable: false
+            name: salary
+            type: VARCHAR(11)
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: from_date
+            type: date
+        - column:
+            constraints:
+              nullable: false
+            name: to_date
+            type: date
+        tableName: salaries_text
+- changeSet:
+    id: 1707074106436-7
+    author: vsushko (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: emp_no
+            type: INT
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: title
+            type: VARCHAR(51)
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: from_date
+            type: date
+        - column:
+            name: to_date
+            type: date
+        tableName: titles
+- changeSet:
+    id: 1707074106436-8
+    author: vsushko (generated)
+    changes:
+    - createIndex:
+        associatedWith: ''
+        columns:
+        - column:
+            name: to_date
+        indexName: IX_dept_emp_to_date
+        tableName: dept_emp
+- changeSet:
+    id: 1707074106436-9
+    author: vsushko (generated)
+    changes:
+    - createIndex:
+        associatedWith: ''
+        columns:
+        - column:
+            name: birth_date
+        indexName: IX_employees_birthDate
+        tableName: employees
+- changeSet:
+    id: 1707074106436-10
+    author: vsushko (generated)
+    changes:
+    - createIndex:
+        associatedWith: ''
+        columns:
+        - column:
+            name: birth_date
+        - column:
+            name: first_name
+        indexName: IX_employees_birthDate_firstName
+        tableName: employees
+- changeSet:
+    id: 1707074106436-11
+    author: vsushko (generated)
+    changes:
+    - createIndex:
+        associatedWith: ''
+        columns:
+        - column:
+            name: first_name
+        indexName: IX_employees_firstName
+        tableName: employees
+- changeSet:
+    id: 1707074106436-12
+    author: vsushko (generated)
+    changes:
+    - createIndex:
+        associatedWith: ''
+        columns:
+        - column:
+            name: salary
+        indexName: IX_salaries_salary
+        tableName: salaries
+- changeSet:
+    id: 1707074106436-13
+    author: vsushko (generated)
+    changes:
+    - createIndex:
+        associatedWith: ''
+        columns:
+        - column:
+            name: salary
+        indexName: IX_salaries_text_salary
+        tableName: salaries_text
+- changeSet:
+    id: 1707074106436-14
+    author: vsushko (generated)
+    changes:
+    - createIndex:
+        associatedWith: ''
+        columns:
+        - column:
+            name: dept_no
+        indexName: dept_no
+        tableName: dept_emp
+- changeSet:
+    id: 1707074106436-15
+    author: vsushko (generated)
+    changes:
+    - createIndex:
+        associatedWith: ''
+        columns:
+        - column:
+            name: dept_no
+        indexName: dept_no
+        tableName: dept_manager
+- changeSet:
+    id: 1707074106436-16
+    author: vsushko (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: emp_no
+        baseTableName: dept_emp
+        constraintName: dept_emp_ibfk_1
+        deferrable: false
+        initiallyDeferred: false
+        onDelete: CASCADE
+        onUpdate: RESTRICT
+        referencedColumnNames: emp_no
+        referencedTableName: employees
+        validate: true
+- changeSet:
+    id: 1707074106436-17
+    author: vsushko (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: dept_no
+        baseTableName: dept_emp
+        constraintName: dept_emp_ibfk_2
+        deferrable: false
+        initiallyDeferred: false
+        onDelete: CASCADE
+        onUpdate: RESTRICT
+        referencedColumnNames: dept_no
+        referencedTableName: departments
+        validate: true
+- changeSet:
+    id: 1707074106436-18
+    author: vsushko (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: emp_no
+        baseTableName: dept_manager
+        constraintName: dept_manager_ibfk_1
+        deferrable: false
+        initiallyDeferred: false
+        onDelete: CASCADE
+        onUpdate: RESTRICT
+        referencedColumnNames: emp_no
+        referencedTableName: employees
+        validate: true
+- changeSet:
+    id: 1707074106436-19
+    author: vsushko (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: dept_no
+        baseTableName: dept_manager
+        constraintName: dept_manager_ibfk_2
+        deferrable: false
+        initiallyDeferred: false
+        onDelete: CASCADE
+        onUpdate: RESTRICT
+        referencedColumnNames: dept_no
+        referencedTableName: departments
+        validate: true
+- changeSet:
+    id: 1707074106436-20
+    author: vsushko (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: emp_no
+        baseTableName: salaries
+        constraintName: salaries_ibfk_1
+        deferrable: false
+        initiallyDeferred: false
+        onDelete: CASCADE
+        onUpdate: RESTRICT
+        referencedColumnNames: emp_no
+        referencedTableName: employees
+        validate: true
+- changeSet:
+    id: 1707074106436-21
+    author: vsushko (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: emp_no
+        baseTableName: salaries_text
+        constraintName: salaries_text_ibfk_1
+        deferrable: false
+        initiallyDeferred: false
+        onDelete: CASCADE
+        onUpdate: RESTRICT
+        referencedColumnNames: emp_no
+        referencedTableName: employees
+        validate: true
+- changeSet:
+    id: 1707074106436-22
+    author: vsushko (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: emp_no
+        baseTableName: titles
+        constraintName: titles_ibfk_1
+        deferrable: false
+        initiallyDeferred: false
+        onDelete: CASCADE
+        onUpdate: RESTRICT
+        referencedColumnNames: emp_no
+        referencedTableName: employees
+        validate: true
+

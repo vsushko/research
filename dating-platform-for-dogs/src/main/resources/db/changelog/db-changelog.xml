@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+        http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+
+    <changeSet id="create-breeds-table" author="vsushko">
+        <createTable tableName="BREEDS">
+            <column name="BRE_ID" type="int" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_BREEDS"/>
+            </column>
+            <column name="BRE_NAME" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="insert-breeds" author="vsushko">
+        <insert tableName="BREEDS">
+            <column name="BRE_NAME" value="Golden Retriever"/>
+        </insert>
+        <insert tableName="BREEDS">
+            <column name="BRE_NAME" value="American Staffordshire Terrier"/>
+        </insert>
+        <insert tableName="BREEDS">
+            <column name="BRE_NAME" value="German Shepherd Doger"/>
+        </insert>
+
+        <rollback>
+            <delete tableName="BREEDS"/>
+        </rollback>
+    </changeSet>
+    <changeSet id="create-profiles-table" author="vsushko">
+        <createTable tableName="PROFILES">
+            <column name="PRO_ID" type="int" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_PROFILES" />
+            </column>
+            <column name="PRO_NAME" type="varchar(100)">
+                <constraints nullable="false" />
+            </column>
+            <column name="PRO_BRE_ID" type="int" />
+            <column name="PRO_HEIGHT" type="int" />
+            <column name="PRO_WEIGHT" type="int" />
+            <column name="PRO_DESCRIPTION" type="varchar(4000)" />
+            <column name="PRO_IMAGE_URL" type="varchar(100)" />
+        </createTable>
+        <rollback>
+            <delete tableName="PROFILES"/>
+        </rollback>
+    </changeSet>
+    <changeSet id="create-ix_pro_bre_id" author="DBA presents">
+        <createIndex tableName="PROFILES" indexName="IX_PRO_BRE_ID">
+            <column name="PRO_BRE_ID" />
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="create-fk_pro_bre_id" author="DBA presents">
+        <addForeignKeyConstraint baseTableName="PROFILES" baseColumnNames="PRO_BRE_ID" constraintName="FK_PRO_BRE_ID"
+                                 referencedTableName="BREEDS" referencedColumnNames="BRE_ID" />
+    </changeSet>
+
+    <changeSet id="add-pro_gender-column" author="DBA presents">
+        <addColumn tableName="PROFILES">
+            <column name="PRO_GENDER" type="char(1)" />
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>

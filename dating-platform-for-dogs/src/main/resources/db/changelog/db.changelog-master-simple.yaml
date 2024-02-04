@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: vsushko
+      changes:
+        - modifyDataType:
+            columnName: title
+            newDataType: varchar(51)
+            tableName: titles
+      rollback:
+        - modifyDataType:
+            columnName: title
+            newDataType: varchar(50)
+            tableName: titles
